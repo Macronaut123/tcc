@@ -1,0 +1,17 @@
+NOTAS DE UPDATE
+*---------------------------------/
+*---------------------------------/
+
+	- Npc AI 
+		- NavMesh;
+		- TalkSistem;
+	
+	- MiniMap;
+
+	- ClockSistem;
+
+	- Fist situation lock;
+
+	- Back to the fulture;
+
+- Lock all on Talk;
