@@ -38,6 +38,69 @@ public class interact : MonoBehaviour {
                 if (hit.gameObject.name == "Armazem_trigger") { armazem_stay = true; } else { armazem_stay = false; }
                 break;
         }
+	
+		/*if(hit.gameObject.name == "igreja"){
+			
+			igreja = true;
+			localization = "Igreja";
+		}*/
+		
+		
+		/*if(hit.gameObject.name == "NPC_armazem" && global_time > 180){
+		
+			speak = "So posso abrir o Armazem as 3h";
+			localization = "Casa";
+			
+		}else if(hit.gameObject.name == "NPC_armazem" && global_time < 180 && global_time > 120){
+			
+			speak = "So posso abrir o Armazem as 3h";
+			localization = "Mercado";
+			manto_on = true;
+			
+		}else if(hit.gameObject.name == "NPC_armazem" && global_time < 120 && global_time > 60){
+			
+			speak = "Aqui esta seu manto”, jogador obtem manto";
+			localization = "Armazem";
+			manto_on = true;
+			
+		}else if(hit.gameObject.name == "NPC_armazem" && global_time > 60){
+			
+			speak = "Aqui esta seu manto”, jogador obtem manto";
+			localization = "Armazem";
+			manto_on = true;
+			
+		}else{
+			//speak = "";
+			
+		}*/
+		
+		/*if(hit.gameObject.name == "NPC_GUARDA" && global_time > 180){
+		
+			speak = "O rei nao esta atendendo no momento.";
+			
+		}else if(hit.gameObject.name == "NPC_GUARDA" && global_time < 180 && global_time > 120){
+			
+			if(!manto_on){
+				speak = "So os que possuem o manto podem entrar";
+			}else{
+				speak = "Por favor, sinta-se a vontade";
+				GameObject.Find("block").collider.enabled = false;
+			}
+			
+		}else if(hit.gameObject.name == "NPC_GUARDA" && global_time < 120 && global_time > 60){
+			
+			speak = "O rei não este atendendo no momento.";
+			
+		}else if(hit.gameObject.name == "NPC_GUARDA" && global_time > 60){
+			
+			speak = "O rei não este atendendo no momento.";
+			
+		}else{
+			//speak = "";
+			
+		}*/
+		
+		/*if(hit.gameObject.name == "NPC_rei" && global_time > 120 && global_time < 180){
 		
 			speak = "Parabens, você conseguiu";
 		
@@ -69,6 +132,30 @@ public class interact : MonoBehaviour {
                 speak = "";
                 break;
         }
+	
+		
+		/*if(hit.gameObject.name == "igreja"){
+			
+			igreja = false;
+		}
+		
+		if(hit.gameObject.name == "NPC_armazem"){
+		
+			speak = "";
+			
+		}
+		
+		if(hit.gameObject.name == "NPC_GUARDA"){
+		
+			speak = "";
+			
+		}
+		
+		if(hit.gameObject.name == "NPC_rei"){
+		
+			speak = "";
+		
+		}*/
 		
 	}
 	
