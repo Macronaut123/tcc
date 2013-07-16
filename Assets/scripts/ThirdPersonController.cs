@@ -81,11 +81,18 @@ public class ThirdPersonController : MonoBehaviour
 		walking = false;
 	}
 	
-	
 	void Update ()
 	// Handle rotation here to ensure smooth application.
 	{
 		float rotationAmount;
+		
+		if(Input.GetKeyDown(KeyCode.LeftShift)){
+			
+			speed = 0.3f;	
+		}else if(Input.GetKeyUp(KeyCode.LeftShift)){
+			
+			speed = 1.0f;
+		}
 		
 		if (Input.GetMouseButton (1) && (!requireLock || controlLock || Screen.lockCursor))
 		// If the right mouse button is held, rotation is locked to the mouse

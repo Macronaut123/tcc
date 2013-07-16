@@ -2,7 +2,8 @@ using UnityEngine;
 using System.Collections;
 
 public class NPC_systemTalk : MonoBehaviour {
-
+	
+	
 	public string[] currentConversa;
 	public string[] conversa_0;
 	public string[] conversa_1;
