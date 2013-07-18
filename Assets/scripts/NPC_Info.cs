@@ -7,6 +7,7 @@ public class NPC_Info : MonoBehaviour {
     public string subinfo;
     public string description;
     public int age;
+    public int[] dailyRoutine;
 
 	void Start () {
 	

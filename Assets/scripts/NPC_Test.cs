@@ -9,6 +9,8 @@ public class NPC_Test : MonoBehaviour {
     private string name;
     private string subinfo;
     private string description;
+    private int[] dailyRoutine;
+
 
     private bool showDescription;
 
@@ -25,6 +27,7 @@ public class NPC_Test : MonoBehaviour {
         name = TargetObject.GetComponent<NPC_Info>().name;
         subinfo = TargetObject.GetComponent<NPC_Info>().subinfo;
         description = TargetObject.GetComponent<NPC_Info>().description;
+        dailyRoutine = TargetObject.GetComponent<NPC_Info>().dailyRoutine;
 
         showDescription = false;
 	}
@@ -38,7 +41,15 @@ public class NPC_Test : MonoBehaviour {
 
     void OnGUI(){
 
-        if (showDescription) { GUI.Box(new Rect(40, 40, 400, 100), "\nIdade: " + age + "\nNome: " + name + "\nClasse: " + subinfo + "\nDescrição: " + description); }
+        if (showDescription){
+            GUI.Box(new Rect(40, 40, 400, 100), "\nIdade: " + age + "\nNome: " + name + "\nClasse: " + subinfo + "\nDescrição: " + description);
+            GUI.Box(new Rect(440, 15, 80, 275), "");
+            for (int i = 0; i < dailyRoutine.Length; i++) {
+                if (i == 0) { GUI.Label(new Rect(450, 40 * i + 20, 180, 20), "Horário: " + dailyRoutine[i].ToString()); }
+                else { GUI.Label(new Rect(450, 40 * i + 20, 180, 20), "Horário: " + dailyRoutine[i].ToString()); }
+            }
+        }
+
         
         GUI.Label(new Rect(Screen.width/2 - 150,Screen.height - 100,300,30),"Aperte U para abrir a tela de descrições");
     }
