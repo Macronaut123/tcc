@@ -8,6 +8,7 @@ public class NPC_Info : MonoBehaviour {
     public string description;
     public int age;
     public int[] dailyRoutine;
+    public bool[] dailyRoutineCondition;
 
 	void Start () {
 	

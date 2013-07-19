@@ -10,6 +10,7 @@ public class NPC_Test : MonoBehaviour {
     private string subinfo;
     private string description;
     private int[] dailyRoutine;
+    private bool[] dailyRoutineCondition;
 
 
     private bool showDescription;
@@ -28,6 +29,7 @@ public class NPC_Test : MonoBehaviour {
         subinfo = TargetObject.GetComponent<NPC_Info>().subinfo;
         description = TargetObject.GetComponent<NPC_Info>().description;
         dailyRoutine = TargetObject.GetComponent<NPC_Info>().dailyRoutine;
+        dailyRoutineCondition = TargetObject.GetComponent<NPC_Info>().dailyRoutineCondition;
 
         showDescription = false;
 	}
@@ -45,8 +47,9 @@ public class NPC_Test : MonoBehaviour {
             GUI.Box(new Rect(40, 40, 400, 100), "\nIdade: " + age + "\nNome: " + name + "\nClasse: " + subinfo + "\nDescrição: " + description);
             GUI.Box(new Rect(440, 15, 80, 275), "");
             for (int i = 0; i < dailyRoutine.Length; i++) {
-                if (i == 0) { GUI.Label(new Rect(450, 40 * i + 20, 180, 20), "Horário: " + dailyRoutine[i].ToString()); }
-                else { GUI.Label(new Rect(450, 40 * i + 20, 180, 20), "Horário: " + dailyRoutine[i].ToString()); }
+                if (dailyRoutineCondition[i]){
+                    GUI.Label(new Rect(450, 40 * i + 20, 180, 20), "Horário: " + dailyRoutine[i].ToString()); 
+                }
             }
         }
 
