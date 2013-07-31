@@ -29,7 +29,7 @@ public class ThirdPersonCamera : MonoBehaviour
 			// Turn this off to reduce gizmo clutter if needed
 		requireLock = true,
 			// Turn this off if the camera should be controllable even without cursor lock
-		controlLock = true;
+		controlLock = false;
 			// Turn this off if you want mouse lock controlled elsewhere
 		
 		
@@ -176,7 +176,7 @@ public class ThirdPersonCamera : MonoBehaviour
 			if(NpcAberto == false){
 			if (controlLock)
 			{
-				Screen.lockCursor = true;
+				Screen.lockCursor = false;
 			}
 			else if (controlLock)
 			{

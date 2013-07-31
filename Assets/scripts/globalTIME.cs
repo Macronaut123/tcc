@@ -6,12 +6,14 @@ public class globalTIME : MonoBehaviour {
 	
 	public bool igreja;
 	public float global_timer;
+	public static float global_timer_representation;
 	
 	public bool Disenable = true;
 	
 	
 	void Update (){
 	
+		global_timer_representation = global_timer;
 		
 		igreja = GameObject.Find("objetivo_001").GetComponent<objetivos_001>().igreja;
 		

@@ -41,11 +41,6 @@ public class NPC_Test : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown("u")) { if (showDescription) { showDescription = false; } else { showDescription = true; } }
-
-        if (Input.GetKeyDown("i")) { TargetID = 1; print(TargetID); }
-        if (Input.GetKeyDown("o")) { TargetID = 2; print(TargetID); }
-
         switch (TargetID){
             case 1:
                 TargetObject = GameObject.FindGameObjectWithTag("NPC_armazem");
@@ -67,7 +62,17 @@ public class NPC_Test : MonoBehaviour {
     void OnGUI(){
 
         GUI.skin.box.wordWrap = true;
-
+		
+		if(GUI.Button(new Rect(40,550,180,30),"GUARDA")){
+			TargetID = 2;
+			if(showDescription){showDescription = false;} else {showDescription = true;}
+		}
+		
+		if(GUI.Button(new Rect(40,580,180,30),"TAVERNEIRO")){
+			TargetID = 1;
+			if(showDescription){showDescription = false;} else {showDescription = true;}
+		}
+		
         if (showDescription){
             GUI.Box(new Rect(40, 40, 350, 150), "\nIdade: " + age + "\nNome: " + name + "\nClasse: " + subinfo + "\nDescrição: " + description);
             GUI.Box(new Rect(440, 15, 80, 275), "");
@@ -77,8 +82,5 @@ public class NPC_Test : MonoBehaviour {
                 }
             }
         }
-
-        
-        GUI.Label(new Rect(Screen.width/2 - 150,Screen.height - 100,300,30),"Aperte U para abrir a tela de descrições");
     }
 }
