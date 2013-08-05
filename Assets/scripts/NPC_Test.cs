@@ -4,6 +4,8 @@ using System.Collections;
 public class NPC_Test : MonoBehaviour {
 
     private GameObject TargetObject;
+    public static bool Armazem;
+    public static bool Guarda;
 
     private int age;
     private string name;
@@ -19,6 +21,9 @@ public class NPC_Test : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+        Guarda = false;
+        Armazem = false;
 
         TargetObject = GameObject.FindGameObjectWithTag("NPC_armazem");
 
@@ -62,16 +67,24 @@ public class NPC_Test : MonoBehaviour {
     void OnGUI(){
 
         GUI.skin.box.wordWrap = true;
-		
-		if(GUI.Button(new Rect(40,550,180,30),"GUARDA")){
-			TargetID = 2;
-			if(showDescription){showDescription = false;} else {showDescription = true;}
-		}
-		
-		if(GUI.Button(new Rect(40,580,180,30),"TAVERNEIRO")){
-			TargetID = 1;
-			if(showDescription){showDescription = false;} else {showDescription = true;}
-		}
+
+        if (Guarda)
+        {
+            if (GUI.Button(new Rect(40, 550, 180, 30), "GUARDA"))
+            {
+                TargetID = 2;
+                if (showDescription) { showDescription = false; } else { showDescription = true; }
+            }
+        }
+
+        if (Armazem)
+        {
+            if (GUI.Button(new Rect(40, 580, 180, 30), "TAVERNEIRO"))
+            {
+                TargetID = 1;
+                if (showDescription) { showDescription = false; } else { showDescription = true; }
+            }
+        }
 		
         if (showDescription){
             GUI.Box(new Rect(40, 40, 350, 150), "\nIdade: " + age + "\nNome: " + name + "\nClasse: " + subinfo + "\nDescrição: " + description);

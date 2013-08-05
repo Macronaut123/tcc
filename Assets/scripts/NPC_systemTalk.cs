@@ -81,7 +81,9 @@ public class NPC_systemTalk : MonoBehaviour {
 				}
 				
 			}else if(gameObject.name == "NPC_guardaForte"){
-				
+
+                NPC_Test.Guarda = true;
+
 				if(obj_002){
 					currentConversa = conversa_2;
 					gameObject.GetComponent<basicAI>().waypoints.Clear();
@@ -96,7 +98,9 @@ public class NPC_systemTalk : MonoBehaviour {
 			}
 			
 		}else if(float.Parse(checkConversa_1[0]) <= global_timer && float.Parse(checkConversa_1[1]) >= global_timer){
-			
+
+            NPC_Test.Armazem = true;
+
 			if(gameObject.name == "NPC_armazem"){
 				
 				if(obj_001){
