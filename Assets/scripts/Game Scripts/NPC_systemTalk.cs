@@ -3,7 +3,6 @@ using System.Collections;
 
 public class NPC_systemTalk : MonoBehaviour {
 	
-	
 	public string[] currentConversa;
 	public string[] conversa_0;
 	public string[] conversa_1;
@@ -28,7 +27,7 @@ public class NPC_systemTalk : MonoBehaviour {
 	void Start(){
 		
 		currentLine = 1;
-		
+        
 	}
 	
 	void OnTriggerEnter(Collider hit){
@@ -80,17 +79,14 @@ public class NPC_systemTalk : MonoBehaviour {
 					currentConversa = conversa_0;
 				}
 				
-			}else if(gameObject.name == "NPC_guardaForte"){
-
-                NPC_Test.Guarda = true;
-
+			}else if(gameObject.name == "NPC_guardaForte"){             
 				if(obj_002){
 					currentConversa = conversa_2;
 					gameObject.GetComponent<basicAI>().waypoints.Clear();
 					gameObject.GetComponent<basicAI>().currentWayPoint = 0;
 					gameObject.GetComponent<basicAI>().FindWayPoints();
 				}else{
-					currentConversa = conversa_1;
+					currentConversa = conversa_1;                
 				}
 				
 			}else{
@@ -99,10 +95,7 @@ public class NPC_systemTalk : MonoBehaviour {
 			
 		}else if(float.Parse(checkConversa_1[0]) <= global_timer && float.Parse(checkConversa_1[1]) >= global_timer){
 
-            NPC_Test.Armazem = true;
-
 			if(gameObject.name == "NPC_armazem"){
-				
 				if(obj_001){
 					currentConversa = conversa_2;
 				}else{
@@ -152,6 +145,15 @@ public class NPC_systemTalk : MonoBehaviour {
 					GetingTalk();
 					_talking = currentConversa[currentLine];
 					GameObject.Find("globalTime").GetComponent<globalTIME>().Disenable = false;
+                    switch (gameObject.name)
+                    {
+                        case "NPC_armazem":
+                            NPC_Test.Armazem = true;
+                            break;
+                        case "NPC_guardaForte":
+                            NPC_Test.Guarda = true;
+                            break;
+                    }
 				}else{
 					currentLine = 1;
 					_talking = "";

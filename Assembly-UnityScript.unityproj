@@ -44,7 +44,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\scripts\NPC_systemTalk_JS.js" />
+     <Compile Include="Assets\scripts\Game Scripts\NPC_systemTalk_JS.js" />
      <None Include="Assets\Demo\Shaders\NewShader.shader" />
      <None Include="Assets\notes.txt" />
   </ItemGroup>

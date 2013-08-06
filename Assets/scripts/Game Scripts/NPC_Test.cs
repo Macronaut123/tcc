@@ -27,12 +27,6 @@ public class NPC_Test : MonoBehaviour {
 
         TargetObject = GameObject.FindGameObjectWithTag("NPC_armazem");
 
-        print("Idade do Objeto: " + TargetObject.GetComponent<NPC_Info>().age);
-        print("Nome do Objeto: " + TargetObject.GetComponent<NPC_Info>().name);
-        print("Classe do Objeto: " + TargetObject.GetComponent<NPC_Info>().subinfo);
-        print("Descrição do Objeto: " + TargetObject.GetComponent<NPC_Info>().description);
-
-
         age = TargetObject.GetComponent<NPC_Info>().age;
         name = TargetObject.GetComponent<NPC_Info>().name;
         subinfo = TargetObject.GetComponent<NPC_Info>().subinfo;

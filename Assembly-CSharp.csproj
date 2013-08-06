@@ -46,20 +46,20 @@
   <ItemGroup>
      <Compile Include="Assets\Demo\Assets\AnimationController.cs" />
      <Compile Include="Assets\Demo\Assets\CloseCameraFade.cs" />
-     <Compile Include="Assets\scripts\DisableObject.cs" />
-     <Compile Include="Assets\scripts\LevelManagerScript.cs" />
-     <Compile Include="Assets\scripts\NPC_Info.cs" />
-     <Compile Include="Assets\scripts\NPC_Test.cs" />
-     <Compile Include="Assets\scripts\NPC_systemTalk.cs" />
-     <Compile Include="Assets\scripts\NPC_systemTalk_TESTE.cs" />
-     <Compile Include="Assets\scripts\SpeechBubble.cs" />
-     <Compile Include="Assets\scripts\ThirdPersonCamera.cs" />
-     <Compile Include="Assets\scripts\ThirdPersonController.cs" />
-     <Compile Include="Assets\scripts\basicAI.cs" />
-     <Compile Include="Assets\scripts\getItem.cs" />
-     <Compile Include="Assets\scripts\globalTIME.cs" />
-     <Compile Include="Assets\scripts\interact.cs" />
-     <Compile Include="Assets\scripts\objetivos_001.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\DisableObject.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\LevelManagerScript.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\NPC_Info.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\NPC_Test.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\NPC_systemTalk.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\NPC_systemTalk_TESTE.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\SpeechBubble.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\ThirdPersonCamera.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\ThirdPersonController.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\basicAI.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\getItem.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\globalTIME.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\interact.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\objetivos_001.cs" />
      <None Include="Assets\Demo\Shaders\NewShader.shader" />
      <None Include="Assets\notes.txt" />
   </ItemGroup>
