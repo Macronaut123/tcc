@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{E5105FB8-2D3D-29D5-81F3-85E496437A16}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_5;UNITY_4_1;UNITY_64;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\ex2D\Editor\Inspector\ex2DRendererInspector.cs" />
+     <Compile Include="Assets\ex2D\Editor\Inspector\exAtlasInspector.cs" />
+     <Compile Include="Assets\ex2D\Editor\Inspector\exBitmapFontInspector.cs" />
+     <Compile Include="Assets\ex2D\Editor\Inspector\exSpriteAnimationClipInspector.cs" />
+     <Compile Include="Assets\ex2D\Editor\Inspector\exSpriteBaseInspector.cs" />
+     <Compile Include="Assets\ex2D\Editor\Inspector\exSpriteFontInspector.cs" />
+     <Compile Include="Assets\ex2D\Editor\Inspector\exSpriteInspector.cs" />
+     <Compile Include="Assets\ex2D\Editor\Inspector\exTextureInfoInspector.cs" />
+     <Compile Include="Assets\ex2D\Editor\MenuItems.cs" />
+     <Compile Include="Assets\ex2D\Editor\ex2DAboutWindow.cs" />
+     <Compile Include="Assets\ex2D\Editor\ex2DEditor.cs" />
+     <Compile Include="Assets\ex2D\Editor\ex2DPreferencesWindow.cs" />
+     <Compile Include="Assets\ex2D\Editor\exAtlasEditor.cs" />
+     <Compile Include="Assets\ex2D\Editor\exAtlasUtility.cs" />
+     <Compile Include="Assets\ex2D\Editor\exBitmapFontUtility.cs" />
+     <Compile Include="Assets\ex2D\Editor\exEditorUtility.cs" />
+     <Compile Include="Assets\ex2D\Editor\exGenericAssetUtility.cs" />
+     <Compile Include="Assets\ex2D\Editor\exRectSelection.cs" />
+     <Compile Include="Assets\ex2D\Editor\exSceneEditor.cs" />
+     <Compile Include="Assets\ex2D\Editor\exSpriteAnimationEditor.cs" />
+     <None Include="Assets\Demo\Shaders\NewShader.shader" />
+     <None Include="Assets\ex2D\Runtime\Resources\Shaders\AlphaBlendNoZTest.shader" />
+     <None Include="Assets\notes.txt" />
+     <None Include="Assets\ex2D\Runtime\Resources\Shaders\AlphaBlend.shader" />
+     <None Include="Assets\ex2D\Runtime\Resources\Shaders\AlphaBlendClipping.shader" />
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:\Program Files (x86)\Unity\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{13F4F123-E45F-1216-F501-7D4C3FFBBBE2}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{843DFC4F-AED4-F6B4-14C1-317EA7DE1905}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{60AD079D-995A-7378-7ADC-4865149D0C48}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript.unityproj">
+      <Project>{85C60CC6-32FF-12DD-F3F6-AD4E0072975E}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

@@ -50,7 +50,17 @@
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js" />
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" />
      <None Include="Assets\Demo\Shaders\NewShader.shader" />
+     <None Include="Assets\ex2D\_demo\Fonts\Amaranth.txt" />
+     <None Include="Assets\ex2D\Core\Shaders\SpriteBlendClipping.shader" />
+     <None Include="Assets\ex2D\Core\Shaders\SpriteBlendPixelPerfect.shader" />
+     <None Include="Assets\ex2D\_demo\Fonts\springSteel.txt" />
+     <None Include="Assets\ex2D\Core\Shaders\SpriteBlendNoZTest.shader" />
      <None Include="Assets\notes.txt" />
+     <None Include="Assets\ex2D\Core\Shaders\SpriteBlend.shader" />
+     <None Include="Assets\ex2D\_demo\Fonts\otari.txt" />
+ <Reference Include="ex2D.Runtime">
+ <HintPath>Assets\ex2D\Core\ex2D.Runtime.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
