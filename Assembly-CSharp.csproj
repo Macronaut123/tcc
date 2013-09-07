@@ -65,6 +65,7 @@
      <Compile Include="Assets\scripts\Game Scripts\objetivos_001.cs" />
      <Compile Include="Assets\scripts\Interface Scripts\change_target.cs" />
      <Compile Include="Assets\scripts\Interface Scripts\simple_close.cs" />
+     <Compile Include="Assets\scripts\Interface Scripts\simple_feedback.cs" />
      <Compile Include="Assets\scripts\Interface Scripts\simple_open.cs" />
      <None Include="Assets\Demo\Shaders\NewShader.shader" />
      <None Include="Assets\ex2D\_demo\Fonts\Amaranth.txt" />

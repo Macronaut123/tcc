@@ -12,7 +12,7 @@ public class change_target : MonoBehaviour {
     private int age;
     private string name;
     private string subinfo;
-    private string description;
+    private string[] description;
     private int[] dailySettings;
     private bool[] dailyConditions;
 
@@ -23,9 +23,12 @@ public class change_target : MonoBehaviour {
         age = new_target.GetComponent<NPC_Info>().age;
         name = new_target.GetComponent<NPC_Info>().name;
         subinfo = new_target.GetComponent<NPC_Info>().subinfo;
-        description = new_target.GetComponent<NPC_Info>().description;
         dailySettings = new_target.GetComponent<NPC_Info>().dailyRoutine;
         dailyConditions = new_target.GetComponent<NPC_Info>().dailyRoutineCondition;
+
+        description = new string[2];
+        description[0] = "Este é o primeiro \nvalor.";
+        description[1] = "Este é o segundo \nvalor.";
 	}
 
     void OnMouseDown() {
@@ -36,7 +39,8 @@ public class change_target : MonoBehaviour {
                 menus_open[i].SetActive(true);
             }
         }
-        text_to_change.text = "\nIdade: " + age.ToString() +"\nNome: " + name + "\nClasse: " + subinfo;
+
+        text_to_change.text = "\nIdade: " + age.ToString() +"\nNome: " + name + "\nClasse: " + subinfo + "\nDescricao: " + description[0];
         for (int o = 0; o < dailySettings.Length; o++) {
             if (dailyConditions[o])
                 hours_to_change[o].text = "Horario: " + dailySettings[o].ToString();
