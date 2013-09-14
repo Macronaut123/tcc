@@ -54,6 +54,7 @@
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendClipping.shader" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendPixelPerfect.shader" />
      <None Include="Assets\ex2D\_demo\Fonts\springSteel.txt" />
+     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendNoZTest.shader" />
      <None Include="Assets\notes.txt" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlend.shader" />
