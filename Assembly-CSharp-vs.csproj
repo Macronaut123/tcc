@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_5;UNITY_4_1;UNITY_64;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_3;UNITY_4_1;UNITY_64;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_TEAM_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -53,35 +53,47 @@
      <Compile Include="Assets\iTween\Sample\MoveSample.cs" />
      <Compile Include="Assets\iTween\Sample\RotateSample.cs" />
      <Compile Include="Assets\iTween\Sample\SampleInfo.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\AiBasic.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\AiTwoActions.cs" />
      <Compile Include="Assets\scripts\Game Scripts\DisableObject.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\GenericFunction.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\GetItem.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\GlobalActions.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\GlobalActivePlayerRoom.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\GlobalObjects.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\GlobalTime.cs" />
      <Compile Include="Assets\scripts\Game Scripts\LevelManagerScript.cs" />
-     <Compile Include="Assets\scripts\Game Scripts\NPC_Info.cs" />
-     <Compile Include="Assets\scripts\Game Scripts\NPC_Test.cs" />
-     <Compile Include="Assets\scripts\Game Scripts\NPC_systemTalk.cs" />
-     <Compile Include="Assets\scripts\Game Scripts\NPC_systemTalk_TESTE.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\NpcInfo.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\NpcSystemBackTime.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\NpcSystemTalk.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\NpcSystemTalkSolo.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\NpcSystemTalkTwoActions.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\NpcTest.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\QuestOpen.cs" />
      <Compile Include="Assets\scripts\Game Scripts\SpeechBubble.cs" />
      <Compile Include="Assets\scripts\Game Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\scripts\Game Scripts\ThirdPersonController.cs" />
-     <Compile Include="Assets\scripts\Game Scripts\basicAI.cs" />
-     <Compile Include="Assets\scripts\Game Scripts\getItem.cs" />
-     <Compile Include="Assets\scripts\Game Scripts\globalTIME.cs" />
      <Compile Include="Assets\scripts\Game Scripts\interact.cs" />
-     <Compile Include="Assets\scripts\Game Scripts\objetivos_001.cs" />
      <Compile Include="Assets\scripts\Interface Scripts\change_target.cs" />
      <Compile Include="Assets\scripts\Interface Scripts\itweenMovement.cs" />
      <Compile Include="Assets\scripts\Interface Scripts\simple_close.cs" />
      <Compile Include="Assets\scripts\Interface Scripts\simple_feedback.cs" />
      <Compile Include="Assets\scripts\Interface Scripts\simple_open.cs" />
      <None Include="Assets\Demo\Shaders\NewShader.shader" />
+     <None Include="Assets\Standard Assets\water well\readme.txt" />
      <None Include="Assets\ex2D\_demo\Fonts\Amaranth.txt" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendClipping.shader" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendPixelPerfect.shader" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
      <None Include="Assets\ex2D\_demo\Fonts\springSteel.txt" />
      <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendNoZTest.shader" />
      <None Include="Assets\notes.txt" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlend.shader" />
      <None Include="Assets\ex2D\_demo\Fonts\otari.txt" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>

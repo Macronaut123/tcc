@@ -76,25 +76,40 @@ public class SpeechBubble : MonoBehaviour
 		goViewportPos.x = goScreenPos.x/(float)Screen.width;
 		goViewportPos.y = goScreenPos.y/(float)Screen.height;
 	}
-	
-	void Update(){
-		
-		currentTalk = gameObject.GetComponent<NPC_systemTalk>()._talking;
-		talking = gameObject.GetComponent<NPC_systemTalk>().talking;
-		
-		if(talking){
-			if(GetComponent<NavMeshAgent>()){
-				GetComponent<NavMeshAgent>().speed = 0;
-			}
-			
-		}else{
-			if(GetComponent<NavMeshAgent>()){
-				GetComponent<NavMeshAgent>().speed = 8;
-			}
-		}
-		
-		
-	}
+
+    void Update(){
+
+
+        if (gameObject.GetComponent<NpcSystemTalk>())
+        {
+            currentTalk = gameObject.GetComponent<NpcSystemTalk>()._talking;
+            talking = gameObject.GetComponent<NpcSystemTalk>().talking;
+        }
+        else if (gameObject.GetComponent<NpcSystemTalkSolo>())
+        {
+            currentTalk = gameObject.GetComponent<NpcSystemTalkSolo>()._talking;
+            talking = gameObject.GetComponent<NpcSystemTalkSolo>().talking;
+        }
+        else if (gameObject.GetComponent<NpcSystemTalkTwoActions>())
+        {
+            currentTalk = gameObject.GetComponent<NpcSystemTalkTwoActions>().talking;
+            talking = gameObject.GetComponent<NpcSystemTalkTwoActions>().isTalking;
+        }
+        if (talking)
+        {
+            if (GetComponent<NavMeshAgent>())
+            {
+                GetComponent<NavMeshAgent>().speed = 0;
+            }
+        }
+        else
+        {
+            if (GetComponent<NavMeshAgent>())
+            {
+                GetComponent<NavMeshAgent>().speed = 8;
+            }
+        }
+    }
 	
 	//Draw GUIs
 	void OnGUI()

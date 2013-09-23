@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class getItem : MonoBehaviour {
+public class GetItem : MonoBehaviour {
 	
 	private string itemName;
 	

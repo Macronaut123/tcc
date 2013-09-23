@@ -20,11 +20,11 @@ public class change_target : MonoBehaviour {
 	void Start () {
         local_btn = gameObject.GetComponent<exSpriteBorder>();
 
-        age = new_target.GetComponent<NPC_Info>().age;
-        name = new_target.GetComponent<NPC_Info>().name;
-        subinfo = new_target.GetComponent<NPC_Info>().subinfo;
-        dailySettings = new_target.GetComponent<NPC_Info>().dailyRoutine;
-        dailyConditions = new_target.GetComponent<NPC_Info>().dailyRoutineCondition;
+        age = new_target.GetComponent<NpcInfo>().age;
+        name = new_target.GetComponent<NpcInfo>().name;
+        subinfo = new_target.GetComponent<NpcInfo>().subinfo;
+        dailySettings = new_target.GetComponent<NpcInfo>().dailyRoutine;
+        dailyConditions = new_target.GetComponent<NpcInfo>().dailyRoutineCondition;
 
         description = new string[2];
         description[0] = "Este é o primeiro \nvalor.";

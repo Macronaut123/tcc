@@ -5,7 +5,6 @@ public class DisableObject : MonoBehaviour {
 	
 	public MonoBehaviour[] scriptComponents;
 	public float speedNavMesh;
-	private bool Disenable;
 	
 	
 	
@@ -20,27 +19,40 @@ public class DisableObject : MonoBehaviour {
 	
 	void Update () {
 		
-		Disenable = GameObject.Find("globalTime").GetComponent<globalTIME>().Disenable;
-		
-		if(!Disenable){
+		if(!GameObject.Find("globalTime").GetComponent<GlobalTime>().disable){
 			
 			foreach(MonoBehaviour script in scriptComponents) {
-    	
-				if(GetComponent<NavMeshAgent>()){
-					gameObject.GetComponent<NavMeshAgent>().speed = 0;	
-				}
-				
-				script.enabled = false;
-				gameObject.GetComponent<DisableObject>().enabled = true;
-				
-				if(GetComponent<NPC_systemTalk>()){
-					GetComponent<NPC_systemTalk>().enabled = true;
-				}
-				if(GetComponent<SpeechBubble>()){
-					GetComponent<SpeechBubble>().enabled = true;
-				}
+
+                if (script == gameObject.GetComponent<DisableObject>())
+                {
+                    continue;
+                }
+                if (script == gameObject.GetComponent<NavMeshAgent>())
+                {
+                    continue;
+                }
+                if (script == gameObject.GetComponent<NpcSystemTalk>())
+                {
+                    continue;
+                }
+                if (script == gameObject.GetComponent<NpcSystemTalkSolo>())
+                {
+                    continue;
+                }
+                if (script == gameObject.GetComponent<NpcSystemTalkTwoActions>())
+                {
+                    continue;
+                }
+                if (script == gameObject.GetComponent<SpeechBubble>())
+                {
+                    continue;
+                }
+
+                script.enabled = false;
 			}
-			
+
+            
+
 		}else{
 			foreach(MonoBehaviour script in scriptComponents) {
 	    		script.enabled = true;
