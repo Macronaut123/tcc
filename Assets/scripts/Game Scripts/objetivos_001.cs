@@ -78,7 +78,7 @@ public class objetivos_001 : MonoBehaviour {
 	
 	void Update(){
 	
-		global_timer = GameObject.Find("globalTime").GetComponent<globalTIME>().global_timer;
+		global_timer = GameObject.Find("globalTime").GetComponent<GlobalTime>().globalTimer;
 		
 		
 		if(key_001){

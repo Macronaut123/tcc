@@ -60,7 +60,7 @@ public class basicAI : MonoBehaviour
 	
 	public void prepareToStart(){
 		key_001 = GameObject.Find("objetivo_001").GetComponent<objetivos_001>().key_001;
-		global_time = GameObject.Find("globalTime").GetComponent<globalTIME>().global_timer;
+		global_time = GameObject.Find("globalTime").GetComponent<GlobalTime>().globalTimer;
 		tick_time = (int)global_time / dividor_time; //start = 5
 		last_tick = tick_time;
 	}	
@@ -68,7 +68,7 @@ public class basicAI : MonoBehaviour
     public void Update(){
 		
 		key_001 = GameObject.Find("objetivo_001").GetComponent<objetivos_001>().key_001;
-		global_time = GameObject.Find("globalTime").GetComponent<globalTIME>().global_timer;
+		global_time = GameObject.Find("globalTime").GetComponent<GlobalTime>().globalTimer;
 		tick_time = (int)global_time / dividor_time; //start = 5
 		
 		if(last_tick > tick_time){

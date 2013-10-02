@@ -40,7 +40,7 @@ public class NPC_systemTalk : MonoBehaviour {
 			GetingTalk();
 			talking = true;
 			_talking = currentConversa[currentLine];
-			GameObject.Find("globalTime").GetComponent<globalTIME>().Disenable = false;
+			GameObject.Find("globalTime").GetComponent<GlobalTime>().disable = false;
 		}
 	}
 	
@@ -53,13 +53,13 @@ public class NPC_systemTalk : MonoBehaviour {
 			talking = false;
 			currentLine = 1;
 			_talking = "";
-			GameObject.Find("globalTime").GetComponent<globalTIME>().Disenable = true;
+			GameObject.Find("globalTime").GetComponent<GlobalTime>().disable = true;
 		}
 	}
 	
 	void GetingTalk(){
 		
-		global_timer = GameObject.Find("globalTime").GetComponent<globalTIME>().global_timer;
+		global_timer = GameObject.Find("globalTime").GetComponent<GlobalTime>().globalTimer;
 		obj_001 = GameObject.Find("objetivo_001").GetComponent<objetivos_001>().obj_001;
 		obj_002 = GameObject.Find("objetivo_001").GetComponent<objetivos_001>().obj_002;
 		obj_003 = GameObject.Find("objetivo_001").GetComponent<objetivos_001>().obj_003;
@@ -144,7 +144,7 @@ public class NPC_systemTalk : MonoBehaviour {
 					currentLine++;
 					GetingTalk();
 					_talking = currentConversa[currentLine];
-					GameObject.Find("globalTime").GetComponent<globalTIME>().Disenable = false;
+					GameObject.Find("globalTime").GetComponent<GlobalTime>().disable = false;
                     switch (gameObject.name)
                     {
                         case "NPC_armazem":
@@ -158,7 +158,7 @@ public class NPC_systemTalk : MonoBehaviour {
 					currentLine = 1;
 					_talking = "";
 					talking = false;
-					GameObject.Find("globalTime").GetComponent<globalTIME>().Disenable = true;
+					GameObject.Find("globalTime").GetComponent<GlobalTime>().disable = true;
 					if(camDesactive){
 						GameObject.Find("MiniMap").camera.enabled = true;
 					}
