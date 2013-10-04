@@ -57,6 +57,7 @@
      <Compile Include="Assets\scripts\Game Scripts\AiTwoActions.cs" />
      <Compile Include="Assets\scripts\Game Scripts\DisableObject.cs" />
      <Compile Include="Assets\scripts\Game Scripts\GenericFunction.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\GetItem.cs" />
      <Compile Include="Assets\scripts\Game Scripts\GlobalActions.cs" />
      <Compile Include="Assets\scripts\Game Scripts\GlobalActivePlayerRoom.cs" />
      <Compile Include="Assets\scripts\Game Scripts\GlobalObjects.cs" />
@@ -77,7 +78,6 @@
      <Compile Include="Assets\scripts\Game Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\scripts\Game Scripts\ThirdPersonController.cs" />
      <Compile Include="Assets\scripts\Game Scripts\basicAI.cs" />
-     <Compile Include="Assets\scripts\Game Scripts\getItem.cs" />
      <Compile Include="Assets\scripts\Game Scripts\interact.cs" />
      <Compile Include="Assets\scripts\Game Scripts\objetivos_001.cs" />
      <Compile Include="Assets\scripts\Interface Scripts\change_target.cs" />

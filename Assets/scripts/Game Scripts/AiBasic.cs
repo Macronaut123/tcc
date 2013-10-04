@@ -22,55 +22,67 @@ public class AiBasic : MonoBehaviour
     public int currentWayPoint;
     public int tickTime;
     public int lastTick;
-    public int limitForWalk = 5;
+    public int limitForWalk = 60;
     public Vector3 direction;
-    public float globaTime;
+    public int hour;
+
+
+    List<GameObject> subContainers;
 
     public void Start()
     {
-
-        calculateGlobalTimeAndLastTick();
-        findWayPoints();
+        //calculateGlobalTime(true);
+        //defineCurrentContainer(findSubContainers(), calculeIndex());
     }
 
-    public void findWayPoints()
+    public List<GameObject> findSubContainers()
     {
-        currentWayPoint = 0;
-        waypointContainer = GameObject.Find(gameObject.name + "_WP");
-        Transform[] potentialWayPoints = waypointContainer.GetComponentsInChildren<Transform>();
+        GameObject container = GameObject.Find(gameObject.name + "_WP");
+        Transform[] mainContainer = container.GetComponentsInChildren<Transform>();
+        subContainers = new List<GameObject>();
+        foreach (Transform temp in mainContainer)
+        {
+            if(!temp.gameObject.name.Contains("NPC"))
+            {
+                print(temp.gameObject.name);
+                subContainers.Add(temp.gameObject);
+            }
+        }
+        return subContainers;
+    }
+
+    public int calculeIndex()
+    {
+        return GameObject.Find("globalTime").GetComponent<GlobalTime>().hour - 6;
+    }
+
+    public void defineCurrentContainer(List<GameObject> subContainers, int index)
+    {
+        Transform[] currentContainer = subContainers[index].GetComponentsInChildren<Transform>();
         wayPoints = new List<Transform>();
-
-        for (int i = 1; i < potentialWayPoints.Length; i++)
+        for (int i = 1; i < currentContainer.Length; i++)
         {
-            wayPoints.Add(potentialWayPoints[i]);
-        }
-
-        gameObject.GetComponent<NpcSystemBackTime>().wayPoints = this.wayPoints;
-    }
-
-    public void calculateGlobalTimeAndLastTick()
-    {
-
-        globaTime = GameObject.Find("globalTime").GetComponent<GlobalTime>().globalTimer;
-
-        tickTime = (int)globaTime / limitForWalk; //start = 5
-
-        lastTick = tickTime;
-
-        if (lastTick > tickTime)
-        {
-            lastTick = tickTime;
+            wayPoints.Add(currentContainer[i]);
         }
     }
 
-    public void calculateGlobalTime()
+    public void defineCurrentContainer(int index)
+    {
+        Transform[] currentContainer = subContainers[index].GetComponentsInChildren<Transform>();
+        wayPoints = new List<Transform>();
+        for (int i = 1; i < currentContainer.Length; i++)
+        {
+            wayPoints.Add(currentContainer[i]);
+        }
+    }
+
+    public void calculateGlobalTime(bool calculeLastTick)
     {
 
-        globaTime = GameObject.Find("globalTime").GetComponent<GlobalTime>().globalTimer;
+        hour = GameObject.Find("globalTime").GetComponent<GlobalTime>().hour;
+        tickTime = hour - 6; //limitForWalk
 
-        tickTime = (int)globaTime / limitForWalk; //start = 5
-
-        if (lastTick > tickTime)
+        if (calculeLastTick)
         {
             lastTick = tickTime;
         }
@@ -78,27 +90,32 @@ public class AiBasic : MonoBehaviour
 
     public void Update()
     {
-        calculateGlobalTime();
+        //calculateGlobalTime(false);
+        //Action();
+    }
 
-        if (tickTime > lastTick - balanceTick)
+    private void Action()
+    {
+        if (lastTick > tickTime)
+        {
+            //new index
+            state = NPCStates.stopWalk;
+            defineCurrentContainer(calculeIndex());
+            state = NPCStates.walkToNext;
+            return;
+        }
+
+        if (true)
         {
             state = NPCStates.walkToNext;
-
         }
-        else
-        {
-            state = NPCStates.stopWalk;
-        }
-
         if (state == NPCStates.walkToNext)
         {
             weepOrStopWalk(true);
             walkToNext(currentWayPoint);
-
         }
         else if (state == NPCStates.stopWalk)
         {
-
             weepOrStopWalk(false);
         }
     }
@@ -111,24 +128,17 @@ public class AiBasic : MonoBehaviour
 
     public void walkToNext(int currentWay)
     {
-
         direction = wayPoints[currentWay].position - transform.position;
-
         Vector3 next = wayPoints[currentWay].position;
 
         if (direction.magnitude <= 1)
         {
-
-            lastTick = tickTime;
-
             currentWayPoint++;
 
             if (currentWayPoint >= wayPoints.ToArray().Length)
             {
-
                 currentWayPoint = 0;
             }
-
         }
         else
         {
