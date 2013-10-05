@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<npcs>
+	<npc key="mario">
+		<speech key="a">
+			<if key="b"/>
+			<if key="c">
+				<ifnot key="d"/>
+			</if>
+		</speech>
+		<speech key="default"/>
+	</npc>
+	<npc key="luigi">
+		<speech key="b"/>
+	</npc>
+</npcs>

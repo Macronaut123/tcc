@@ -72,6 +72,7 @@
      <Compile Include="Assets\scripts\Game Scripts\NpcSystemTalkSolo.cs" />
      <Compile Include="Assets\scripts\Game Scripts\NpcSystemTalkTwoActions.cs" />
      <Compile Include="Assets\scripts\Game Scripts\NpcTest.cs" />
+     <Compile Include="Assets\scripts\Game Scripts\Parser.cs" />
      <Compile Include="Assets\scripts\Game Scripts\QuestOpen.cs" />
      <Compile Include="Assets\scripts\Game Scripts\SpeechBubble.cs" />
      <Compile Include="Assets\scripts\Game Scripts\ThirdPersonCamera.cs" />
@@ -88,6 +89,7 @@
      <None Include="Assets\ex2D\_demo\Fonts\Amaranth.txt" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendClipping.shader" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendPixelPerfect.shader" />
+     <None Include="Assets\scripts\Game Scripts\npcs.xml" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
      <None Include="Assets\ex2D\_demo\Fonts\springSteel.txt" />
      <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
@@ -98,6 +100,7 @@
      <None Include="Assets\ex2D\_demo\Fonts\otari.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
+     <None Include="Assets\scripts\Game Scripts\speeches.xml" />
  <Reference Include="ex2D.Runtime">
  <HintPath>Assets\ex2D\Core\ex2D.Runtime.dll</HintPath>
  </Reference>
