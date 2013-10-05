@@ -9,7 +9,7 @@ public class GlobalTime : MonoBehaviour
     public int hour = 6;
 
     private void Update()
-    {
+    {		
         if (disable)
         {
             if (second >= 60)
@@ -19,7 +19,7 @@ public class GlobalTime : MonoBehaviour
             }
             else
             {
-                second += Time.deltaTime;
+                second += Time.deltaTime * 20;
             }
 
             if (minut == 60)

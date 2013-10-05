@@ -26,14 +26,19 @@ public class AiBasic : GenericFunction
     public Vector3 direction;
 
 
-    List<GameObject> subContainers;
+    public List<GameObject> subContainers;
 
     public void Start()
     {
         calculateGlobalTime(true);
         defineCurrentContainer(findSubContainers(), calculeIndex());
     }
-
+	
+	public void getNewCurrentContainer()
+	{
+		defineCurrentContainer(findSubContainers(), calculeIndex());
+	}
+	
     public List<GameObject> findSubContainers()
     {
         GameObject container = GameObject.Find(gameObject.name + "_WP");
@@ -68,6 +73,13 @@ public class AiBasic : GenericFunction
 
         return index;
     }
+	
+	public Transform getSubContainerWayPoint()
+	{
+		Transform[] currentContainer = findSubContainers()[calculeIndex()].GetComponentsInChildren<Transform>();
+		Transform tempWayPoints = currentContainer[1];
+		return tempWayPoints;
+	}
 
     public void defineCurrentContainer(List<GameObject> subContainers, int index)
     {
@@ -78,7 +90,7 @@ public class AiBasic : GenericFunction
             wayPoints.Add(currentContainer[i]);
         }
     }
-
+	
     public void defineCurrentContainer(int index)
     {
         Transform[] currentContainer = subContainers[index].GetComponentsInChildren<Transform>();

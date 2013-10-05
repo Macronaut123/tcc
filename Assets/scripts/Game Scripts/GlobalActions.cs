@@ -2,9 +2,20 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class GlobalActions : GlobalObjects
+public class GlobalActions : GenericFunction
 {
 
+    public bool haveChurchKey = false;
+
+    //Tutorial 6 ~ 7
+    public bool ainaCanMove = false;
+    public bool knowToBack = false;
+    public bool objStart = true;
+    public bool obj001_Aina = false;
+    public bool obj002_Aina = false;
+    public bool obj001_Alviss = false;
+    public bool obj002_Alviss = false;
+	
     public string[] NPC_Aina_01;
     public string[] NPC_Aina_02;
     public string[] NPC_Alviss_01;
@@ -12,18 +23,18 @@ public class GlobalActions : GlobalObjects
 
     private bool haveBackedOneTime = false;
 
-    public void action(int hour, int minut, float second, int resetNumber, bool resetAll)
+    public void action(int hour, int minut, float second, bool resetAll)
     {
-        GameObject.Find("globalTime").GetComponent<GlobalTime>().setNewTimer(hour, minut, second);
+        setNewTimer(hour, minut, second);
         GameObject[] a = GameObject.FindGameObjectsWithTag("canBack");
-
+		
         foreach (GameObject temp in a)
         {
             if (temp.GetComponent<AiBasic>())
             {
-                temp.GetComponent<AiBasic>().currentWayPoint = resetNumber;
+                temp.GetComponent<AiBasic>().getNewCurrentContainer();
             }
-                /*
+               /*
             else if (temp.GetComponent<AiTwoActions>())
             {
                 if (resetAll)
@@ -32,9 +43,9 @@ public class GlobalActions : GlobalObjects
                     GameObject.Find("NPC_Aina").GetComponent<AiTwoActions>().findFirstWayPoints("_WP");
                 }
             }
-                  */
-
-            temp.GetComponent<NpcSystemBackTime>().goToPosition(resetNumber);
+                  */ 
+			
+   			temp.GetComponent<NpcSystemBackTime>().goToPosition(temp.GetComponent<AiBasic>().getSubContainerWayPoint());
         }
     }
 
@@ -44,32 +55,10 @@ public class GlobalActions : GlobalObjects
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                action(6, 0 , 0f, 0, true);
-                haveBackedOneTime = true;
+	            action(6, 0 , 0f, true);
+	            haveBackedOneTime = true;
             }
-                /*
-            else if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                action(25200f, 1, false);
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                action(28800f, 2, false);
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha4))
-            {
-                action(32400f, 3, false);
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha5))
-            {
-                action(36000f, 4, false);
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha6))
-            {
-                action(39600f, 5, false);
-            }
-                 * */
-        }
+		}
     }
 
     public void OnTriggerEnter(Collider hit)
@@ -137,7 +126,6 @@ public class GlobalActions : GlobalObjects
             }
         }
     }
-
     public void OnTriggerExit(Collider hit)
     {
         if (hit.name == "NPC_Aina")
@@ -149,7 +137,6 @@ public class GlobalActions : GlobalObjects
             }
         }
     }
-
     public void resetAllActions()
     {
         obj001_Aina = false;

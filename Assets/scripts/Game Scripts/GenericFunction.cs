@@ -8,7 +8,7 @@ public class GenericFunction : MonoBehaviour
     {
         globalTime = GameObject.Find("globalTime");
     }
-    
+
     public int hour()
     {
         return globalTime.GetComponent<GlobalTime>().hour;
@@ -31,4 +31,8 @@ public class GenericFunction : MonoBehaviour
     {
         globalTime.GetComponent<GlobalTime>().setNewDisable(disable);
     }
+	public void setNewTimer(int hour, int minut, float second)
+	{
+		globalTime.GetComponent<GlobalTime>().setNewTimer(hour , minut, second);
+	}
 }
