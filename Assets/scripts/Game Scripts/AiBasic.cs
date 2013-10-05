@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-public class AiBasic : MonoBehaviour
+public class AiBasic : GenericFunction
 {
 
     public enum NPCStates
@@ -24,15 +24,14 @@ public class AiBasic : MonoBehaviour
     public int lastTick;
     public int limitForWalk = 60;
     public Vector3 direction;
-    public int hour;
 
 
     List<GameObject> subContainers;
 
     public void Start()
     {
-        //calculateGlobalTime(true);
-        //defineCurrentContainer(findSubContainers(), calculeIndex());
+        calculateGlobalTime(true);
+        defineCurrentContainer(findSubContainers(), calculeIndex());
     }
 
     public List<GameObject> findSubContainers()
@@ -42,9 +41,8 @@ public class AiBasic : MonoBehaviour
         subContainers = new List<GameObject>();
         foreach (Transform temp in mainContainer)
         {
-            if(!temp.gameObject.name.Contains("NPC"))
+            if (!temp.gameObject.name.Contains("NPC"))
             {
-                print(temp.gameObject.name);
                 subContainers.Add(temp.gameObject);
             }
         }
@@ -53,7 +51,22 @@ public class AiBasic : MonoBehaviour
 
     public int calculeIndex()
     {
-        return GameObject.Find("globalTime").GetComponent<GlobalTime>().hour - 6;
+        var h = hour();
+        var m = minut();
+        var add = 0;
+
+        if (m >= 30)
+        {
+            add = 1;
+        }
+
+        var a = (h - 6);
+        var b = a * 2;
+        var index = b + add;
+
+        //print(h+ " "+ m +" "+ a + " " + b + " " + c + " " + add);
+
+        return index;
     }
 
     public void defineCurrentContainer(List<GameObject> subContainers, int index)
@@ -78,9 +91,7 @@ public class AiBasic : MonoBehaviour
 
     public void calculateGlobalTime(bool calculeLastTick)
     {
-
-        hour = GameObject.Find("globalTime").GetComponent<GlobalTime>().hour;
-        tickTime = hour - 6; //limitForWalk
+        tickTime = minut();
 
         if (calculeLastTick)
         {
@@ -90,19 +101,17 @@ public class AiBasic : MonoBehaviour
 
     public void Update()
     {
-        //calculateGlobalTime(false);
-        //Action();
+        calculateGlobalTime(false);
+        Action();
     }
 
     private void Action()
     {
-        if (lastTick > tickTime)
+        if (tickTime == 0 || tickTime == 30)
         {
-            //new index
-            state = NPCStates.stopWalk;
             defineCurrentContainer(calculeIndex());
             state = NPCStates.walkToNext;
-            return;
+            lastTick = tickTime;
         }
 
         if (true)

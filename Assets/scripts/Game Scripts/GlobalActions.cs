@@ -12,9 +12,9 @@ public class GlobalActions : GlobalObjects
 
     private bool haveBackedOneTime = false;
 
-    public void action(float setNewTime, int resetNumber , bool resetAll)
+    public void action(int hour, int minut, float second, int resetNumber, bool resetAll)
     {
-        GameObject.Find("globalTime").GetComponent<GlobalTime>().setNewTimer(setNewTime);
+        GameObject.Find("globalTime").GetComponent<GlobalTime>().setNewTimer(hour, minut, second);
         GameObject[] a = GameObject.FindGameObjectsWithTag("canBack");
 
         foreach (GameObject temp in a)
@@ -23,6 +23,7 @@ public class GlobalActions : GlobalObjects
             {
                 temp.GetComponent<AiBasic>().currentWayPoint = resetNumber;
             }
+                /*
             else if (temp.GetComponent<AiTwoActions>())
             {
                 if (resetAll)
@@ -31,6 +32,7 @@ public class GlobalActions : GlobalObjects
                     GameObject.Find("NPC_Aina").GetComponent<AiTwoActions>().findFirstWayPoints("_WP");
                 }
             }
+                  */
 
             temp.GetComponent<NpcSystemBackTime>().goToPosition(resetNumber);
         }
@@ -42,16 +44,17 @@ public class GlobalActions : GlobalObjects
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                action(21600f, 0, true);
+                action(6, 0 , 0f, 0, true);
                 haveBackedOneTime = true;
             }
+                /*
             else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                action(25200f, 1 , false);
+                action(25200f, 1, false);
             }
             else if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                action(28800f, 2 , false);
+                action(28800f, 2, false);
             }
             else if (Input.GetKeyDown(KeyCode.Alpha4))
             {
@@ -65,6 +68,7 @@ public class GlobalActions : GlobalObjects
             {
                 action(39600f, 5, false);
             }
+                 * */
         }
     }
 
@@ -85,7 +89,7 @@ public class GlobalActions : GlobalObjects
             if (objStart && !obj001_Alviss && !obj002_Alviss && !obj001_Aina && !obj002_Aina && !knowToBack) //ela 
             {
                 obj001_Aina = true;
-                hit.GetComponent<NpcSystemTalk>().getTalkForThisAction(NPC_Aina_01);
+                //hit.GetComponent<NpcSystemTalk>().getTalkForThisAction(NPC_Aina_01);
                 return;
             }
             if (objStart && obj001_Alviss && !obj002_Alviss && !obj001_Aina && !obj002_Aina && knowToBack && haveBackedOneTime) // ele , ~ , ela
@@ -93,14 +97,14 @@ public class GlobalActions : GlobalObjects
                 obj001_Aina = true;
                 obj002_Aina = true;
                 ainaCanMove = true;
-                hit.GetComponent<NpcSystemTalk>().getTalkForThisAction(NPC_Aina_02);
+               // hit.GetComponent<NpcSystemTalk>().getTalkForThisAction(NPC_Aina_02);
                 return;
             }
             if (objStart && obj001_Alviss && !obj002_Alviss && obj001_Aina && !obj002_Aina && knowToBack && haveBackedOneTime) // ela , ele , ~ , ela
             {
                 obj002_Aina = true;
                 ainaCanMove = true;
-                hit.GetComponent<NpcSystemTalk>().getTalkForThisAction(NPC_Aina_02);
+               // hit.GetComponent<NpcSystemTalk>().getTalkForThisAction(NPC_Aina_02);
                 return;
             }
         }
@@ -110,15 +114,15 @@ public class GlobalActions : GlobalObjects
             {
                 obj001_Alviss = true;
                 knowToBack = true;
-                hit.GetComponent<NpcSystemTalk>().getTalkForThisAction(NPC_Alviss_02);
-                GameObject.Find("NPC_Aina").GetComponent<AiTwoActions>().findFirstWayPoints("_WP_02");
+               // hit.GetComponent<NpcSystemTalk>().getTalkForThisAction(NPC_Alviss_02);
+                //GameObject.Find("NPC_Aina").GetComponent<AiTwoActions>().findFirstWayPoints("_WP_02");
                 return;
             }
             if (objStart && !obj001_Alviss && !obj002_Alviss && obj001_Aina && !obj002_Aina && !knowToBack) // ela , ele , ~
             {
                 obj001_Alviss = true;
                 knowToBack = true;
-                hit.GetComponent<NpcSystemTalk>().getTalkForThisAction(NPC_Alviss_02);
+               // hit.GetComponent<NpcSystemTalk>().getTalkForThisAction(NPC_Alviss_02);
                 return;
             }
 
@@ -128,7 +132,7 @@ public class GlobalActions : GlobalObjects
                 //haveChurchKey = true;
                 GameObject.Find("ChurchKey").gameObject.renderer.enabled = true;
                 GameObject.Find("ChurchKey").gameObject.collider.enabled = true;
-                hit.GetComponent<NpcSystemTalk>().getTalkForThisAction(NPC_Alviss_01);
+                //hit.GetComponent<NpcSystemTalk>().getTalkForThisAction(NPC_Alviss_01);
                 return;
             }
         }
@@ -140,7 +144,7 @@ public class GlobalActions : GlobalObjects
         {
             if (ainaCanMove)
             {
-                GameObject.Find("NPC_Aina").GetComponent<AiTwoActions>().findFirstWayPoints("_WP_02");
+                //GameObject.Find("NPC_Aina").GetComponent<AiTwoActions>().findFirstWayPoints("_WP_02");
                 return;
             }
         }

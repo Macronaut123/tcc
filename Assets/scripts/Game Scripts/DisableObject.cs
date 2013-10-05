@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class DisableObject : MonoBehaviour {
+public class DisableObject : GenericFunction {
 	
 	public MonoBehaviour[] scriptComponents;
 	public float speedNavMesh;
@@ -18,8 +18,9 @@ public class DisableObject : MonoBehaviour {
 	}
 	
 	void Update () {
-		
-		if(!GameObject.Find("globalTime").GetComponent<GlobalTime>().disable){
+
+        if (!disableTime())
+        {
 			
 			foreach(MonoBehaviour script in scriptComponents) {
 
@@ -31,6 +32,7 @@ public class DisableObject : MonoBehaviour {
                 {
                     continue;
                 }
+                /*
                 if (script == gameObject.GetComponent<NpcSystemTalk>())
                 {
                     continue;
@@ -47,7 +49,7 @@ public class DisableObject : MonoBehaviour {
                 {
                     continue;
                 }
-
+                */
                 script.enabled = false;
 			}
 

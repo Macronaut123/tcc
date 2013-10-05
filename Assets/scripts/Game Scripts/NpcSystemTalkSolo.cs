@@ -1,8 +1,8 @@
-using UnityEngine;
+/*using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 
-public class NpcSystemTalkSolo : MonoBehaviour
+public class NpcSystemTalkSolo : GenericFunction
 {
     private string[] currentConversa;
     public string[] conversa_0;
@@ -11,7 +11,6 @@ public class NpcSystemTalkSolo : MonoBehaviour
     public string _talking;
     public bool camDesactive = false;
     public bool Disenable;
-    public float globaTime;
 
     void Start()
     {
@@ -30,7 +29,7 @@ public class NpcSystemTalkSolo : MonoBehaviour
             currentLine = 1;
             talking = true;
             _talking = GetingTalk()[currentLine];
-            GameObject.Find("globalTime").GetComponent<GlobalTime>().disable = false;
+            setDisableTime(false);
         }
     }
 
@@ -40,18 +39,17 @@ public class NpcSystemTalkSolo : MonoBehaviour
         {
             if (camDesactive)
             {
-                GameObject.Find("globalTime").GetComponent<GlobalTime>().disable = true;
+                setDisableTime(true);
             }
             talking = false;
             currentLine = 1;
             _talking = "";
-            GameObject.Find("globalTime").GetComponent<GlobalTime>().disable = true;
+            setDisableTime(true);
         }
     }
 
     public List<string> GetingTalk()
     {
-
         globaTime = GameObject.Find("globalTime").GetComponent<GlobalTime>().globalTimer;
         string[] checkConversa_0 = conversa_0[0].Split('/');
         List<string> temp = new List<string>();
@@ -77,7 +75,7 @@ public class NpcSystemTalkSolo : MonoBehaviour
                 {
                     currentLine++;
                     _talking = GetingTalk()[currentLine];
-                    GameObject.Find("globalTime").GetComponent<GlobalTime>().disable = false;
+                    setDisableTime(false);
                     switch (gameObject.name)
                     {
                         case "NPC_armazem":
@@ -90,7 +88,7 @@ public class NpcSystemTalkSolo : MonoBehaviour
                     currentLine = 1;
                     _talking = "";
                     talking = false;
-                    GameObject.Find("globalTime").GetComponent<GlobalTime>().disable = true;
+                    setDisableTime(true);
                     if (camDesactive)
                     {
                         GameObject.Find("MiniMap").camera.enabled = true;
@@ -99,4 +97,4 @@ public class NpcSystemTalkSolo : MonoBehaviour
             }
         }
     }
-}
+}*/

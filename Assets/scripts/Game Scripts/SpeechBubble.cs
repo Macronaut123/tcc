@@ -1,4 +1,4 @@
-using UnityEngine; // 41 Post - Created by DimasTheDriver on Dec/12/2011 . Part of the 'Unity: How to create a speech balloon' post. Available at: http://www.41post.com/?p=4545 
+/*using UnityEngine; // 41 Post - Created by DimasTheDriver on Dec/12/2011 . Part of the 'Unity: How to create a speech balloon' post. Available at: http://www.41post.com/?p=4545 
 using System.Collections;
 
 [ExecuteInEditMode]
@@ -129,7 +129,7 @@ public class SpeechBubble : MonoBehaviour
 			if(GUI.Button(new Rect(50,60,100,30),"Back to post..."))
 			{
 				Application.OpenURL("http://www.41post.com/?p=4545");
-			}*/
+			}*//*
 		
 		GUI.EndGroup();
 	}
@@ -160,4 +160,4 @@ public class SpeechBubble : MonoBehaviour
 		//pop the orthogonal matrix from the stack
 		GL.PopMatrix();
 	}
-}
+}*/

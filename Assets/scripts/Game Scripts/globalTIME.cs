@@ -3,14 +3,12 @@ using System.Collections;
 
 public class GlobalTime : MonoBehaviour
 {
-
     public bool disable = true;
-
     public float second = 0f;
     public int minut = 0;
-    public int hour = 0;
+    public int hour = 6;
 
-    public void Update()
+    private void Update()
     {
         if (disable)
         {
@@ -32,18 +30,25 @@ public class GlobalTime : MonoBehaviour
         }
     }
 
-    public void setNewTimer(float newTimer)
+    public void setNewTimer(int hour, int minut, float second)
     {
-        //globalTimer = newTimer;
+        this.hour = hour;
+        this.minut = minut;
+        this.second = second;
     }
 
-    public string FormatSeconds()
+    private string FormatSeconds()
     {
         return string.Format("{0:00}:{1:00}:{2:00}", hour, minut, second);
     }
 
-    public void OnGUI()
+    private void OnGUI()
     {
         GUI.Label(new Rect(10, 10, 150, 50), FormatSeconds());
+    }
+
+    internal void setNewDisable(bool disable)
+    {
+        this.disable = disable;
     }
 }
