@@ -59,16 +59,31 @@
      <None Include="Assets\ex2D\_demo\Fonts\Amaranth.txt" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendClipping.shader" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendPixelPerfect.shader" />
+     <None Include="Assets\scripts\Game Scripts\npcs.xml" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\TutorialScript.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
      <None Include="Assets\ex2D\_demo\Fonts\springSteel.txt" />
+     <None Include="Assets\scripts\Game Scripts\speeches.xml" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\Demo Dialogue 1.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\Demo Dialogue 3.txt" />
      <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\Demo Dialogue 2.txt" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendNoZTest.shader" />
      <None Include="Assets\notes.txt" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlend.shader" />
+     <None Include="Assets\Dialogue\Dialogue\Docs.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\ExampleDialogue.txt" />
      <None Include="Assets\ex2D\_demo\Fonts\otari.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\Demo Dialogue 4.txt" />
+ <Reference Include="System.Xml">
+ <HintPath>Assets\System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>Assets\System.Xml.Linq.dll</HintPath>
+ </Reference>
  <Reference Include="ex2D.Runtime">
  <HintPath>Assets\ex2D\Core\ex2D.Runtime.dll</HintPath>
  </Reference>

@@ -5,6 +5,8 @@ public class simple_close : MonoBehaviour {
 
     public GameObject menu_to_close;
     private exSprite close_btn;
+	public Vector3[] reachingPlace;
+	public float timeDelay;
 
 	// Use this for initialization
 	void Start () {
@@ -17,8 +19,7 @@ public class simple_close : MonoBehaviour {
 	}
 
     void OnMouseDown() {
-        close_btn.color = Color.white;
-        menu_to_close.SetActive(false);
+        iTween.MoveTo(menu_to_close,reachingPlace[0],timeDelay);
     }
 
     void OnMouseOver() {

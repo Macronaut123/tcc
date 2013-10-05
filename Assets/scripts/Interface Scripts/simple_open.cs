@@ -6,6 +6,8 @@ public class simple_open : MonoBehaviour {
     public GameObject menu_to_open;
     public GameObject second_menu;
     private exSpriteBorder open_btn;
+	public Vector3[] placetoGo;
+	public float timeDelay;
 
 	// Use this for initialization
 	void Start () {
@@ -18,17 +20,8 @@ public class simple_open : MonoBehaviour {
 	}
 
     void OnMouseDown() {
-
-        if (second_menu != null)
-        {
-                second_menu.SetActive(true);
-        }
-           
-
-        if(!menu_to_open.activeSelf)
-                menu_to_open.SetActive(true);
-            else
-                menu_to_open.SetActive(false);
+		iTween.MoveTo(menu_to_open,placetoGo[0],timeDelay);
+		if(second_menu != null){iTween.MoveTo(second_menu,placetoGo[1],timeDelay);}
     }
 
     void OnMouseOver() {

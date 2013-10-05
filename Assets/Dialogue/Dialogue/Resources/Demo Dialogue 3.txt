@@ -1,0 +1,8 @@
+//Demonstration of call commands
+Player:			Hullo!
+Robot 3:		Hello, I demonstrate the "call" direction.
+Player:			What's that?
+				[call OutputString 0]
+Robot 4:		Have a look at the console.
+Robot 4:		If you want to look at how it's done, have a look at my AI file and Demo Dialogue 3.
+Player:			That's usefull, thanks.

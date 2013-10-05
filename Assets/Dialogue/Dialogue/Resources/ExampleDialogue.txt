@@ -1,0 +1,154 @@
+//This is a lighthearted demo to show a large scale conversation with lots of branches and choices for 
+//the player to make.
+
+//It uses a number labelling system that allows you to see the path back etc to try and make it easier 
+//to follow through the dialogue.
+
+//I apologise to any 'trekies' I insult in this :|
+
+Gatekeeper:		Who dares step foot through the great doors?
+Player:			{It is I, Great King Julian!}												[goto 1]
+				{I come with on command of King Julian!}									[goto 2]
+				{I've lost my phone, have you seen it?}										[goto 3]
+
+-1
+Gatekeeper:		I do not know your voice, you are not King Julian!
+Player:			{errr... I have a cold! I just sound different...}							[goto 1.1]
+				{I'm a different King Julian!}												[goto 1.2]
+				{>Run<}																		[goto run]
+
+-2
+Gatekeeper:		I know King Julian. Why has he sent you?
+Player:			{He told me to fetch an army!}												[goto 2.1]
+				{He wants to know if you'll go on a date.}									[goto 2.2]
+
+-3
+Gatekeeper:		Why does everyone think I'll have seen their phone?
+Player:			{Well you are "The All Seeing Gatekeeper"...}								[goto 3.1]
+				{Well I've been doing a lot of walking round here lately...}				[goto 3.2]
+				{Because you have nice eyes?}												[goto 3.3]
+
+-1.1
+Gatekeeper:		Colds do not concern me. I do not get them.
+Player:			{Do you get warms?}															[goto 1.1.1]
+				{But I am mortal, I do! See things from my perspective for once!}			[goto 1.1.2]
+				{Well do you have a tissue I can borrow?}									[goto 1.1.3]
+
+-1.2
+Gatekeeper:		Of what dominion?
+Player:			errrr.....
+Player:			{The dominion of the Star Trek Appreciation Group! S.T.A.G for short}		[goto 1.2.1]
+				{The dominion of dominoing dominos!}										[goto 1.2.2]
+				{>Run<}																		[goto run]
+
+-2.1
+Gatekeeper:		And you wish for my army? Are you a fool?
+Player:			{Yes.}																		[goto 2.1.1]
+				{No. You're a fool!}														[goto 2.1.2]
+				{No, but right now you're falling for my charms!}							[goto seduceA]
+
+-2.2
+Gatekeeper:		A date?
+Player:			Yes, a date!
+Gatekeeper:		Well, I've never really looked at him that way...
+Player:			{I think you two would work really well together...}						[goto 2.2.1]
+				{Well, the dates seem to have ripened early this year...}					[goto 2.2.2]
+
+-3.1
+Gatekeeper:		That is a metaphor. I do not see everything.
+																						[goto wanderOff]
+
+-3.2
+Gatekeeper:		No you haven’t. I would have seen you if you had.
+																						[goto run]
+
+-3.3
+Gatekeeper:		I am quite aware I do. Expand.
+																						[goto seduce]
+
+-1.1.1
+Gatekeeper:		I DO NOT GET ILL! You dare come to my door and make fun of me?
+Player:			{You're fat!}																[goto playerKilled]
+				{No, in fact you look very nice today...}									[goto seduceB]
+				{>Run<}																		[goto run]
+
+-1.1.2
+Gatekeeper:		"See things from your perspective?" I'm the All Seeing Gatekeeper and you are telling me to adjust my vision?
+Player:			{>Run<}																	[goto run]
+
+-1.1.3
+Gatekeeper:		I have no need for tissues thus I have no tissues. Find your own.
+Player:			Can you tell me where some are?
+Gatekeeper:		No.
+																						[goto wanderoff]
+
+-1.2.1
+Gatekeeper:		You are a treky?
+Player:			How dare you call us that! I have never been so insulted in my life!
+Player:			I shall find an army elsewhere!
+																						[end]
+
+-1.2.2
+Gatekeeper:		The dominion of dominoing dominos?
+Player:			We dominate three empires!
+Gatekeeper:		The dominion of dominoing dominos dominates three dominoing empires?
+Player:			Each with a Dominos pizza place!
+Gatekeeper:		Next you'll be telling me you like Dolmino sauce!
+Player:			No, never.
+																						[end]
+
+-2.1.1
+Gatekeeper:		Well... That's honest of you...
+Player:			{I'm a very honest person}													[goto success]
+				{Yes, and now I'm being honest and telling you you need to send an army!}	[goto noArmy]
+
+-2.1.2
+Gatekeeper:		A FOOL?!?! If only you had seen what I have seen with my eyes!
+																						[goto playerKilled]
+
+-2.2.1
+Player:			His squeaky voice would brilliantly suit your boomy voice...
+Gatekeeper:		Enough! You do not take me seriously!!!!
+																						[goto playerKilled]
+-2.2.2
+Player:			...Really? You get my hopes up just to make that joke? There is no chance of you getting past now.
+																					[goto playerKilled]	
+
+-run
+Player:			*Runs*
+Player:			*Far Away*
+																					[end]
+
+-seduceA
+Gatekeeper:		Your "Charms"?
+-seduceB
+Player:			Your eyes are glittering in the moonlight...
+Player:			...Your smile is radiating across the land...
+Player:			...Your hair falls like every strand has been perfectly posistioned...
+Gatekeeper:		You can see me?
+Player:			Oh...
+Player:			*Runs*
+																					[end]
+
+-playerKilled
+Gatekeeper:		I shall smite you down like a mere ant under a hammer!
+Player:			Have you never tried doing that? They always escape somehow...
+Gatekeeper:		*fires lightning*
+Player:			*Dies*
+																					[end]
+
+-wanderOff
+Player:			Oh...
+Player:			*Walks away very slowly*
+Player:			*Does a dramatic look over the shoulder*
+Gatekeeper:		Go...
+																					[end]
+
+-success
+Gatekeeper:		Oh all right then. Take my army. 
+Gatekeeper:		But I want my handy and my shouldery back
+Player:			Yippee!!! I never thought you'd fall for that! wait...
+																					[end]
+-noArmy
+Gatekeeper:		You shall not have my army. Leave! Now!
+																					[goto wanderOff]

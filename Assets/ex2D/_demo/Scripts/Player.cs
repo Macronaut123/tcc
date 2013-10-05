@@ -16,7 +16,7 @@ using System.Collections;
 // defines
 ///////////////////////////////////////////////////////////////////////////////
 
-public class Player : MonoBehaviour {
+/*public class Player : MonoBehaviour {
 
     ///////////////////////////////////////////////////////////////////////////////
     //
@@ -35,4 +35,4 @@ public class Player : MonoBehaviour {
     void PlaySpriteAnim ( string _name ) {
         character.spanim.Play(_name);
     }
-}
+}*/

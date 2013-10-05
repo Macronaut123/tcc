@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
+using UnityEngine;
 
 public class Parser
 {
@@ -214,22 +215,5 @@ public class Speech
     public static void Clear()
     {
         List.Clear();
-    }
-}
-
-class Program
-{
-    public static int Main(string[] args)
-    {
-        Parser parser = new Parser();
-
-        parser.LoadSpeeches(XDocument.Load("speeches.xml"));
-        parser.LoadNpcs(XDocument.Load("npcs.xml"));
-
-        Console.WriteLine(parser.GetSpeech(parser.Npcs[0]).Text);
-        Console.WriteLine(parser.GetSpeech(parser.Npcs[1]).Text);
-        Console.WriteLine(parser.GetSpeech(parser.Npcs[0]).Text);
-
-        return 0;
     }
 }

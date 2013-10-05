@@ -1,7 +1,0 @@
-C:\tcc\obj\Debug\Fakes\sxl\b\System.Xml.Linq.Fakes.xml
-C:\tcc\obj\Debug\Fakes\sxl\b\System.Xml.Linq.Fakes.dll
-C:\tcc\obj\Debug\Fakes\sxl\b\System.Xml.Linq.Fakes.pdb
-C:\tcc\obj\Debug\Fakes\sxl\b\Microsoft.QualityTools.Testing.Fakes.dll
-C:\tcc\obj\Debug\Fakes\sxl\o\ResolveAssemblyReference.cache
-C:\tcc\obj\Debug\Fakes\sxl\o\System.Xml.Linq.Fakes.dll
-C:\tcc\obj\Debug\Fakes\sxl\o\System.Xml.Linq.Fakes.pdb

@@ -1,0 +1,248 @@
+Hello and thanks for downloading our Dialogue engine. You've made us all happy :D
+
+These Docs are intended to be a reference for using the engine and include syntax, 
+function lists and descriptions etc for it.
+
+The code and all examples, documents and other property shipped in this package are copyright NinjaPoke Studios,
+whilst we allow you to dissasemble/better/alter our code we request you do not redistrubute your modifications or 
+the original documents in a readble format (eg. building your project with our code in is fine but selling or 
+giving it away it is not) because we lose out on revenue etc.
+
+Thanks again for downloading,
+-The NinjaPoke Studios team
+
+If you require assisance you can contact us at assets@ninjapokestudios.net76.net and we'll try to get back to you 
+asap :)
+
+We also now have 4 tutorial videos to guide you through writing scripts for the package!
+Part 1: http://youtu.be/Sxa2xH7OfOE
+Part 2: http://youtu.be/zncR55SUbJQ
+Part 3: http://youtu.be/9KDMR7X7Jqc
+Part 4: http://youtu.be/PPEc0Pqz0nk
+
+###################################################################################################################
+
+Interfacing
+~~~~~~~~~~~
+
+If you want to learn how to interface it to your code we suggest looking through 
+the "DialogueTemplate.cs" script for a basic idea (unity script one coming soon) as 
+you shouldn't need much more than that unless you are altering the code.
+
+The only things you really need to be aware of are:
+- Initialising the plugin
+- The GetNextOutput() function
+- The DialogueItem class (this is how everything is sent back so is worth knowing 
+	what's what in it)
+
+###################################################################################################################
+
+Writing a script
+~~~~~~~~~~~~~~~~
+
+The dialogues your characters will say are writen in a special 4th/2nd level language. The 
+layout is designed to resemble a play or movie script but also includes assembly language 
+like "directions" (sometimes refered to as "Stage Directions").
+
+The fundamentals of the script are simple:
+	
+	Name: Text to say
+	
+ie.
+	
+	Harry: Hello!!!!
+	
+Thus a simple dialogue between 2 players can be built up quickly:
+
+	Harry: Hello!!!!
+	Sam: Hi!
+	Harry: How are you?
+	Sam: I'm good!
+	-PeterJoins
+	Peter: Hello!!
+	...
+	
+You'll notice there is a line "-PeterJoins". This is a label as it begins with a "-", it is 
+not output to the screen but instead marks a point in your program and you will see what it 
+does below.
+	
+We can make it a bit more flexible if we add in directions however. Directions are pieces of 
+code that direct the interpreter as to where to go next and what to do, much like stage 
+directions tell actors what to do. There are 3 main directions:
+- Goto	This causes the interpreter to jump exeution point to a specific label.
+- Call	This allows you to return things to the script calling the dialogue.
+- End	This allows you to force an end flag causing the code to stop execution.
+
+So lets have a look at using some:
+
+	Harry: Hello!!!!
+	Sam: Hi!
+	Harry: How are you?
+	[goto PeterJoins]
+	Sam: I'm good!
+	-PeterJoins
+	Peter: Hello!!
+	...
+	
+In this example the line "Sam: I'm good!" will never be performed as execution jumps past it 
+to the label beneath. We can also use the "call" direction to send a message back to our C#/Js/
+Boo scripts:
+
+	Harry: Hello!!!!
+	Sam: Hi!
+	[call HelloComplete]
+	[call AtLine 4]
+	...
+
+You can see in the second instance there is a number seperated with a space, this allows you to 
+pass parameters across to your functions (they will always be in string format so you'll need 
+to use int.Parse(string) to turn it into a useable number.
+
+The last direction I will just brush over is the "end" direction which raises a special flag 
+on the output of the line to tell you the conversation has ended so you need to close the GUI.
+
+Finally we have one special feature which is allowing the user to be able to choose what they 
+say - this is done through options. Options are written in {} and each is immediately followed 
+by a direction written in [], as so:
+
+	Harry:	{I feel ill}	[goto ill]
+			{I'm tired}		[goto tired]
+			{I'm hungry}	[call PlayHungerAnimation]
+		
+This would cause 3 buttons to appear onscreen saying:
+- I feel ill
+- I'm tired
+- I'm hungry
+And when the player clicks on one the direction next to the option will be excecuted. So if 
+they choose "I'm tired" the execution will move to the label "tired".
+
+If you need to comment some code simply use "//" as you would in C# and unityscript.
+
+###################################################################################################################
+
+Understanding the DialogueItem class
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This class may seem a little unfriendly at first but fear not! It is simply made from 4 
+variables an a function. It is used to return everything from the engine so it would be 
+helpfull to understand it.
+
+Variables:
+- speaker
+- speech
+- content
+- direction
+- type
+- Parameter
+
+Speaker is simple enough, when the DialogueItem represents text it's whos speaking, other wise 
+it's unused.
+
+Speech is also fairly simple, when the DialogueItem represents text it's the text they're 
+saying.
+
+Content is a little more tricky, it contains a string of both speaker and speech (for legacy) 
+when the Dialogue Item is text but is still used for the text that will go in and buttons, 
+labels etc to display (there is one exception to this later).
+
+Direction is only used when the Dialogue Item is an Option (see next paragraph). It is the code 
+that needs to be executed should the user click on this option.
+
+Type is simply the type of feedback this is. 
+- If it is InputType.Text then the speaker and speech variables must be displayed in a label 
+	(or similar).
+- If it is InputType.Option the content variable needs to be displayed in a button and when 
+	clicked the variable direction needs to be fed into the InterpretStageDirection( line ) 
+	function.
+- If it is InputType.Call all that needs to happen is you call the method of which name is in 
+	content (using, for instance, SendMessage), parameter is a parameter you can send to the 
+	function
+- If it is InputType.Goto you just need to get the next output, most of these are handled 
+	automatically so it's just the odd occasion this will happen.
+- If it is InputType.EndMark you need to close the Dialogue system and move on.
+
+Parameter is an extra value you can send with "call" directions to pass data across in string 
+format. Remember you can always use int.Parse(string) or int.TryParse(string, out int) to get it as 
+a useable value. Also remember you can pass multiple parameters by putting a character inbetween 
+them (not a space) and then use string.Split(char) to break it into multiple strings to convert.
+
+If you recieve null however there is no data to feedback.
+
+This is likely to seem very confusing at first but have a look at DialogueTemplate.cs and it should 
+be easier to understand. Dont forget you can copy and paste the template into your own projects! :)
+
+###################################################################################################################
+
+Functions & Variables
+~~~~~~~~~~~~~~~~~~~~~
+
+Here is a list of all the functions and variables in the Dialogue class with a brief description of what they do:
+
+Variables:
+
+	  Name		|			Type			|											Desc
+--------------------------------------------------------------------------------------------------------------------------------------
+ file			| TextAsset					| The file we are reading out of (your code).
+ 				|							|
+ lines			| string[]					| A list of each line of your code after prasing and splitting etc.
+ 				|							|
+ labels			| Dictionary<string,int> 	| A dictionary of all the label names (keys) and their line numbers (values).
+  				|							|
+ currentLine	| int						| The line we are reading next. (best use GetCurrentLineNumber())
+ 				|							|
+
+
+
+Functions:
+
+	  				Name						|											Desc
+--------------------------------------------------------------------------------------------------------------------------------------
+void Dialogue( filename = "" )					| This is the constructor in which you create a new Dialogue engine. You need to 
+												| specify the filename to read here.
+												|
+void GotoLine( lineNo : int ) 					| This moves the pointer to the specified line number.
+ 												|
+int GotoLabel( labelName : string )				| Move the pointer to the specified label. returns line noumber or -1 if the label was 
+												| not found
+												|
+int GetCurrentLineNumber() 						| This returns the current line number (best not to use currentLine as it actually 
+												| points to the next line...
+ 												|
+string[] : RemoveComments( lines : string[] )	| This takes an array of strings and removes the neccessarry whitespace and comments.
+					 							|
+Dictionary<string,int> : ResolveLabels( lines :	| Takes are array of lines and records a list of labels and their line numbers for
+	 string[] ){					 			| later use.
+						 						|
+DialogueItem[] : etNextOutput()					| The main function used for reading the file, this started the interpreter on the next
+												| line and outputs the aray of DialogueItem you see.
+												|
+DialogueItem[] : DoNextLine()					| This detects the type of line it is (option, text, etc) and pushes the code off to the 
+												| correct sub-interpreter.
+												|
+DialogueItem  : InterpretStageDirection( line : | This is a sub-interpreter for all stage directions which sorts out which direction it 
+	string )									| is and builds a DialogueItem with the correct data to pass back.
+												|
+List<DialogueItem> : InterpretMultipleChoice()	| This is the sub-interpreter for the options and packages them into a DialogueItem list.
+												|
+Dictionary<string,string> : 					| This is the bulk of the option sub-interpreter that extracts the data from the file 
+	GetQuestionDataFromNextLine()				| and passes it to be put into a DialogueItem.
+												|
+int : GetLineNumberFromLabel( labelName : 		| This searches through the labels dictionary looking for a specified label and returns 
+	string )									| the line number for goto directions.
+	
+###################################################################################################################
+	
+Plans & Bugs
+~~~~~~~~~~~~
+
+Plans:
+- Implement returns on calls (to get variable values into the script)
+- Eval statement
+
+Bugs:
+- None I know of! Yipee!!! :D
+
+If you find any bugs or have requests email us at assets@ninjapokestudios.net76.net :)
+
+
+Happy Dialogueing! :)
