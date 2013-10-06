@@ -7,7 +7,12 @@ public class GlobalTime : MonoBehaviour
     public float second = 0f;
     public int minut = 0;
     public int hour = 6;
-
+	
+	private void Awake(){
+	
+		disable = true;
+	}
+	
     private void FixedUpdate()
     {		
         if (disable)
@@ -47,7 +52,7 @@ public class GlobalTime : MonoBehaviour
         GUI.Label(new Rect(10, 10, 150, 50), FormatSeconds());
     }
 
-    internal void setNewDisable(bool disable)
+    public void setNewDisable(bool disable)
     {
         this.disable = disable;
     }

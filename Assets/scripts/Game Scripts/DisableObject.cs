@@ -1,12 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
-public class DisableObject : GenericFunction {
+public class DisableObject : MonoBehaviour {
 	
 	public MonoBehaviour[] scriptComponents;
 	public float speedNavMesh;
-	
-	
 	
 	void Awake() {
 		
@@ -17,10 +15,11 @@ public class DisableObject : GenericFunction {
 		}
 	}
 	
-	void Update () {
+	public void disableAll (bool disableTime) {
 
-        if (!disableTime())
-        {
+        if (!disableTime)
+        {	
+			gameObject.GetComponent<NavMeshAgent>().speed = 0;
 			
 			foreach(MonoBehaviour script in scriptComponents) {
 
@@ -32,29 +31,9 @@ public class DisableObject : GenericFunction {
                 {
                     continue;
                 }
-                /*
-                if (script == gameObject.GetComponent<NpcSystemTalk>())
-                {
-                    continue;
-                }
-                if (script == gameObject.GetComponent<NpcSystemTalkSolo>())
-                {
-                    continue;
-                }
-                if (script == gameObject.GetComponent<NpcSystemTalkTwoActions>())
-                {
-                    continue;
-                }
-                if (script == gameObject.GetComponent<SpeechBubble>())
-                {
-                    continue;
-                }
-                */
+				
                 script.enabled = false;
 			}
-
-            
-
 		}else{
 			foreach(MonoBehaviour script in scriptComponents) {
 	    		script.enabled = true;

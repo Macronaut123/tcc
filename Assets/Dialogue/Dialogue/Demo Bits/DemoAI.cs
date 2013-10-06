@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class DemoAI : MonoBehaviour {
+public class DemoAI : GenericFunction {
 	
 	public string filename;
 	
@@ -20,8 +20,12 @@ public class DemoAI : MonoBehaviour {
 		if( Vector3.Distance( transform.position, player.position ) < 3f ){
 			//Display the script
 			talking = true;
+			setDisableTime(false);
+			gameObject.GetComponent<DisableObject>().disableAll(false);
 		}else{
 			talking = false;
+			setDisableTime(true);
+			gameObject.GetComponent<DisableObject>().disableAll(true);
 		}
 		
 		if( hasUpdated )
