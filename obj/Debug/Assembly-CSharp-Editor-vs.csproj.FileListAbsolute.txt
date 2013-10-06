@@ -1,0 +1,17 @@
+C:\tcc\Temp\bin\Debug\Assembly-CSharp-Editor.dll
+C:\tcc\Temp\bin\Debug\Assembly-CSharp-Editor.pdb
+C:\tcc\Temp\bin\Debug\Assembly-UnityScript-firstpass.dll
+C:\tcc\Temp\bin\Debug\Assembly-UnityScript.dll
+C:\tcc\Temp\bin\Debug\ex2D.Editor.dll
+C:\tcc\Temp\bin\Debug\ex2D.Runtime.dll
+C:\tcc\Temp\bin\Debug\UnityEditor.dll
+C:\tcc\Temp\bin\Debug\UnityEditor.Graphs.dll
+C:\tcc\Temp\bin\Debug\UnityEngine.dll
+C:\tcc\Temp\bin\Debug\Mono.Cecil.dll
+C:\tcc\Temp\bin\Debug\nunit.framework.dll
+C:\tcc\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\tcc\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\tcc\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\tcc\obj\Debug\Assembly-CSharp-Editor-vs.csprojResolveAssemblyReference.cache
+C:\tcc\obj\Debug\Assembly-CSharp-Editor.dll
+C:\tcc\obj\Debug\Assembly-CSharp-Editor.pdb
