@@ -54,7 +54,6 @@
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendClipping.shader" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendPixelPerfect.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1630.txt" />
-     <None Include="Assets\scripts\Game Scripts\npcs.xml" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\TutorialScript.txt" />
@@ -67,7 +66,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0900.txt" />
      <None Include="Assets\ex2D\_demo\Fonts\springSteel.txt" />
-     <None Include="Assets\scripts\Game Scripts\speeches.xml" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\Demo Dialogue 1.txt" />
@@ -104,12 +102,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1500.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\Demo Dialogue 4.txt" />
- <Reference Include="System.Xml">
- <HintPath>Assets\System.Xml.dll</HintPath>
- </Reference>
- <Reference Include="System.Xml.Linq">
- <HintPath>Assets\System.Xml.Linq.dll</HintPath>
- </Reference>
  <Reference Include="ex2D.Runtime">
  <HintPath>Assets\ex2D\Core\ex2D.Runtime.dll</HintPath>
  </Reference>

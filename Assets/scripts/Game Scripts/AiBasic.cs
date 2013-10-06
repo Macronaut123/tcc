@@ -26,7 +26,7 @@ public class AiBasic : GenericFunction
     public Vector3 direction;
 
 
-    public List<GameObject> subContainers;
+    public Dictionary<String,GameObject> subContainers = new Dictionary<String, GameObject>();
 
     public void Start()
     {
@@ -36,42 +36,152 @@ public class AiBasic : GenericFunction
 	
 	public void getNewCurrentContainer()
 	{
-		defineCurrentContainer(findSubContainers(), calculeIndex());
+		defineCurrentContainer(calculeIndex());
 	}
 	
-    public List<GameObject> findSubContainers()
+    public Dictionary<String,GameObject> findSubContainers()
     {
         GameObject container = GameObject.Find(gameObject.name + "_WP");
         Transform[] mainContainer = container.GetComponentsInChildren<Transform>();
-        subContainers = new List<GameObject>();
+		subContainers = new Dictionary<string, GameObject>();
         foreach (Transform temp in mainContainer)
         {
             if (!temp.gameObject.name.Contains("NPC"))
             {
-                subContainers.Add(temp.gameObject);
+                this.subContainers.Add(temp.gameObject.name, temp.gameObject);
             }
         }
-        return subContainers;
+        return this.subContainers;
     }
 
-    public int calculeIndex()
+//    public int calculeIndex()
+//    {
+//        var h = hour();
+//        var m = minut();
+//        var add = 0;
+//
+//        if (m >= 30)
+//        {
+//            add = 1;
+//        }
+//
+//        var a = (h - 6);
+//        var b = a * 2;
+//        var index = b + add;
+//
+//        //print(h+ " "+ m +" "+ a + " " + b + " " + c + " " + add);
+//
+//        return index;
+//    }
+	
+	public string calculeIndex()
     {
-        var h = hour();
-        var m = minut();
-        var add = 0;
-
-        if (m >= 30)
-        {
-            add = 1;
-        }
-
-        var a = (h - 6);
-        var b = a * 2;
-        var index = b + add;
-
-        //print(h+ " "+ m +" "+ a + " " + b + " " + c + " " + add);
-
-        return index;
+			var h = hour();
+			var m = minut();
+			
+			var key = "";
+		
+			if(h == 6 && m < 30){
+				key = "0600";
+			}
+			else if(h == 6 && m >= 30){
+				key = "0630";
+			}
+			else if(h == 7 && m < 30){
+				key = "0700";
+			}
+			else if(h == 7 && m >= 30){
+				key = "0730";
+			}
+			else if(h == 8 && m < 30){
+				key = "0800";
+			}
+			else if(h == 8 && m >= 30){
+				key = "0830";
+			}
+			else if(h == 9 && m < 30){
+				key = "0900";
+			}
+			else if(h == 9 && m >= 30){
+				key = "0930";
+			}
+			else if(h == 10 && m < 30){
+				key = "1000";
+			}
+			else if(h == 10 && m >= 30){
+				key = "1030";
+			}
+			else if(h == 11 && m < 30){
+				key = "1100";
+			}
+			else if(h == 11 && m >= 30){
+				key = "1130";
+			}
+			else if(h == 12 && m < 30){
+				key = "1200";
+			}
+			else if(h == 12 && m >= 30){
+				key = "1230";
+			}
+			else if(h == 13 && m < 30){
+				key = "1300";
+			}
+			else if(h == 13 && m >= 30){
+				key = "1330";
+			}
+			else if(h == 14 && m < 30){
+				key = "1400";
+			}
+			else if(h == 14 && m >= 30){
+				key = "1430";
+			}
+			else if(h == 15 && m < 30){
+				key = "1500";
+			}
+			else if(h == 15 && m >= 30){
+				key = "1530";
+			}
+			else if(h == 16 && m < 30){
+				key = "1600";
+			}
+			else if(h == 16 && m >= 30){
+				key = "1630";
+			}
+			else if(h == 17 && m < 30){
+				key = "1700";
+			}
+			else if(h == 17 && m >= 30){
+				key = "1730";
+			}
+			else if(h == 18 && m < 30){
+				key = "1800";
+			}
+			else if(h == 18 && m >= 30){
+				key = "1830";
+			}
+			else if(h == 19 && m < 30){
+				key = "1900";
+			}
+			else if(h == 19 && m >= 30){
+				key = "1930";
+			}
+			else if(h == 20 && m < 30){
+				key = "2000";
+			}
+			else if(h == 20 && m >= 30){
+				key = "2030";
+			}
+			else if(h == 21 && m < 30){
+				key = "2100";
+			}
+			else if(h == 21 && m >= 30){
+				key = "2130";
+			}
+			else if(h == 22 && m < 30){
+				key = "2200";
+			}
+		
+        return "WP_"+key;
     }
 	
 	public Transform getSubContainerWayPoint()
@@ -81,24 +191,34 @@ public class AiBasic : GenericFunction
 		return tempWayPoints;
 	}
 
-    public void defineCurrentContainer(List<GameObject> subContainers, int index)
+    public void defineCurrentContainer(Dictionary<String,GameObject> subContainers, string index)
     {
-        Transform[] currentContainer = subContainers[index].GetComponentsInChildren<Transform>();
-        wayPoints = new List<Transform>();
-        for (int i = 1; i < currentContainer.Length; i++)
-        {
-            wayPoints.Add(currentContainer[i]);
-        }
+		if (subContainers.ContainsKey(index))
+		{
+	        Transform[] currentContainer = subContainers[index].GetComponentsInChildren<Transform>();
+	        wayPoints = new List<Transform>();
+	        for (int i = 1; i < currentContainer.Length; i++)
+	        {
+	            wayPoints.Add(currentContainer[i]);   
+			}
+		}else{
+			Debug.Log("subWP nao encontrado");
+		}
     }
 	
-    public void defineCurrentContainer(int index)
+    public void defineCurrentContainer(string index)
     {
-        Transform[] currentContainer = subContainers[index].GetComponentsInChildren<Transform>();
-        wayPoints = new List<Transform>();
-        for (int i = 1; i < currentContainer.Length; i++)
-        {
-            wayPoints.Add(currentContainer[i]);
-        }
+        if (subContainers.ContainsKey(index))
+		{
+	        Transform[] currentContainer = subContainers[index].GetComponentsInChildren<Transform>();
+	        wayPoints = new List<Transform>();
+	        for (int i = 1; i < currentContainer.Length; i++)
+	        {
+	            wayPoints.Add(currentContainer[i]);   
+			}
+		}else{
+			Debug.Log("subWP "+ index +"nao encontrado");
+		}
     }
 
     public void calculateGlobalTime(bool calculeLastTick)
