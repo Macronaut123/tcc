@@ -65,7 +65,7 @@ public class Dialogue : System.Object{
 	
 	public int currentLine;
 	
-	public Dialogue( string filename = "" ){
+	public Dialogue(string filename){
 		//Load file
 		file = (TextAsset)Resources.Load( filename, typeof(TextAsset) );
 		if( file == null ){

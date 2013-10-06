@@ -8,7 +8,7 @@ public class GlobalTime : MonoBehaviour
     public int minut = 0;
     public int hour = 6;
 
-    private void Update()
+    private void FixedUpdate()
     {		
         if (disable)
         {

@@ -52,26 +52,59 @@
      <None Include="Assets\Demo\Shaders\NewShader.shader" />
      <None Include="Assets\Standard Assets\water well\readme.txt" />
      <None Include="Assets\ex2D\_demo\Fonts\Amaranth.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_2200.txt" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendClipping.shader" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendPixelPerfect.shader" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1630.txt" />
      <None Include="Assets\scripts\Game Scripts\npcs.xml" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1800.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\TutorialScript.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1700.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1330.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0830.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1200.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0730.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0800.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0900.txt" />
      <None Include="Assets\ex2D\_demo\Fonts\springSteel.txt" />
      <None Include="Assets\scripts\Game Scripts\speeches.xml" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0630.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\Demo Dialogue 1.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1730.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1430.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\Demo Dialogue 3.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1530.txt" />
      <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0600.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_2030.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_2130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\Demo Dialogue 2.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1300.txt" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlendNoZTest.shader" />
      <None Include="Assets\notes.txt" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlend.shader" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1400.txt" />
      <None Include="Assets\Dialogue\Dialogue\Docs.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1100.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_2000.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1830.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_2100.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\ExampleDialogue.txt" />
      <None Include="Assets\ex2D\_demo\Fonts\otari.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1130.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1030.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0930.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1230.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1500.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\Demo Dialogue 4.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
@@ -98,6 +131,8 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
       <Project>{13F4F123-E45F-1216-F501-7D4C3FFBBBE2}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-vs.csproj">
+      <Project>{60AD079D-995A-7378-7ADC-4865149D0C48}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
