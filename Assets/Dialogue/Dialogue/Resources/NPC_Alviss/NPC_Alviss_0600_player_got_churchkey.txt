@@ -1,2 +1,4 @@
-NPC: 0600 player_got_churchkey
-NPC: 0600 player_got_churchkey
+Alviss: Por acaso você pegou as chaves da Igreja com a Aina ?
+Player:  Sim, consegui. Aqui estão as suas chaves.
+Alviss: Ótimo, você pode abrir a igreja e ficar com a chave.
+Alviss: Não se esqueça de pegar a encomenda no mercado. 

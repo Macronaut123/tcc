@@ -1,4 +1,3 @@
-NPC : 0600 sem D
-NPC : 0600 sem D
-NPC : 0600 sem D
-NPC : 0600 sem D
+Titor:  Aina! Onde eu encontro o padre?
+Aina: Ele está no altar da igreja.
+Titor:  Ah, obrigado.

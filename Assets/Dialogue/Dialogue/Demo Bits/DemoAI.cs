@@ -17,7 +17,7 @@ public class DemoAI : GenericFunction {
 		//transform.LookAt( player );
 		
 		//If they're in range we want to talk to them
-		if( Vector3.Distance( transform.position, player.position ) < 3f ){
+		if( Vector3.Distance( transform.position, player.position ) < 10f ){
 			//Display the script
 			talking = true;
 			setDisableTime(false);

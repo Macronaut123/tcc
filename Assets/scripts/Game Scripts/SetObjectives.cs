@@ -10,10 +10,10 @@ public class SetObjectives : GenericFunction {
 
             case "NPC_Aina":
 
-
                 if (getDependency(hit.gameObject, "player_knowledge_to_got_churchkey", true))
                 {
                     setDependency(hit.gameObject, "player_got_churchkey", true);
+					setDependency(GameObject.Find("NPC_Alviss"), "player_got_churchkey", true);
                 }
                 else
                 {
@@ -22,17 +22,19 @@ public class SetObjectives : GenericFunction {
             break;
 
             case "NPC_Alviss":
-
-                if (getDependency(hit.gameObject, "player_knowledge_to_got_churchkey", false))
+			
+			
+				if (getDependency(hit.gameObject, "player_knowledge_to_got_churchkey", false))
                 {
                     setDependency(hit.gameObject, "player_knowledge_to_got_churchkey", true);
+					setDependency(GameObject.Find("NPC_Aina"), "player_knowledge_to_got_churchkey", true);
                 }
-
-                else if (getDependency(hit.gameObject, "player_got_churchkey", false))
+			
+                else if (getDependency(hit.gameObject, "player_got_churchkey", true))
                 {
                     setDependency(hit.gameObject, "player_got_churchkey_definity", true);
                 }
-   
+			
             break;
         }
     }

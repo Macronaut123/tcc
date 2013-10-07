@@ -1,2 +1,3 @@
-NPC: player_knowledge_to_got_churchkey
-NPC: player_knowledge_to_got_churchkey
+Alviss: Por acaso você pegou as chaves da Igreja com a Aina ?
+Player: Não,  eu não sabia que você iria precisar 
+Alviss: Ahhh... Ela já deve ter saído, você deveria ter pego a chave antes dela sair.

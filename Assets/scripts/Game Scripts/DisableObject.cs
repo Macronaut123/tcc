@@ -19,10 +19,10 @@ public class DisableObject : MonoBehaviour {
 
         if (!disableTime)
         {	
-			gameObject.GetComponent<NavMeshAgent>().speed = 0;
-			
 			foreach(MonoBehaviour script in scriptComponents) {
-
+				
+				gameObject.GetComponent<NavMeshAgent>().speed = 0;
+				
                 if (script == gameObject.GetComponent<DisableObject>())
                 {
                     continue;

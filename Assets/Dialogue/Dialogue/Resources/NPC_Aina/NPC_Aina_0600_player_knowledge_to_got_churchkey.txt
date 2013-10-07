@@ -1,6 +1,3 @@
-NPC: 0600 com D
-NPC: 0600 com D
-NPC: 0600 com D
-NPC: 0600 com D
-NPC: 0600 com D
-NPC: 0600 com D
+Titor: O padre disse para você deixar a chave comigo.
+Aina: Claro! Aqui estão as chaves Titor! Mas eu preciso que você abra as portas para mim, pode ser?
+Titor:  Posso sim! Vamos lá!

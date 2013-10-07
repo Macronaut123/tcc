@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class SystemTalk : GenericFunction {
-
+	
+	
 	public void OnTriggerEnter(Collider hit){
 
         if (hit.name == "Player"){
@@ -24,10 +25,10 @@ public class SystemTalk : GenericFunction {
 
                         var fileName = gameObject.name+"/"+gameObject.name+"_"+key;
 
-                        var dependency01 = "player_knowledge_to_got_churchkey";
+                        var dependencyAina01 = "player_knowledge_to_got_churchkey";
 
-                        if(getDependency(gameObject , dependency01 , true)){
-                           fileName = fileName+"_"+dependency01;
+                        if(getDependency(gameObject , dependencyAina01 , true)){
+                           fileName = fileName+"_"+dependencyAina01;
                         }
 
 				        var newValue = true;
@@ -60,39 +61,23 @@ public class SystemTalk : GenericFunction {
 
                         var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
 
-                        var dependency01 = "player_knowledge_to_got_churchkey";
+                        var dependencyAlviss01 = "player_knowledge_to_got_churchkey";
 
-                        if (getDependency(gameObject, dependency01, false))
+                        if (getDependency(gameObject, dependencyAlviss01, false))
                         {
                             fileName = fileName;
                         }
 
-                        var dependency02 = "player_got_churchkey";
+						var dependencyAlviss02 = "player_got_churchkey";
 
-                        if (getDependency(gameObject, dependency01, false))
+                        if (getDependency(gameObject, dependencyAlviss02, true))
                         {
-                            fileName = fileName + "_" + dependency02;
+                            fileName = fileName + "_" + dependencyAlviss02;
                         }
 
                         var newValue = true;
                         validateLifeTime(key, fileName, newValue);
                     }
-
-                    if (h == 6 && m >= 30)
-                    {
-                        var key = "0630";
-
-                        var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                        var dependency = "player_knowledge_to_got_churchkey";
-
-                        if (getDependency(gameObject, dependency, false))
-                        {
-                            fileName = fileName + "_" + dependency;
-                        }
-                        var newValue = true;
-                        validateLifeTime(key, fileName, newValue);
-                    }
-
                     npcInDependency = true;
                 break;
             }

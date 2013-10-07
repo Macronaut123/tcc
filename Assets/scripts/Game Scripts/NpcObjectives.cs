@@ -22,6 +22,7 @@ public class NpcObjectives : MonoBehaviour
             case "NPC_Alviss":
                 dependencyActions.Add("player_knowledge_to_got_churchkey", false);
                 dependencyActions.Add("player_got_churchkey_definity", false);
+				dependencyActions.Add("player_got_churchkey", false);
             break;
         }
     }
