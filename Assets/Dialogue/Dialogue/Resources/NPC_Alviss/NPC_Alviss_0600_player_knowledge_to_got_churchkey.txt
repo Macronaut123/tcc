@@ -1,0 +1,2 @@
+NPC: player_knowledge_to_got_churchkey
+NPC: player_knowledge_to_got_churchkey

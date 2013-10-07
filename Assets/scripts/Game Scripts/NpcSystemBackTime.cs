@@ -8,8 +8,6 @@ public class NpcSystemBackTime : MonoBehaviour {
 
     public void goToPosition(Transform position)
     {
-        //gameObject.transform.position = new Vector3(wayPoints[index].position.x, wayPoints[index].position.y, wayPoints[index].position.z);
 		gameObject.transform.position = new Vector3(position.position.x, position.position.y , position.position.z);
     }
-
 }

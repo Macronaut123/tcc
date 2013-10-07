@@ -1,0 +1,2 @@
+NPC: 0600 player_got_churchkey
+NPC: 0600 player_got_churchkey

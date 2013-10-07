@@ -53,26 +53,6 @@ public class AiBasic : GenericFunction
         }
         return this.subContainers;
     }
-
-//    public int calculeIndex()
-//    {
-//        var h = hour();
-//        var m = minut();
-//        var add = 0;
-//
-//        if (m >= 30)
-//        {
-//            add = 1;
-//        }
-//
-//        var a = (h - 6);
-//        var b = a * 2;
-//        var index = b + add;
-//
-//        //print(h+ " "+ m +" "+ a + " " + b + " " + c + " " + add);
-//
-//        return index;
-//    }
 	
 	public string calculeIndex()
     {
@@ -202,7 +182,7 @@ public class AiBasic : GenericFunction
 	            wayPoints.Add(currentContainer[i]);   
 			}
 		}else{
-			Debug.Log("subWP nao encontrado");
+            Debug.Log("subWP " + index + "nao encontrado");
 		}
     }
 	
