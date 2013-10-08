@@ -34,6 +34,7 @@ public class DemoAI : GenericFunction {
 	
 	public void setFileName (string filename) {
 		//Build a new dialogue system
+		Debug.Log("Try to load " + filename); 
 		d = new Dialogue(filename);
 		
 		//Get some output

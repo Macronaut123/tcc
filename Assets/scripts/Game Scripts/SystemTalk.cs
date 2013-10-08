@@ -15,316 +15,334 @@ public class SystemTalk : GenericFunction {
 
 			h = hour();
 			m = minut();
-
+			
+			//NPC COM DEPENDENCIA
             switch (gameObject.name)
             {
                 case "NPC_Aina" :
-
-                    if(h == 6 && m < 30){
-                        var key = "0600";
-
-                        var fileName = gameObject.name+"/"+gameObject.name+"_"+key;
-
-                        var dependencyAina01 = "player_knowledge_to_got_churchkey";
-
-                        if(getDependency(gameObject , dependencyAina01 , true)){
-                           fileName = fileName+"_"+dependencyAina01;
-                        }
-
-				        var newValue = true;
-				        validateLifeTime(key, fileName, newValue);
-			        }
-
-                    if (h == 6 && m >= 30)
-                    {
-                        var key = "0630";
-
-                        var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                        var dependency = "player_knowledge_to_got_churchkey";
-
-                        if (getDependency(gameObject, dependency, true))
-                        {
-                            fileName = fileName + "_" + dependency;
-                        }
-                        var newValue = true;
-                        validateLifeTime(key, fileName, newValue);
-                    }
-
+					engineSystemTalk(parserTime(h,m), "player_knowledge_to_got_churchkey");
                     npcInDependency = true;
                 break;
-
+				
+				
                 case "NPC_Alviss":
-
-                    if (h == 6 && m < 30)
-                    {
-                        var key = "0600";
-
-                        var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-
-                        var dependencyAlviss01 = "player_knowledge_to_got_churchkey";
-
-                        if (getDependency(gameObject, dependencyAlviss01, false))
-                        {
-                            fileName = fileName;
-                        }
-
-						var dependencyAlviss02 = "player_got_churchkey";
-
-                        if (getDependency(gameObject, dependencyAlviss02, true))
-                        {
-                            fileName = fileName + "_" + dependencyAlviss02;
-                        }
-
-                        var newValue = true;
-                        validateLifeTime(key, fileName, newValue);
-                    }
-                    npcInDependency = true;
+						engineSystemTalk(parserTime(h,m), "player_knowledge_to_got_churchkey");
+						engineSystemTalk(parserTime(h,m), "player_got_churchkey");
+                    	npcInDependency = true;
                 break;
+				
             }
+			
             if (npcInDependency)
             {
                 return;
             }
+			
+			#region NPC SEM DEPENDENCIA
             if (h == 6 && m < 30)
             {
-                var key = "0600";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("0600");
             }
             else if (h == 6 && m >= 30)
             {
-                var key = "0630";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("0630");
             }
             else if (h == 7 && m < 30)
             {
-                var key = "0700";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("0700");
             }
 
             else if (h == 7 && m >= 30)
             {
-                var key = "0730";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("0730");
             }
 
             else if (h == 8 && m < 30)
             {
-                var key = "0800";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("0800");
             }
 
             else if (h == 8 && m >= 30)
             {
-                var key = "0830";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("0830");
             }
 
             else if (h == 9 && m < 30)
             {
-                var key = "0900";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("0900");
             }
 
             else if (h == 9 && m >= 30)
             {
-                var key = "0930";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("0930");
             }
             else if (h == 10 && m < 30)
             {
-                var key = "1000";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1000");
             }
 
             else if (h == 10 && m >= 30)
             {
-                var key = "1030";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1030");
             }
             else if (h == 11 && m < 30)
             {
-                var key = "1100";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1100");
             }
 
             else if (h == 11 && m >= 30)
             {
-                var key = "1130";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1130");
             }
             else if (h == 12 && m < 30)
             {
-                var key = "1200";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1200");
             }
 
             else if (h == 12 && m >= 30)
             {
-                var key = "1230";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1230");
             }
             else if (h == 13 && m < 30)
             {
-                var key = "1300";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1300");
             }
 
             else if (h == 14 && m >= 30)
             {
-                var key = "1430";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1430");
             }
             else if (h == 15 && m < 30)
             {
-                var key = "1500";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1500");
             }
 
             else if (h == 15 && m >= 30)
             {
-                var key = "1530";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1530");
             }
             else if (h == 16 && m < 30)
             {
-                var key = "1600";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1600");
             }
 
             else if (h == 16 && m >= 30)
             {
-                var key = "1630";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1630");
             }
             else if (h == 17 && m < 30)
             {
-                var key = "1700";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1700");
             }
 
             else if (h == 17 && m >= 30)
             {
-                var key = "1730";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1730");
             }
             else if (h == 18 && m < 30)
             {
-                var key = "1800";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1800");
             }
 
             else if (h == 18 && m >= 30)
             {
-                var key = "1830";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1830");
             }
             else if (h == 19 && m < 30)
             {
-                var key = "1900";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1900");
             }
 
             else if (h == 19 && m >= 30)
             {
-                var key = "1930";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("1930");
             }
             else if (h == 20 && m < 30)
             {
-                var key = "2000";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("2000");
             }
 
             else if (h == 20 && m >= 30)
             {
-                var key = "2030";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("2030");
             }
             else if (h == 21 && m < 30)
             {
-                var key = "2100";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("2100");
             }
 
             else if (h == 21 && m >= 30)
             {
-                var key = "2130";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("2130");
             }
             else if (h == 22 && m < 30)
             {
-                var key = "2200";
-                var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
-                var newValue = true;
-                validateLifeTime(key, fileName, newValue);
+                makeValidateForSimpleNpc("2200");
             }
+			
+			#endregion
 		}
 	}
 	
-	public void validateLifeTime(string key, string fileName, bool newValue){
+	public string parserTime(int h , int m){
 		
-		if(gameObject.GetComponent<LifeTime>().getLifeTimeValue(key) != newValue){
-			gameObject.GetComponent<LifeTime>().setLifeTimeValue(key, newValue);
+		if (h == 6 && m < 30)
+        {
+            return "0600";
+        }
+        else if (h == 6 && m >= 30)
+        {
+            return "0630";
+        }
+        else if (h == 7 && m < 30)
+        {
+            return "0700";
+        }
+        else if (h == 7 && m >= 30)
+        {
+            return "0730";
+        }
+        else if (h == 8 && m < 30)
+        {
+            return "0800";
+        }
+        else if (h == 8 && m >= 30)
+        {
+            return "0830";
+        }
+        else if (h == 9 && m < 30)
+        {
+            return "0900";
+        }
+        else if (h == 9 && m >= 30)
+        {
+            return "0930";
+        }
+        else if (h == 10 && m < 30)
+        {
+            return "1000";
+        }
+        else if (h == 10 && m >= 30)
+        {
+            return "1030";
+        }
+        else if (h == 11 && m < 30)
+        {
+            return "1100";
+        }
+        else if (h == 11 && m >= 30)
+        {
+            return "1130";
+        }
+        else if (h == 12 && m < 30)
+        {
+            return "1200";
+        }
+        else if (h == 12 && m >= 30)
+        {
+            return "1230";
+        }
+        else if (h == 13 && m < 30)
+        {
+            return "1300";
+        }
+        else if (h == 14 && m >= 30)
+        {
+            return "1430";
+        }
+        else if (h == 15 && m < 30)
+        {
+            return "1500";
+        }
+        else if (h == 15 && m >= 30)
+        {
+            return "1530";
+        }
+        else if (h == 16 && m < 30)
+        {
+            return "1600";
+        }
+        else if (h == 16 && m >= 30)
+        {
+            return "1630";
+        }
+        else if (h == 17 && m < 30)
+        {
+            return "1700";
+        }
+        else if (h == 17 && m >= 30)
+        {
+            return "1730";
+        }
+        else if (h == 18 && m < 30)
+        {
+            return "1800";
+        }
+        else if (h == 18 && m >= 30)
+        {
+            return "1830";
+        }
+        else if (h == 19 && m < 30)
+        {
+            return "1900";
+        }
+        else if (h == 19 && m >= 30)
+        {
+            return "1930";
+        }
+        else if (h == 20 && m < 30)
+        {
+            return "2000";
+        }
+        else if (h == 20 && m >= 30)
+        {
+            return "2030";
+        }
+        else if (h == 21 && m < 30)
+        {
+            return "2100";
+        }
+        else if (h == 21 && m >= 30)
+        {
+            return "2130";
+        }
+        else if (h == 22 && m < 30)
+        {
+            return "2200";
+        }
+	}
+	
+	public void engineSystemTalk(string time, string dependency){
+			ValidateDependency(time, MakeValidateForDependencyNpc(dependency));
+	}
+	
+	public void ValidateDependency(string time, string file) {
+		var fileName = gameObject.name+"/"+gameObject.name+"_"+time;
+		if(file != ""){
+			fileName = fileName+"_"+file;
+		}
+		validateLifeTime(time, fileName, true);
+	}
+	
+	public string MakeValidateForDependencyNpc(string dependency) {
+		
+		if(getDependency(gameObject , dependency , true)){
+			return dependency;
+		}else{
+			return "";
+		}
+	}
+	
+	public void makeValidateForSimpleNpc(string key){
+	    var fileName = gameObject.name + "/" + gameObject.name + "_" + key;
+	    var newValue = true;
+	    validateLifeTime(key, fileName, newValue);
+	}
+	
+	public void validateLifeTime(string time, string fileName, bool newValue){
+		
+		if(gameObject.GetComponent<LifeTime>().getLifeTimeValue(time) != newValue){
+			gameObject.GetComponent<LifeTime>().setLifeTimeValue(time, newValue);
 		}
 		if(!gameObject.GetComponent<DemoAI>()){
 			gameObject.AddComponent<DemoAI>().setFileName(fileName);
