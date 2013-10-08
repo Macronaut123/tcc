@@ -1,0 +1,37 @@
+Gunvar: Tudo bem Titor?.....
+Gunvar:Estou pensando no momento em uma coisa muito seria. 
+
+Player: {Player: Bom tudo bem então. Vou deixa-lo pensar} [goto line1]
+Player: {Player: O que está pensando tão intensamente} [goto line2]
+
+
+-line1
+Gunvar: Humm....
+
+-line2
+ Gunvar:Humm Não posso te contar Titor. 
+Gunvar:Talvez deva ter sido impressão de minha parte 
+Gunvar:e alias disso você não poderia me ajudar.
+
+Player: {Player: Como sabe que eu não poderia ajuda-lo se você não me contar?} [goto line3]
+Player: {Player: Talvez não, mas se souber o que viu posso lhe ajudar a encontrar a resposta} [goto line4]
+
+-line3
+Gunvar:Não fica tranquilo, foi somente impressão minha. Nada com que se preocupar.
+
+
+-line4
+Gunvar:Vi duas pessoas tendo uma conversa estranha.
+
+Player: {Player: E essas duas pessoas eram?”} [goto line5]
+Player: {Player: Se você acha suspeito não deveria interroga-los?} [goto line6]
+
+line5
+Gunvar: Hummm nada demais Titor. Pode ficar tranquilo
+
+line6
+Gunvar:Acredito que não há necessidade de interrogar o Rikki e a 
+Gunvar:nova pessoa que chegou para o festival simplesmente por causa 
+Gunvar:dessa conversa, mas era uma conversa muito suspeita sim....
+Gunvar:acredito que acabei contando demais. 
+Gunvar:Agora me deixe com meus pensamentos Titor.

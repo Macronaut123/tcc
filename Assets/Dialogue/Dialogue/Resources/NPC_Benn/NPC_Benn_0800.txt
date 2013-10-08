@@ -1,0 +1,21 @@
+Benn: UURRHHHHGG....Que dor de estomago. 
+Benn: Ahh olá Titor você por um acaso não teria um remédio para o estômago. 
+Benn: Sei que os cogumelos por aqui são bons para digestão, mas precisam ser 
+Benn: preparados com mais alguma coisa, só não sei qual.
+
+Player{Player:Por um acaso seria essa?} [goto lineYes]
+Player{Player:Hum...Infelizmente não posso te Ajudar Benn} [goto lineNo]
+
+-lineNo
+Benn: Ahhh Não tem problema meu jovem, 
+Benn: até a hora do festival essa dor irá passar. Tenho certeza disso.
+
+
+-lineYes
+//errada
+Benn: Hummm infelizmente não é essa Titor, mas agradeço a ajuda.
+//certa
+Benn: Nossa realmente é essa remédio. Obrigado Titor, muito obrigado....
+Benn: Fiquei assim por ter visto Aquele Rikki,  não suporto ver ele. 
+Benn: Ele não é como vocês hospitaleiro e alegre Titor...você sabia que ele 
+Benn: veio de um outro reino, ele não nasceu aqui?

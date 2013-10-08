@@ -1,3 +1,10 @@
-Tobbie:Ahh tudo bem titor. 
-Estou indo almoçar agora e estou morrendo de fome. 
-Me encontre mais tarde para brincarmos. até mais.
+Tobbie: Ahh tudo bem Titor? Estou descansando agora.
+
+Player: {Tudo bem, tentarei aranjar uma para você} [goto lineNo]
+Player: {Aqui está uma calça nova, esta serve?} [goto lineYes]
+
+-lineNo
+Tobbie:  Ok ficarei esperando
+
+-lineYes
+Tobbie:  Sim ficou perfeito. Venha vou te mostrar como entrar.

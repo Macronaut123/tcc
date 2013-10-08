@@ -4,6 +4,8 @@ using System.Collections;
 public class DemoAI : GenericFunction {
 	
 	public string filename;
+	public string npc = "";
+	public string specialContainer = "";
 	
 	Dialogue d;				//Our Dialogue engine
 	DialogueItem[] items;	//Our list of items we have to display
@@ -88,5 +90,18 @@ public class DemoAI : GenericFunction {
 	
 	void OutputString( string number ){
 		Debug.Log("Hello!");
+	}
+	
+	
+	public void wpToMove(string comand){
+		this.specialContainer = comand;
+	}
+	
+	public void how(string gO){
+		this.npc = gO;
+	}
+	
+	public void calculeGoto(){
+		GameObject.Find(npc).GetComponent<AiBasic>().defineCurrentContainer(GameObject.Find(specialContainer));
 	}
 }

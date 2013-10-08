@@ -1,3 +1,6 @@
 Alviss: Por acaso você pegou as chaves da Igreja com a Aina ?
 Player: Não,  eu não sabia que você iria precisar 
 Alviss: Ahhh... Ela já deve ter saído, você deveria ter pego a chave antes dela sair.
+[call wpToMove WP_0600_Evento_02]
+[call how NPC_Aina]
+[call calculeGoto]

@@ -46,7 +46,7 @@ public class DialogueItem{
 		//For calling from OnGUI to display the item and handling all stuff
 		if( type == ItemType.Text ){
 			//We are normal text so display in a label
-			GUILayout.Label(speaker+": "+speech);
+			GUILayout.Label(speaker+" "+speech);
 		}else{
 			//We are an option so we need to process button presses
 			if( GUILayout.Button(content) )

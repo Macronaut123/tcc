@@ -46,9 +46,11 @@ public class AiBasic : GenericFunction
 		subContainers = new Dictionary<string, GameObject>();
         foreach (Transform temp in mainContainer)
         {
-            if (!temp.gameObject.name.Contains("NPC"))
+            if (!temp.gameObject.name.Contains("NPC") || !temp.gameObject.name.Contains("Evento") )
             {
-                this.subContainers.Add(temp.gameObject.name, temp.gameObject);
+				if(!this.subContainers.ContainsKey(temp.gameObject.name)){
+                	this.subContainers.Add(temp.gameObject.name, temp.gameObject);
+				}
             }
         }
         return this.subContainers;
@@ -170,7 +172,17 @@ public class AiBasic : GenericFunction
 		Transform tempWayPoints = currentContainer[1];
 		return tempWayPoints;
 	}
-
+	
+	public void defineCurrentContainer(GameObject subContainers)
+    {
+        Transform[] currentContainer = subContainers.GetComponentsInChildren<Transform>();
+        wayPoints = new List<Transform>();
+        for (int i = 1; i < currentContainer.Length; i++)
+        {
+            wayPoints.Add(currentContainer[i]);   
+		}
+	}
+	
     public void defineCurrentContainer(Dictionary<String,GameObject> subContainers, string index)
     {
 		if (subContainers.ContainsKey(index))
@@ -221,7 +233,7 @@ public class AiBasic : GenericFunction
     {
         if (tickTime == 0 || tickTime == 30)
         {
-            defineCurrentContainer(calculeIndex());
+            defineCurrentContainer(findSubContainers(), calculeIndex());
             state = NPCStates.walkToNext;
             lastTick = tickTime;
         }

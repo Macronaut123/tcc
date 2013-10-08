@@ -15,10 +15,6 @@ public class SetObjectives : GenericFunction {
                     setDependency(hit.gameObject, "player_got_churchkey", true);
 					setDependency(GameObject.Find("NPC_Alviss"), "player_got_churchkey", true);
                 }
-                else
-                {
-                }
-
             break;
 
             case "NPC_Alviss":

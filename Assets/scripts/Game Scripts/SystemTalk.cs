@@ -20,15 +20,31 @@ public class SystemTalk : GenericFunction {
             switch (gameObject.name)
             {
                 case "NPC_Aina" :
-					engineSystemTalk(parserTime(h,m), "player_knowledge_to_got_churchkey");
+
+                    if(h == 6 && m < 30){
+						engineSystemTalk("0600", "player_knowledge_to_got_churchkey");
+			        }
+
+                    else if (h == 6 && m >= 30)
+                    {
+						engineSystemTalk("0630", "player_knowledge_to_got_churchkey");
+                    }
+				
                     npcInDependency = true;
+				
                 break;
 				
 				
                 case "NPC_Alviss":
-						engineSystemTalk(parserTime(h,m), "player_knowledge_to_got_churchkey");
-						engineSystemTalk(parserTime(h,m), "player_got_churchkey");
-                    	npcInDependency = true;
+
+                    if (h == 6 && m < 30)
+                    {
+						engineSystemTalk("0600", "player_knowledge_to_got_churchkey");
+						engineSystemTalk("0600", "player_got_churchkey");
+                    }
+				
+                    npcInDependency = true;
+				
                 break;
 				
             }
@@ -183,135 +199,7 @@ public class SystemTalk : GenericFunction {
 			#endregion
 		}
 	}
-	
-	public string parserTime(int h , int m){
 		
-		if (h == 6 && m < 30)
-        {
-            return "0600";
-        }
-        else if (h == 6 && m >= 30)
-        {
-            return "0630";
-        }
-        else if (h == 7 && m < 30)
-        {
-            return "0700";
-        }
-        else if (h == 7 && m >= 30)
-        {
-            return "0730";
-        }
-        else if (h == 8 && m < 30)
-        {
-            return "0800";
-        }
-        else if (h == 8 && m >= 30)
-        {
-            return "0830";
-        }
-        else if (h == 9 && m < 30)
-        {
-            return "0900";
-        }
-        else if (h == 9 && m >= 30)
-        {
-            return "0930";
-        }
-        else if (h == 10 && m < 30)
-        {
-            return "1000";
-        }
-        else if (h == 10 && m >= 30)
-        {
-            return "1030";
-        }
-        else if (h == 11 && m < 30)
-        {
-            return "1100";
-        }
-        else if (h == 11 && m >= 30)
-        {
-            return "1130";
-        }
-        else if (h == 12 && m < 30)
-        {
-            return "1200";
-        }
-        else if (h == 12 && m >= 30)
-        {
-            return "1230";
-        }
-        else if (h == 13 && m < 30)
-        {
-            return "1300";
-        }
-        else if (h == 14 && m >= 30)
-        {
-            return "1430";
-        }
-        else if (h == 15 && m < 30)
-        {
-            return "1500";
-        }
-        else if (h == 15 && m >= 30)
-        {
-            return "1530";
-        }
-        else if (h == 16 && m < 30)
-        {
-            return "1600";
-        }
-        else if (h == 16 && m >= 30)
-        {
-            return "1630";
-        }
-        else if (h == 17 && m < 30)
-        {
-            return "1700";
-        }
-        else if (h == 17 && m >= 30)
-        {
-            return "1730";
-        }
-        else if (h == 18 && m < 30)
-        {
-            return "1800";
-        }
-        else if (h == 18 && m >= 30)
-        {
-            return "1830";
-        }
-        else if (h == 19 && m < 30)
-        {
-            return "1900";
-        }
-        else if (h == 19 && m >= 30)
-        {
-            return "1930";
-        }
-        else if (h == 20 && m < 30)
-        {
-            return "2000";
-        }
-        else if (h == 20 && m >= 30)
-        {
-            return "2030";
-        }
-        else if (h == 21 && m < 30)
-        {
-            return "2100";
-        }
-        else if (h == 21 && m >= 30)
-        {
-            return "2130";
-        }
-        else if (h == 22 && m < 30)
-        {
-            return "2200";
-        }
-	}
-	
 	public void engineSystemTalk(string time, string dependency){
 			ValidateDependency(time, MakeValidateForDependencyNpc(dependency));
 	}

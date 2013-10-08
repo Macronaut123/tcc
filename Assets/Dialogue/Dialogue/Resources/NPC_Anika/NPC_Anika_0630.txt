@@ -1,0 +1,13 @@
+Anika: Ahh tudo bem Titor? 
+Anika: Estou indo para praça ajudar nos preparativos do festival. 
+Anika: Por um acaso você viu o Gunvar?
+
+Player {Player: Desculpa Anika mas não vi ele ainda hoje.}  [goto lineNo]
+Player {Player: Ahh vi ele sim, e ele está vindo com uma flor para lhe entregar.}  [goto lineYes]
+
+-lineNo
+Anika: Ahh tudo bem, se vê-lo fale que eu estou com saudades. (risos)
+
+
+-lineYes
+Anika: Serio? Ah ele é um doce. (risos)

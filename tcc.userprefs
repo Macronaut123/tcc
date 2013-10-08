@@ -9,11 +9,25 @@
               <Node name="Dialogue" expanded="True">
                 <Node name="Dialogue" expanded="True">
                   <Node name="Demo Bits" expanded="True" />
+                  <Node name="Resources" expanded="True">
+                    <Node name="NPC_Aina" expanded="True">
+                      <Node name="NPC_Aina_0600_player_knowledge_to_got_churchkey.txt" selected="True" />
+                    </Node>
+                  </Node>
                 </Node>
               </Node>
               <Node name="scripts" expanded="True">
-                <Node name="Game Scripts" expanded="True">
-                  <Node name="DisableObject.cs" selected="True" />
+                <Node name="Game Scripts" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+          <Node name="Assembly-CSharp-firstpass" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Dialogue" expanded="True">
+                <Node name="Dialogue" expanded="True">
+                  <Node name="Resources" expanded="True">
+                    <Node name="NPC_Aina" expanded="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>
