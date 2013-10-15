@@ -84,6 +84,7 @@
      <Compile Include="Assets\scripts\Game Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\scripts\Game Scripts\ThirdPersonController.cs" />
      <Compile Include="Assets\scripts\Game Scripts\getItem.cs" />
+     <Compile Include="Assets\scripts\Interface Scripts\DisableSound.cs" />
      <Compile Include="Assets\scripts\Interface Scripts\change_target.cs" />
      <Compile Include="Assets\scripts\Interface Scripts\exitApplication.cs" />
      <Compile Include="Assets\scripts\Interface Scripts\itweenCamera.cs" />
