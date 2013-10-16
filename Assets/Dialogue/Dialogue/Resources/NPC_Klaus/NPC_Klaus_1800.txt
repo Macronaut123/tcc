@@ -1,0 +1,9 @@
+[call speakNpc NPC_Persival]
+
+Klaus: 1!
+Klaus: 2!
+Klaus: 3!
+
+
+//check_condition_Klaus_Persival_letter for player
+[call letter letter_condition]

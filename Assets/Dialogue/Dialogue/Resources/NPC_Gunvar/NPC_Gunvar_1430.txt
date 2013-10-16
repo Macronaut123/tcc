@@ -1,3 +1,10 @@
-Gunvar:  Ahh Tit.Titor.....o que você está fazendo aqui? 
-Gunvar: Você deveria estar na missa, não deveria? 
-Gunvar: Olha não conte para ninguém, mas eu vou me encontrar com a Anika. 
+GUNVAR: Ah! Que susto Titor! Poxa, nem estou acreditando...
+Player {Player: Parece estar feliz... Aconteceu algo?} [gotoLine1]
+Player {Player: O Sr não vai para a missa?} [gotoLine2]
+
+-Line1
+GUNVAR: Hoje parece ser o meu dia de sorte! Adivinha quem vai se encontrar com a senhorita Anika hoje? GAHAHAHA! 
+GUNVAR: EU! GAHAHAHA!! Depois nos falamos Titor!
+	
+-Line2
+GUNVAR: Esse ano não Titor! Esse ano vou... GAHAHAHA!

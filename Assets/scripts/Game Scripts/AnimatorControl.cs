@@ -48,7 +48,4 @@ public class AnimatorControl : MonoBehaviour {
             animControl.SetBool("Correndo", true);
         }
     }
-
-    void OnGUI() { 
-    }
 }

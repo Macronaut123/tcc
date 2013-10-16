@@ -1,0 +1,9 @@
+
+
+Persival: 3!
+Persival: 2!
+Persival: 1!
+
+
+//check_condition_Klaus_Persival_letter for player
+[call letter letter_condition]

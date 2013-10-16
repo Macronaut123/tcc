@@ -1,4 +1,11 @@
-Gunvar:  Ahh Olá Titor. 
-Gunvar: Estou somente esperando o rei agora, pois ele irá treinar com Klaus, 
-Gunvar: daqui a pouco. Alias disso você também está precisando treinar 
-Gunvar: esses músculos hein? 
+GUNVAR: ...
+Player {Player: Sr Gunvar?} [gotoLine1]
+Player {Player: BUHHHHH!} [gotoLine2]
+
+-Line1
+GUNVAR: Ah! Que susto Titor! Estou esperando a Senhorita Anika!
+[end]
+	
+-Line2
+GUNVAR: AHHHH! Que susto Titor! Nunca mais faça isso! Quase morri do coração...
+[end]

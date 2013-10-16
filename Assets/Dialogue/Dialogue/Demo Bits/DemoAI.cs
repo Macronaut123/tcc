@@ -6,21 +6,33 @@ public class DemoAI : GenericFunction {
 	public string filename;
 	public string npc = "";
 	public string specialContainer = "";
-	
+	public string fileName;
 	Dialogue d;				//Our Dialogue engine
 	DialogueItem[] items;	//Our list of items we have to display
-	bool talking = false;	//Are we talking?
+	public bool talking = false;	//Are we talking?
 	
-	void Update () {
+	float timer;
+	public float setTimer = 5f;
+	
+	void Start(){
 		
-		Transform player = GameObject.Find("Player").transform;
+		switch(gameObject.name){
 		
-		//A basic AI behaviour to always look at the Player
-		//transform.LookAt( player );
+			case "NPC_Klaus":
+				setTimer = 5f;
+			break;
+			
+			case "NPC_Persival":
+				setTimer = 6f;
+			break;
+			
+		}
 		
-		//If they're in range we want to talk to them
-		if( Vector3.Distance( transform.position, player.position ) < 10f ){
-			//Display the script
+		timer = setTimer;
+	}
+	
+	public void OnTriggerEnter(Collider hit){
+        if (hit.name == "Player"){
 			talking = true;
 			setDisableTime(false);
 			gameObject.GetComponent<DisableObject>().disableAll(false);
@@ -29,15 +41,48 @@ public class DemoAI : GenericFunction {
 			setDisableTime(true);
 			gameObject.GetComponent<DisableObject>().disableAll(true);
 		}
+	}
+	
+	public void OnTriggerExit(Collider hit){
+        if (hit.name == "Player"){
+			talking = false;
+			setDisableTime(true);
+			gameObject.GetComponent<DisableObject>().disableAll(true);
+		}
+	}
+	
+	void Update () {
+		
+		//Transform player = GameObject.Find("Player").transform;
+		
+		//A basic AI behaviour to always look at the Player
+		//transform.LookAt( player );
+		
+		//If they're in range we want to talk to them
+		//if( Vector3.Distance( transform.position, player.position ) < 10f ){
+			//Display the script
+			//talking = true;
+			//setDisableTime(false);
+			//gameObject.GetComponent<DisableObject>().disableAll(false);
+		//}else{
+			//talking = false;
+			//setDisableTime(true);
+			//gameObject.GetComponent<DisableObject>().disableAll(true);
+		//}
+		
 		
 		if( hasUpdated )
 			hasUpdated = false;
 	}
 	
 	public void setFileName (string filename) {
+		
+		this.fileName = filename;
+		this.timer = this.setTimer;
+		
 		//Build a new dialogue system
-		Debug.Log("Try to load " + filename); 
-		d = new Dialogue(filename);
+		Debug.Log("Try to load " + this.fileName); 
+		d = new Dialogue(this.fileName);
 		
 		//Get some output
 		items = d.GetNextOutput();
@@ -50,24 +95,31 @@ public class DemoAI : GenericFunction {
 		//it's a simplified version of the DialogueTemplate script, 
 		//have a look at that to see it in more detail.
 		
-		GUILayout.BeginArea( new Rect( Screen.width/2-100, Screen.height/2-100, 200, 200 ) );
+		GUILayout.BeginArea( new Rect( Screen.width/2, Screen.height/2, 200, 200 ) );
 			//If we're talking lets start
-			if( talking ){
+			if(talking){
 				//Loop through all the items
-				foreach( DialogueItem item in items ){
+				foreach(DialogueItem item in items){
 					
 					ProcessDialogueItem(item);
 				
 					//Display it
-					DialogueItem retrn = item.Display( d );
+					DialogueItem retrn = item.Display(d);
 					
-					if( retrn != null ){
-						ProcessDialogueItem( retrn );
+					if(retrn != null){
+						ProcessDialogueItem(retrn);
 					}
 				}
-				if( items[0].type == DialogueItem.ItemType.Text ){
-					if( GUILayout.Button("Next") )
-						items = d.GetNextOutput();
+				if(items[0].type == DialogueItem.ItemType.Text){
+					timer -= Time.deltaTime;
+						
+						if(timer <= 0){
+							items = d.GetNextOutput();
+							timer = setTimer;
+						}
+				
+					//if( GUILayout.Button("Next") )
+					//	items = d.GetNextOutput();
 				}
 			}
 		
@@ -88,11 +140,6 @@ public class DemoAI : GenericFunction {
 			items = d.GetNextOutput();
 	}
 	
-	void OutputString( string number ){
-		Debug.Log("Hello!");
-	}
-	
-	
 	public void wpToMove(string comand){
 		this.specialContainer = comand;
 	}
@@ -103,5 +150,31 @@ public class DemoAI : GenericFunction {
 	
 	public void calculeGoto(){
 		GameObject.Find(npc).GetComponent<AiBasic>().defineCurrentContainer(GameObject.Find(specialContainer));
+	}
+	
+	public void letter(string condition){
+		var player = GameObject.Find("Player").GetComponent<NpcObjectives>();
+		
+		if(player.dependencyActions[condition] == true){
+			GameObject.Find("NPC_Klaus").GetComponent<DemoAI>().setFileName(this.fileName+"_"+"have_letter");
+		}else{
+			GameObject.Find("NPC_Klaus").GetComponent<DemoAI>().setFileName(this.fileName+"_"+"dont_have_letter");
+		}
+	}
+	
+	public void speakNpc(string how){
+		
+		if(!GameObject.Find(how).GetComponent<DemoAI>()){
+			GameObject.Find(how).AddComponent<DemoAI>();
+			GameObject.Find(how).GetComponent<DemoAI>().setFileName(how+"/"+how+"_"+"0630");
+			GameObject.Find(how).GetComponent<DemoAI>().talking = true;
+			setDisableTime(false);
+			gameObject.GetComponent<DisableObject>().disableAll(false);
+		}else{
+			GameObject.Find(how).GetComponent<DemoAI>().setFileName(how+"/"+how+"_"+"0630");
+			GameObject.Find(how).GetComponent<DemoAI>().talking = true;
+			setDisableTime(false);
+			gameObject.GetComponent<DisableObject>().disableAll(false);
+		}
 	}
 }

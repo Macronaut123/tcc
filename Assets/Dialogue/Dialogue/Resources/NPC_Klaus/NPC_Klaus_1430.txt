@@ -1,0 +1,12 @@
+Klaus: Titor! Você tambem está indo para a missa?
+
+Player {Player: Sim, estou indo} [goto lineYes]
+Player {Player: Não estou indo} [goto lineNo]
+
+-LineYes
+Klaus: É melhor ir rápido ou você vai se atrasar.
+[end]
+
+-LineNo
+Klaus: Mas você deveria ir, todos vão a missa.
+[end]

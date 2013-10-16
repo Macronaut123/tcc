@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 public class NpcObjectives : MonoBehaviour
 {
-
 	public Dictionary<string ,bool> dependencyActions;
 
     public void Awake()
@@ -13,6 +12,10 @@ public class NpcObjectives : MonoBehaviour
 
         switch (gameObject.name)
         {
+			case "Player":
+                dependencyActions.Add("letter_condition", false);
+            break;
+			
             case "NPC_Aina":
 
                 dependencyActions.Add("player_knowledge_to_got_churchkey", false);

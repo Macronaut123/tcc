@@ -56,4 +56,5 @@ public class GenericFunction : MonoBehaviour
     {
         globalTime.GetComponent<GlobalTime>().setNewTimer(hour, minut, second);
     }
+	
 }

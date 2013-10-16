@@ -1,3 +1,15 @@
-Gunvar: Ahhh Anika você é tão linda....
-Gunvar:Ahhh oi Titor diz se ela não é a flor mais linda deste vilarejo?
-//Anika presente na conversa
+Gunvar: Finalmente aceitou o meu convite e veio treinar Titor? GAHAHAHA!
+
+Player {Player: Não, só estou esperando por alguém... } [goto LineNo1]
+Player {Player: Não, vim apenas te ver Sr Gunvar.} [goto LineNo2]
+
+-LineNo1
+Gunvar: Quem? O Klaus? GAHAHAHA! Ele já deve estar vindo! 
+Gunvar: Se quiser esperar, sente-se aí! Ou venha treinar comigo! GAHAHAHA! 
+[end]
+
+-LineNo2
+Gunvar: ...
+Gunvar: Você só pode estar de brincadeira! GAHAHA!
+Gunvar: Sente-se aí ou venha treinar comigo!
+[end]

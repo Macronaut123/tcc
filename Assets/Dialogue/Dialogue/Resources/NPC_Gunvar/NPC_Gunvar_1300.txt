@@ -1,3 +1,10 @@
-Gunvar:  Está um belo dia hoje não é mesmo Titor. 
-Gunvar: Um belo dia para um festival onde vou poder ver minha linda Anika dançando. 
-Gunvar: Ahh um dia você saberá o que é isso Titor.
+GUNVAR: Ah! Que susto Titor! Poxa, nem estou acreditando...
+Player {Player: Parece estar feliz... Aconteceu algo?} [gotoLine1]
+Player {Player: O Sr não vai para a missa?} [gotoLine2]
+
+-Line1
+GUNVAR: Hoje parece ser o meu dia de sorte! Adivinha quem vai se encontrar com a senhorita Anika hoje? GAHAHAHA! 
+GUNVAR: EU! GAHAHAHA!! Depois nos falamos Titor!
+	
+-Line2
+GUNVAR: Esse ano não Titor! Esse ano vou... GAHAHAHA!

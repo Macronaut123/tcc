@@ -1,1 +1,15 @@
-Gunvar:  ...
+Gunvar: ...
+Gunvar: Riki deveria ser mais gentil com todos.
+
+Player {Player: Comigo ele é gentil.} [gotoLine1]
+Player {Player: Eu também acho isso Sr Gunvar.} [gotoLine2]
+
+-Line1
+Gunvar: Quem? O Riki? Você só pode estar de brincadeira comigo! GAHAHA!!
+Gunvar: Mesmo ele morando aqui há anos, mantém uma distância de todos sem querer interagir com ninguém.
+[end]
+
+-Line2
+
+Gunvar: Não me entenda mal Titor, o Riki tem um bom coração... 
+Gunvar: Só o acho um pouco fechado que o comum de mais, apenas isso.

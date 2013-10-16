@@ -1,1 +1,18 @@
-Gunvar:  Arff...arf.... Treinos matinais são muito bons, mas cansam demais.
+Gunvar: O que te traz aqui Titor? Tem alguma encomenda com o Drake? GAHAHA!
+
+Player {Player: Sim, venho pegar uma encomenda.} [goto LineYes]
+Player {Player: Entrei porque ouvi gritos do lado de fora...} [goto LineNo]
+
+-LineYes
+Gunvar: O Drake faz as melhores ferramentas de ferro desta região!
+Gunvar: Se precisar de algo, é só pedir para ele Titor! Gahahaha!
+Drake: ...
+Gunvar: Não posso elogiar que ele fica assim Titor! Envergonhado! Gahahaha!
+Drake: Apenas estou o ignorando Titor... Não ligue para ele.
+[end]
+	
+-LineNo
+Gunvar: Drake já é velho e surdo! Por isso fala tão alto! GAHAHA!
+Drake: Ai ai ai... Só peço para trabalhar em paz...
+Gunvar: GAHAHAHA!
+[end]
