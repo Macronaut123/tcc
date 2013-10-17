@@ -1,0 +1,8 @@
+[call ignoreNpc NPC_Soldado1]
+[call ignoreNpc NPC_Todos]
+
+Soldado 1: Silêncio! O rei vai dirigir a palavra!
+TODOS: ...
+ULRIC: Boa noite a todos! A partir de agora, darei o início ao festival dos anjos! Espero que todos se divirtam! Comam e bebam bastante!
+TODOS: FIUUUU FIUU FIUUU FIUUU!
+ULRIC: Obrigado pela atenção de todos e que se inicie o festival!

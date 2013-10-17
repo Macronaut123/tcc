@@ -1,0 +1,11 @@
+[call ignoreNpc NPC_Riki]
+
+ULRIC:Ahhh! Que caçada espetacular! 
+ULRIC: Esse javali era realmente grande, quase que ele me mata! HAHAHA.
+RIKI: Não brinque com isso… Senhor…
+ULRIC: HAHA, não se preocupe Riki, estou ótimo. Nada vai acontecer comigo hoje.
+RIKI: Assim espero…
+ULRIC: Vamos! Quero ver o Klaus.
+RIKI: Claro senhor.
+
+ULRIC: Ahh Olá Titor como está? Hoje foi uma excelente caçada, mal posso esperar pelo festival para assar o javali que pegamos e comemorar com muita cerveja.

@@ -1,2 +1,5 @@
-Drake: Ahh Olá Titor Tudo bem? 
-Drake: Pode apostar que eu tenho o que você precisa, só pedir.
+DRAKE: ...!!
+Player {Player: Aonde o Sr está indo?} [gotoLine1]
+
+-Line1
+DRAKE: Estou indo a praça. Preciso comprar algumas coisas para a encomenda que eu recebi do Gunvar agora a pouco.

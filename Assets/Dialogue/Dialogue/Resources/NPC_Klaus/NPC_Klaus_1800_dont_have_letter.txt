@@ -1,2 +1,4 @@
+[call ignoreNpc NPC_Persival]
+
 Klaus: Agora não Titor!
 Klaus: Agora não Titor!

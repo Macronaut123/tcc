@@ -1,6 +1,14 @@
-Drake: Ola Titor tudo bem? Aqui pode estar um pouco quente para você e 
-Drake: cuidado com a fornalha para não se queimar.
-Drake: O segredo de uma boa lamina Titor é o fogo e a agua. 
-Drake: Nada é tão resistente que um calor não possa derretê-la e nada é tão 
-Drake: quente que uma agua não possa esfria-la. 
-Drake: As pessoas são assim também, lembre-se disso.
+DRAKE: Tenho isso... isso...
+
+DRAKE: Titor, no que eu posso lhe ajudar?
+Player {Player: O Sr fica aqui o dia todo?} [goto line1]
+
+-line1
+DRAKE: Não o dia todo exatamente... Mas eu fico uma boa parte do meu tempo aqui.
+DRAKE: Aqui é um lugar que eu consigo manter a minha mente vazia.
+DRAKE: Me faz concentrar só no meu trabalho...
+DRAKE: Eu tenho que terminar algumas coisas agora. Nos encontramos mais tarde.
+
+
+//check_condition_player_know_gunvar
+[call knowgunvar knowgunvar_condition]

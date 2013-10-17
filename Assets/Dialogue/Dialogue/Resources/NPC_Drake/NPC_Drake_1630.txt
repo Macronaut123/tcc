@@ -1,2 +1,7 @@
-Drake: Oi Titor, estou indo agora para a forja agora que acabou a missa, 
-Drake: estranho que essas missas sempre me dão sono. 
+DRAKE: ...
+Player {Player: Sr Drake?} [goto Line1]
+
+-Line1
+DRAKE: Boa tarde, me desculpa. Estava pensando na minha família...
+DRAKE: Todos os anos eu rezo para que eu possa encontrar meu filho...
+[end]

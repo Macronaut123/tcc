@@ -1,0 +1,12 @@
+[call ignoreNpc NPC_Klaus]
+
+KLAUS: Titor! Você tambem está indo para a missa?
+Player {Player: Sim, estou indo} [goto LineYes]
+Player {Player: Não estou indo} [goto LineNo]
+
+-LineYes
+KLAUS: É melhor ir rápido ou você vai se atrasar.
+[end]
+-LineNo
+KLAUS: Mas você deveria ir, todos vão a missa.
+[end]

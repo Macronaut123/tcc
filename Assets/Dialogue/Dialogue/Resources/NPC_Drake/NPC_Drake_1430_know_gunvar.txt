@@ -1,0 +1,9 @@
+Player {Player: Preocupado com o Gunvar?} [goto line1]
+
+-line1
+DRAKE: Todos os anos ele inventa alguma desculpa para não ir na missa...
+DRAKE: Desde pequeno, quando vai a essas missas, ele fica dormindo...
+[end]
+
+//check_condition_player_know_riki
+[call knowriki knowriki_condition]

@@ -1,7 +1,3 @@
-Drake: Ola Titor tudo bem? Aqui pode estar um pouco quente para você e 
-Drake: cuidado com a fornalha para não se queimar.
-Drake: O segredo de uma boa lamina Titor é o fogo e a agua. 
-Drake: Nada é tão resistente que um calor não possa derretê-la e nada é tão 
-Drake: quente que uma agua não possa esfria-la. 
-Drake: As pessoas são assim também, lembre-se disso.
-
+DRAKE: Agora é hora de trabalhar... 
+DRAKE: O reino todo pode estar descansando por causa do festival...
+DRAKE: Mas eu tenho muitas encomendas para fazer!

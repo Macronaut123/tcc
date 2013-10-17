@@ -1,2 +1,5 @@
-Drake: Ainda sinto saudades.........Ahhh Titor, desculpa não te vi ai. 
-Drake: Se você não se importar eu gostaria de ficar sozinho por um tempo. 
+DRAKE: ...!!
+Player {Player: Aonde o Sr está indo?} [gotoLine1]
+
+-Line1
+DRAKE: Estou indo a praça. Preciso comprar algumas coisas para a encomenda que eu recebi do Gunvar agora a pouco.

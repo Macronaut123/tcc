@@ -1,3 +1,7 @@
-Drake: Oi Titor tudo bem? Estou indo para a missa agora, 
-Drake: mas se precisar de mim pode me procurar na forja depois da missa. 
-Drake: Até mais.
+DRAKE: Garoto, está indo para a missa também? 
+DRAKE: Espero que este ano, os soldados do reino consigam participar também...
+ 
+ 
+ //check_condition_player_know_gunvar
+[call knowgunvar knowgunvar_condition]
+

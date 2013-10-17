@@ -1,2 +1,27 @@
-Drake: Ahh tudo bem Titor. 
-Drake: Estou almoçando agora, não posso conversar com você.
+GUNVAR: BOOM DIA!!
+DRAKE: …
+DRAKE: Eu não sou surdo Gunvar.
+GUNVAR: Mas você já é velho! Gahahaha!
+DRAKE: ...
+GUNVAR: Estou brincando meu velho amigo! Vim pedir a sua ajuda!
+GUNVAR: Olhe a minha espada!
+DRAKE: Deixei aí, tenho algumas encomendas do castelo na sua frente.
+GUNVAR: Ok, obrigado mais uma vez Drake! GAHAHAHA!
+
+GUNVAR: O que te traz aqui Titor? Tem alguma encomenda com o Drake? GAHAHA!
+Player {Player: Sim, venho pegar uma encomenda.} [goto Line1]
+Player {Player: Entrei porque ouvi gritos do lado de fora...} [goto Line2]
+
+-Line1
+GUNVAR: O Drake faz as melhores ferramentas de ferro desta região!
+GUNVAR: Se precisar de algo, é só pedir para ele Titor! Gahahaha!
+DRAKE: ...
+GUNVAR: Não posso elogiar que ele fica assim Titor! Envergonhado! Gahahaha!
+DRAKE: Apenas estou o ignorando Titor... Não ligue para ele.
+[end]      
+	  
+-Line2
+GUNVAR: Drake já é velho e surdo! Por isso fala tão alto! GAHAHA!
+DRAKE: Ai ai ai... Só peço para trabalhar em paz...
+GUNVAR: GAHAHAHA!
+[end]

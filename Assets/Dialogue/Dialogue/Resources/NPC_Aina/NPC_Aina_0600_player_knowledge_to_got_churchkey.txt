@@ -1,5 +1,0 @@
-Titor: O padre disse para você deixar a chave comigo.
-Aina: Claro! Eu tenho as minha reservas! Fique com essas.
-[call wpToMove WP_0600_Evento_02]
-[call how NPC_Aina]
-[call calculeGoto]

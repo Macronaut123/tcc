@@ -1,2 +1,22 @@
-Drake: Hum Realmente esta comida está muito boa. 
-Drake: Experimente depois Titor.
+[call ignoreNpc NPC_Gunvar]
+
+GUNVAR: Discurso do rei estava ótimo! GAHAHA!! Não acha o mesmo Drake?
+DRAKE: Gunvar, até onde eu vi... Você estava dormindo seu cara de pau!
+GUNVAR: GAHAHA! É o cansaço do dia a dia!
+DRAKE: ...
+GUNVAR: Vamos Drake! Beba até cair no chão! GAHAHAHA!
+DRAKE: O que foi que eu fiz para merecer isso...
+DRAKE: ...!!!!
+GUNVAR: O que foi? Porque todo mundo está parad...
+GUNVAR:...!!!
+DRAKE:...!!!
+
+GUNVAR: Esta carne de javali está uma delícia! 
+GUNVAR: Coma um pedaço antes do Drake comer tudo Titor! GAHAHAHA!!
+DRAKE: Eu não como carne.
+GUNVAR: ...!!!
+DRAKE: Estou brincando! Hahaha!
+GUNVAR:.....!!!!!!!!!!!!!!!!!!!!!!!
+DRAKE: ...
+GUNVAR: GAHAHA!
+DRAKE: ...

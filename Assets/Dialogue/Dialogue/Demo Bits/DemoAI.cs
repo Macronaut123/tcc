@@ -95,7 +95,7 @@ public class DemoAI : GenericFunction {
 		//it's a simplified version of the DialogueTemplate script, 
 		//have a look at that to see it in more detail.
 		
-		GUILayout.BeginArea( new Rect( Screen.width/2, Screen.height/2, 200, 200 ) );
+		GUILayout.BeginArea( new Rect( Screen.width/2 - 200, Screen.height/2 - 200, 200, 200 ) );
 			//If we're talking lets start
 			if(talking){
 				//Loop through all the items
@@ -156,25 +156,56 @@ public class DemoAI : GenericFunction {
 		var player = GameObject.Find("Player").GetComponent<NpcObjectives>();
 		
 		if(player.dependencyActions[condition] == true){
-			GameObject.Find("NPC_Klaus").GetComponent<DemoAI>().setFileName(this.fileName+"_"+"have_letter");
+			if(GameObject.Find("NPC_Klaus").GetComponent<DemoAI>()){
+				GameObject.Find("NPC_Klaus").GetComponent<DemoAI>().setFileName(this.fileName+"_"+"have_letter");
+			}
+			if(GameObject.Find("NPC_Persival").GetComponent<DemoAI>()){
+				GameObject.Find("NPC_Persival").GetComponent<DemoAI>().setFileName(this.fileName+"_"+"have_letter");
+			}
 		}else{
-			GameObject.Find("NPC_Klaus").GetComponent<DemoAI>().setFileName(this.fileName+"_"+"dont_have_letter");
+			if(GameObject.Find("NPC_Klaus").GetComponent<DemoAI>()){
+				GameObject.Find("NPC_Klaus").GetComponent<DemoAI>().setFileName(this.fileName+"_"+"dont_have_letter");
+			}
+			if(GameObject.Find("NPC_Persival").GetComponent<DemoAI>()){
+				GameObject.Find("NPC_Persival").GetComponent<DemoAI>().setFileName(this.fileName+"_"+"dont_have_letter");
+			}
 		}
 	}
 	
-	public void speakNpc(string how){
+	public void knowgunvar(string condition){
+		var player = GameObject.Find("Player").GetComponent<NpcObjectives>();
 		
-		if(!GameObject.Find(how).GetComponent<DemoAI>()){
-			GameObject.Find(how).AddComponent<DemoAI>();
-			GameObject.Find(how).GetComponent<DemoAI>().setFileName(how+"/"+how+"_"+"0630");
-			GameObject.Find(how).GetComponent<DemoAI>().talking = true;
-			setDisableTime(false);
-			gameObject.GetComponent<DisableObject>().disableAll(false);
+		if(player.dependencyActions[condition] == true){
+			if(GameObject.Find("NPC_Drake").GetComponent<DemoAI>()){
+				GameObject.Find("NPC_Drake").GetComponent<DemoAI>().setFileName(this.fileName+"_"+"know_gunvar");
+			}
 		}else{
-			GameObject.Find(how).GetComponent<DemoAI>().setFileName(how+"/"+how+"_"+"0630");
-			GameObject.Find(how).GetComponent<DemoAI>().talking = true;
-			setDisableTime(false);
-			gameObject.GetComponent<DisableObject>().disableAll(false);
+			if(GameObject.Find("NPC_Drake").GetComponent<DemoAI>()){
+				GameObject.Find("NPC_Drake").GetComponent<DemoAI>().setFileName(this.fileName+"_"+"dont_know_gunvar");
+			}
 		}
+	}
+	
+	public void knowriki(string condition){
+		var player = GameObject.Find("Player").GetComponent<NpcObjectives>();
+		
+		if(player.dependencyActions[condition] == true){
+			if(GameObject.Find("NPC_Drake").GetComponent<DemoAI>()){
+				GameObject.Find("NPC_Drake").GetComponent<DemoAI>().setFileName("NPC_Drake/NPC_Drake_1430_know_riki");
+			}
+		}else{
+			if(GameObject.Find("NPC_Drake").GetComponent<DemoAI>()){
+				GameObject.Find("NPC_Drake").GetComponent<DemoAI>().setFileName("NPC_Drake/NPC_Drake_1430_dont_know_riki");
+			}
+		}
+	}
+	
+	public void drop(string item){
+		GameObject.Find(item).renderer.enabled = true;
+		GameObject.Find(item).collider.enabled = true;
+	}
+	
+	public void ignoreNpc(string npc){
+		Destroy(GameObject.Find(npc).GetComponent<DemoAI>());
 	}
 }

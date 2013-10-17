@@ -1,1 +1,7 @@
-Klaus: Estou procurando Persival, se você o ver, me avise Titor.
+[call ignoreNpc NPC_Ulric]
+
+KLAUS: Alvis,  você pode chamar o Persival? Tenho que conversar com ele.
+ALVIS: Ele já foi embora Klaus, acredito que ele tenha voltado para o castelo.
+KLAUS: Tudo bem vou procurar por ele. Se você o ver, me avise, quero falar com ele.
+ 
+KLAUS: Estou procurando Persival, se você o ver, me avise Titor.
