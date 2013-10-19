@@ -84,6 +84,28 @@ public class ThirdPersonController : MonoBehaviour
 	void Update ()
 	// Handle rotation here to ensure smooth application.
 	{
+		
+		if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)){
+			if(speed == 1.0F){
+			AnimatorControl.Anim2 = false;
+			AnimatorControl.Anim1 = false;
+			AnimatorControl.Anim3 = false;
+			AnimatorControl.Anim4 = true;}
+			else if(speed == 0.3F){
+			AnimatorControl.Anim2 = true;
+			AnimatorControl.Anim1 = false;
+			AnimatorControl.Anim3 = false;
+			AnimatorControl.Anim4 = false;
+			}
+		}
+		
+		if(!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S)){
+			AnimatorControl.Anim1 = true;
+			AnimatorControl.Anim2 = false;
+			AnimatorControl.Anim3 = false;
+			AnimatorControl.Anim4 = false;
+		}
+		
 		float rotationAmount;
 		
 		if(Input.GetKeyDown(KeyCode.LeftShift)){

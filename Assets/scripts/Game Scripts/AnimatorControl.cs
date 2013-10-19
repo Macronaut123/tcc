@@ -2,12 +2,12 @@
 using System.Collections;
 
 public class AnimatorControl : MonoBehaviour {
-
-    public Animator animControl;
-    public bool Anim1;
-    public bool Anim2;
-    public bool Anim3;
-    public bool Anim4;
+	
+	public Animator animControl;
+    public static bool Anim1;
+    public static bool Anim2;
+    public static bool Anim3;
+    public static bool Anim4;
 
 
 	// Use this for initialization
@@ -25,7 +25,7 @@ public class AnimatorControl : MonoBehaviour {
         }
 
         if (Anim2)
-        {
+		{
             animControl.SetBool("Idle", false);
             animControl.SetBool("Andando", true);
             animControl.SetBool("FalandoNormal", false);

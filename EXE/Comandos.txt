@@ -1,0 +1,19 @@
+O jogo
+	O jogo é composto por 4 finais. O final default é ruim, portanto, o jogador precisa chegar a um novo final.
+
+	O jogador precisa conversar com os NPCs, coletar itens, e explorar o cenário para conseguir informações que possibilitarão a chegada de um novo final.
+
+
+Controles
+
+Durante algumas conversas, o jogador tem a possibilidade de escolha do que seu personagem irá falar, sendo que algumas dessas possibilidades só aparecerão se o jogador já tiver obtido alguma informação ou item específico.
+PARA CONVERSAR COM OS NPCS, BASTA SE APROXIMAR DELES. AS FALAS DURAM 3S CADA. PARA SELECIONAR A FALA DO PERSONAGEM PRINCIPAL, BASTA CLICAR NO BOTÃO DESEJADO.
+
+O jogador pode voltar e avançar no tempo quantas vezes desejar.
+PARA VOLTAR 30 MINUTOS, PRESSIONE O BOTÃO 1 DO TECLADO. PARA AVANÇAR 30 MINUTOS, PRESSIONE O BOTÃO 2 DO TECLADO.
+
+A movimentação básica é feita pelas teclas: W,A,S,D
+
+A camera é rotacionada usando a MOVIMENTAÇÃO E OS BOTÕES ESQUERDO E DIREITO DO MOUSE.
+
+Para coletar itens, basta o jogador passar em cima do item. (atualmente os itens estão com modelos de cubos cinzas)
