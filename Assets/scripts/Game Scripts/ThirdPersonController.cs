@@ -5,6 +5,8 @@ public delegate void JumpDelegate ();
 
 public class ThirdPersonController : MonoBehaviour
 {
+    private TitorAnimation titorControl;
+
 	public Rigidbody target;
 		// The object we're steering
 	public float speed = 1.0f, walkSpeedDownscale = 2.0f, turnSpeed = 2.0f, mouseTurnSpeed = 0.3f, jumpSpeed = 1.0f;
@@ -66,6 +68,9 @@ public class ThirdPersonController : MonoBehaviour
 	void Start ()
 	// Verify setup, configure rigidbody
 	{
+
+        titorControl = gameObject.GetComponent<TitorAnimation>();
+
 		Setup ();
 			// Retry setup if references were cleared post-add
 		
@@ -86,24 +91,13 @@ public class ThirdPersonController : MonoBehaviour
 	{
 		
 		if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)){
-			if(speed == 1.0F){
-			AnimatorControl.Anim2 = false;
-			AnimatorControl.Anim1 = false;
-			AnimatorControl.Anim3 = false;
-			AnimatorControl.Anim4 = true;}
-			else if(speed == 0.3F){
-			AnimatorControl.Anim2 = true;
-			AnimatorControl.Anim1 = false;
-			AnimatorControl.Anim3 = false;
-			AnimatorControl.Anim4 = false;
-			}
+            titorControl.Anim1 = false;
+            titorControl.Anim2 = true;
 		}
 		
 		if(!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S)){
-			AnimatorControl.Anim1 = true;
-			AnimatorControl.Anim2 = false;
-			AnimatorControl.Anim3 = false;
-			AnimatorControl.Anim4 = false;
+            titorControl.Anim1 = true;
+            titorControl.Anim2 = false;
 		}
 		
 		float rotationAmount;

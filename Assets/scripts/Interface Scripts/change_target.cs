@@ -18,6 +18,8 @@ public class change_target : MonoBehaviour {
     private int[] dailySettings;
     private bool[] dailyConditions;
 
+    public int[] dailyCopy;
+
 	// Use this for initialization
 	void Start () {
         local_btn = gameObject.GetComponent<exSpriteBorder>();
@@ -46,7 +48,7 @@ public class change_target : MonoBehaviour {
         text_to_change.text = "\nIdade: " + age.ToString() +"\nNome: " + name + "\nClasse: " + subinfo + "\nDescricao: " + description[0];
         for (int o = 0; o < dailySettings.Length; o++) {
             if (dailyConditions[o])
-                hours_to_change[o].text = "Horario: " + dailySettings[o].ToString();
+                hours_to_change[o].text = "Horario: Entre " + dailySettings[o].ToString() + "h e " + dailySettings[o+1].ToString() +"h no local " + PlayerCollides.CollisionName;
             else
                 hours_to_change[o].text = "";
         }
@@ -56,7 +58,8 @@ public class change_target : MonoBehaviour {
 		text_to_change.text = "\nIdade: " + age.ToString() +"\nNome: " + name + "\nClasse: " + subinfo + "\nDescricao: " + description[0];
         for (int o = 0; o < dailySettings.Length; o++) {
             if (dailyConditions[o]){
-                hours_to_change[o].text = "Horario: " + dailySettings[o].ToString();}
+                hours_to_change[o].text = "Horario: Entre " + dailySettings[o].ToString() + "h e " + dailySettings[o + 1].ToString() + "h no local " + PlayerCollides.CollisionName;
+            }
             else{
                 hours_to_change[o].text = "";}
         }

@@ -189,16 +189,7 @@ public class NPC_systemTalk : GenericFunction
                     currentLine++;
                     GetingTalk();
                     _talking = currentConversa[currentLine];
-                    setDisableTime(false);
-                    switch (gameObject.name)
-                    {
-                        case "NPC_armazem":
-                            NPC_Test.Armazem = true;
-                            break;
-                        case "NPC_guardaForte":
-                            NPC_Test.Guarda = true;
-                            break;
-                    }
+                    setDisableTime(false);              
                 }
                 else
                 {

@@ -15,6 +15,64 @@ public class SystemTalk : GenericFunction {
 
 			h = hour();
 			m = minut();
+
+            switch (gameObject.name) { 
+                case "NPC_Drake":
+                    npcManager.Drake = true;
+                    NpcInfo npcControlDrake = gameObject.GetComponent<NpcInfo>();
+                    for (var i = 0; i < npcControlDrake.dailyRoutine.Length; i++)
+                    {
+                        if (npcControlDrake.dailyRoutine[i] == h)
+                        {
+                            npcControlDrake.dailyRoutineCondition[i] = true;
+                        }
+                    }
+                    break;
+                case "NPC_Klaus":
+                    npcManager.Klaus = true;
+                    NpcInfo npcControlKlaus = gameObject.GetComponent<NpcInfo>();
+                    for (var i = 0; i < npcControlKlaus.dailyRoutine.Length; i++)
+                    {
+                        if (npcControlKlaus.dailyRoutine[i] == h)
+                        {
+                            npcControlKlaus.dailyRoutineCondition[i] = true;
+                        }
+                    }
+                    break;
+                case "NPC_Persival":
+                    npcManager.Persival = true;
+                    NpcInfo npcControlPersival = gameObject.GetComponent<NpcInfo>();
+                    for (var i = 0; i < npcControlPersival.dailyRoutine.Length; i++)
+                    {
+                        if (npcControlPersival.dailyRoutine[i] == h)
+                        {
+                            npcControlPersival.dailyRoutineCondition[i] = true;
+                        }
+                    }
+                    break;
+                case "NPC_Tobbie":
+                    npcManager.Tobbie = true;
+                    NpcInfo npcControlTobbie = gameObject.GetComponent<NpcInfo>();
+                    for (var i = 0; i < npcControlTobbie.dailyRoutine.Length; i++)
+                    {
+                        if (npcControlTobbie.dailyRoutine[i] == h)
+                        {
+                            npcControlTobbie.dailyRoutineCondition[i] = true;
+                        }
+                    }
+                    break;
+                case "NPC_Ulric":
+                    npcManager.Ulric = true;
+                    NpcInfo npcControlUlric = gameObject.GetComponent<NpcInfo>();
+                    for (var i = 0; i < npcControlUlric.dailyRoutine.Length; i++)
+                    {
+                        if (npcControlUlric.dailyRoutine[i] == h)
+                        {
+                            npcControlUlric.dailyRoutineCondition[i] = true;
+                        }
+                    }
+                    break;
+            }
 			
 			//NPC COM DEPENDENCIA
             switch (gameObject.name)

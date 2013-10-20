@@ -264,6 +264,12 @@ public class AiBasic : GenericFunction
         direction = wayPoints[currentWay].position - transform.position;
         Vector3 next = wayPoints[currentWay].position;
 
+        if (direction.magnitude > 1)
+        {
+            var rotate = Quaternion.LookRotation(next - transform.position);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotate, 0.1F);
+        }
+
         if (direction.magnitude <= 1)
         {
             currentWayPoint++;
