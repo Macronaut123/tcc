@@ -1,5 +1,5 @@
 AINA: Uffa! Já está quase pronto! 
-AINE: Você vai comer a torta que eu preparei Titor?
+AINa: Você vai comer a torta que eu preparei Titor?
 
 Player {PLAYER: Sim, claro!} [goto lineYes]
 Player {PLAYER: Ahm... Aquilo é uma torta?} [goto lineNo]

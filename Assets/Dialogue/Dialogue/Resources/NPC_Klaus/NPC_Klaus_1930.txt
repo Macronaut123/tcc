@@ -1,2 +1,3 @@
-Klaus: Até que enfim encontrei minha capa! 
-Klaus: O festival já vai começar, vamos antes que meu pai comece o discurso.
+KLAUS: Até que enfim encontrei minha capa! 
+KLAUS:: O festival já vai começar, 
+KLAUS: vamos antes que meu pai comece o discurso.

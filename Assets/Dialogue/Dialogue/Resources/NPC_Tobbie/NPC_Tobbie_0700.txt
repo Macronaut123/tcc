@@ -1,14 +1,14 @@
-Tobbie:  Ahh oi Titor tudo bem? 
- Tobbie: Quero te perguntar uma coisa...você sabe guardar segredo?
+[call ignoreNpc NPC_Aina]
 
-Player: {Player: Sim, claro que eu sei, porque não...} [goto lineSim]
-		{Player: Humm melhor não, não sei esconder segredos dos outros...} [goto lineNo]
--lineSim
-Tobbie:  Opa da uma olhada nesse livro.
-Player: Que livro é esse?
-Tobbie:  Eu peguei da sala do Alvis. 
- Tobbie: Parece ser um livro muito importante mas não consegui a chave para abrir o livro.
- Tobbie: Ainda deve estar la na sala dele mas não deu tempo de pega-la.
+AINA: TOBBIE! VOLTA AQUI!
+TOBBIE: O demônio está me perseguindo! Socorro Anika!
+ANIKA: O dia está tão bonito hoje! Um dia perfeito para o festival!
+AINA: Devolve essa vassoura!
+TOBBIE: Eu quero ajudarr!! Me deixa ajudar!!
+ANIKA: Tobbie, o que vale é a sua intenção em querer nos ajudar! Obrigada!
+TOBBIE: Anika, você é um anjo! Ao contrário da minha irmã... Que é um demômio! Kikiki!!
+AINA: TOBBIEEEEEEEE!!
 
--lineNo
- Tobbie: Ahh....ok . Mas olha é um segredo bem grandão.
+ANIKA: Os dois se dão tão bem! Você também não acha isso Titor?
+
+

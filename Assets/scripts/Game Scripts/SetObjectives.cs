@@ -7,9 +7,10 @@ public class SetObjectives : GenericFunction {
     {
         switch (hit.gameObject.name)
         {
-
+			/*
             case "NPC_Aina":
-
+			
+			
                 if (getDependency(hit.gameObject, "player_knowledge_to_got_churchkey", true))
                 {
                     setDependency(hit.gameObject, "player_got_churchkey", true);
@@ -32,6 +33,7 @@ public class SetObjectives : GenericFunction {
                 }
 			
             break;
+            */
         }
     }
 }

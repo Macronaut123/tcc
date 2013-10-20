@@ -11,26 +11,6 @@ AINA: TOBBIEEEEEEEE!!
 
 ANIKA: Os dois se dão tão bem! Você também não acha isso Titor?
 
-Player{PLAYER: Sim} [goto lineYes]
-Player{PLAYER: Não sei não...} [goto lineNo]
 
--lineYes
-[call ignoreNpc NPC_Tobbie]
 
-AINA: Se isso for se dar bem...
-TOBBIE: Aina... Você está bravaaa?
-AINA: Por culpa de quem?
-TOBBIE: kikiki! Do Titor!
-[end]
 
--lineNo
-[call ignoreNpc NPC_Tobbie]
-
-AINA: Mal cheguei para ajudar e já estou cansada...
-TOBBIE: Aina, você está ficando velha. Essa é a verdade. Kikiki!
-ANIKA: Você disse algo Tobbie? (meio brava)
-TOBBIE: Que a Aina... Ahm.. Nada não SENHORITA Anika!
-ANIKA: Eu acho que ouvi coisas então... Rs...
-AINA: (que medo...) <<< Pensamentos
-TOBBIE: (que medo...) <<< Pensamentos
-[end]

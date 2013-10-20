@@ -1,14 +1,8 @@
-Tobbie:  Ahh oi Titor tudo bem? 
-Tobbie: Quero te perguntar uma coisa...você sabe guardar segredo?
+[call ignoreNpc NPC_Aina]
 
-Player: {Player: Sim, claro que eu sei, porque não...} [goto lineSim]
-		{Player: Humm melhor não, não sei esconder segredos dos outros...} [goto lineNo]
--lineSim
-Tobbie:  Opa da uma olhada nesse livro.
-Player: Que livro é esse?
-Tobbie:  Eu peguei da sala do Alvis. 
-Tobbie: Parece ser um livro muito importante mas não consegui a chave para abrir o livro.
-Tobbie: Ainda deve estar la na sala dele mas não deu tempo de pega-la.
-
--lineNo
-Tobbie:  Ahh....ok . Mas olha é um segredo bem grandão.
+AINA: Os pães parecem estar deliciosos! A Anika realmente sabe cozinhar!
+TOBBIE: Me dá um pão Aina!
+AINA: Já disse que meninos sujos só vão comer a noite!
+TOBBIE: Mas.. Mass....
+AINA: Espera até a hora do almoço Tobbie!
+AINA: Tenho que voltar agora para a praça e ajuda-la com os preparativos!

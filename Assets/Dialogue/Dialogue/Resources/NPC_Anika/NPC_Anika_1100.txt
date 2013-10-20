@@ -1,2 +1,39 @@
-Anika: Anika:Oi Titor tudo bem? 
-Anika: Estou almoçando no momento, podemos conversar depois?
+ANIKA: ...
+
+(se Titor interagir)
+ANIKA: Oi Titor! Desculpe-me pela minha falta de atenção!
+ANIKA:  Estava pensando em várias coisas ao mesmo tempo...
+ANIKA: Mas no que eu posso te ajudar?
+
+Player{PLAYER: Vocês que arrumam as casas dos nobres?} [goto lineOne]
+
+//condição = conhecer o Gunvar
+Player{PLAYER: Ouvi dizer que você namora o Gunvar?} [goto lineTwo]
+
+//condição = conhecer o Finn
+Player{PLAYER: Nunca vi o seu pai parar de trabalhar.} [goto lineTree]
+
+-lineOne
+ANIKA: Rsrs! Meu pai tem as chaves de algumas casas deste reino!
+ANIKA: Algumas pessoas pedem para os servos do 
+ANIKA: reino ir limpar as casas delas.
+ANIKA: Então as vezes nós temos que ir limpar a casa do Sr Gunvar 
+ANIKA: e do Sr Riki por exemplo!
+ANIKA: O Sr Riki ainda é organizado... Mas a casa do Sr Gunvar...
+ANIKA: É um pouco mais bagunçada que uma casa comum...
+ANIKA: Nada como uma boa limpeza não resolva!
+[end]
+
+-lineTwo
+ANIKA: ...
+ANIKA: Eu não namoro ele. Somos apenas... Bons amigos! Rs!
+ANIKA: Gosto muito e tenho um respeito muito grande por ele!
+ANIKA: O conheço desde pequena... 
+ANIKA: Mas acho que ele sempre me viu como uma menina! Rs!
+[end]
+
+-lineTree
+ANIKA: Rs! Ele sempre está se mexendo mesmo!
+ANIKA: Mas... As vezes, eu o vejo descansando um pouco depois da hora 
+ANIKA: de almoço! Rs! Não conte a ninguém ok?
+[end]

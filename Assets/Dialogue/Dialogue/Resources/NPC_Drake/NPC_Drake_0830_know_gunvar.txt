@@ -1,7 +1,0 @@
-Player {Player: O Sr é amigo do Sr Gunvar?} [goto line1]
-
--line1
-DRAKE: Ele é a pessoa que me perturba desde que ele era menor.
-DRAKE: No fundo, gosto dele como um filho. Mas não conte isso a ele eim?
-DRAKE: Ele vai ficar se achando como um líder gorila. Hahahaha!
-[end]

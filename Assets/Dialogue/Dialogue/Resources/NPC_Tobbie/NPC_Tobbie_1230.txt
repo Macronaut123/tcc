@@ -1,3 +1,15 @@
-Tobbie: HAHAHAHA...AHH oi Titor. 
-Tobbie: Hoje parece que o festival vai ser muito bom, 
-Tobbie: vou comer muito, mas não tanto quanto o Benn.
+[call ignoreNpc NPC_Argus]
+
+TOBBIE: Sr Argus! Me dá um pouco de cerveja?
+ARGUS: UHAHAHA!! Quando você crescer mais um pouco Tobbie!
+TOBBIE: Um pouco quanto? Uns 2 cm?
+ARGUS: Um pouco mais! Dxo ver... 
+ARGUS: Quando você for mais alto que o Titor! UHAHAHA!
+TOBBIE: Ahhhhh... Que chato! Só porque eu tava brincando de ser rei!
+TOBBIE: Agora eu vou ser uma outra coisa! 
+TOBBIE: Que aventureiro não bebe cerveja Sr Argus?
+ARGUS: Um pirata! UHAHAHA!
+
+TOBBIE: Quando será que eu vou ser um adulto Titor?
+
+

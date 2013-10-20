@@ -1,18 +1,27 @@
-Gunvar: O que te traz aqui Titor? Tem alguma encomenda com o Drake? GAHAHA!
+GUNVAR: BOOM DIA!!
+DRAKE: …
+DRAKE: Eu não sou surdo GUNVAR.
+GUNVAR: Mas você já é velho! Gahahaha!
+DRAKE: ...
+GUNVAR: Estou brincando meu velho amigo! Vim pedir a sua ajuda!
+GUNVAR: Olhe a minha espada!
+ 
+DRAKE: Deixei aí, tenho as encomendas do castelo na sua frente.
+GUNVAR: Ok, obrigado mais uma vez DRAKE! GAHAHAHA!
 
-Player {Player: Sim, venho pegar uma encomenda.} [goto LineYes]
-Player {Player: Entrei porque ouvi gritos do lado de fora...} [goto LineNo]
+Player {Player: Sim, venho pegar uma encomenda.} [goto lineYes]
+Player {Player: Entrei porque ouvi gritos do lado de fora...} [goto lineNo]
 
--LineYes
-Gunvar: O Drake faz as melhores ferramentas de ferro desta região!
-Gunvar: Se precisar de algo, é só pedir para ele Titor! Gahahaha!
-Drake: ...
-Gunvar: Não posso elogiar que ele fica assim Titor! Envergonhado! Gahahaha!
-Drake: Apenas estou o ignorando Titor... Não ligue para ele.
+-lineYes
+GUNVAR: O DRAKE faz as melhores ferramentas de ferro desta região!
+GUNVAR: Se precisar de algo, é só pedir para ele Titor! Gahahaha!
+DRAKE: ...
+GUNVAR: Não posso elogiar que ele fica assim Titor! Envergonhado! Gahahaha!
+DRAKE: Apenas estou o ignorando Titor... Não ligue para ele.
 [end]
 	
--LineNo
-Gunvar: Drake já é velho e surdo! Por isso fala tão alto! GAHAHA!
-Drake: Ai ai ai... Só peço para trabalhar em paz...
-Gunvar: GAHAHAHA!
+-lineNo
+GUNVAR: DRAKE já é velho e surdo! Por isso fala tão alto! GAHAHA!
+DRAKE: Ai ai ai... Só peço para trabalhar em paz...
+GUNVAR: GAHAHAHA!
 [end]

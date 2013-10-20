@@ -1,11 +1,13 @@
 GUNVAR: ...
-Player {Player: Sr Gunvar?} [gotoLine1]
-Player {Player: BUHHHHH!} [gotoLine2]
 
--Line1
+Player{PLAYER: Sr Gunvar?} [goto lineOne]
+Player{PLAYER: BUHHHHH!} [goto lineTwo]
+
+-lineOne
 GUNVAR: Ah! Que susto Titor! Estou esperando a Senhorita Anika!
 [end]
-	
--Line2
-GUNVAR: AHHHH! Que susto Titor! Nunca mais faça isso! Quase morri do coração...
+
+-lineTwo
+GUNVAR: AHHHH! Que susto Titor! 
+GUNVAR: Nunca mais faça isso! Quase morri do coração…
 [end]

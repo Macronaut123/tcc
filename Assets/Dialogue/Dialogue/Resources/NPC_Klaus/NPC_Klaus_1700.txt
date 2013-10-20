@@ -1,3 +1,5 @@
-Klaus: Oi Titor. Estou procurando o Persival... 
-Klaus: Preciso conversar muito serio com ele. 
-Klaus: Se você o ver fale que quero conversar com ele.
+KLAUS: Oi Titor. Estou procurando o Persival... 
+KLAUS: Preciso conversar muito sério com ele desde cedo. 
+KLAUS; Se você o ver, fale que quero conversar com ele.
+ 
+ 

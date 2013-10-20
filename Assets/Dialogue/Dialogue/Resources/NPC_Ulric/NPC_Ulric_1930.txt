@@ -1,11 +1,13 @@
 ULRIC: Está indo para o festival Titor?
-Player {Player: Sim, estou} [goto LineYes]
-Player {Player: Não, só mais tarde} [goto LineNo]
 
+Player{PLAYER:Sim,estou} [goto lineYes]
+Player{PLAYER:Não, só mais tarde} [goto lineNo]
 
--LineYes
+-lineYes
 ULRIC: Espero que goste da carne de javali que eu cacei hoje.
 [end]
 
--LineNo
-ULRIC: Espero que apareça antes que acabe a carne de javali que cacei hoje! HAHAHA!
+-lineNo
+ULRIC: Espero que apareça antes que acabe a 
+Ulric: carne de javali que cacei hoje! HAHAHA!
+[end]

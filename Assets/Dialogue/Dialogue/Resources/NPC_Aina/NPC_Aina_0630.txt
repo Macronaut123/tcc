@@ -1,23 +1,8 @@
+[call ignoreNpc NPC_Tobbie]
+
 AINA: Hoje está um lindo dia para o festival! 
 AINA: Você também não acha isso Titor?
 AINA: Espero que dê tudo certo hoje!
 
-Player{PLAYER: Só espero que nada de ruim aconteça...} [goto lineOne]
-Player{PLAYER: Aonde você está indo mesmo?} [goto lineTwo]
-
--lineOne
-[call ignoreNpc NPC_Tobbie]
-
-AINA: Ai que horror Titor! Você precisa pensar mais positivamente!
-TOBBIE: Tipo eu Titor! Kikikiki!!
-AINA: No seu caso, você precisa repensar os seus ideais Tobbie...
-TOBBIE: Ideais? Não sei o que é isso, não vou repensar em nada! Kikikiki!
-[end]
 
 
--lineTwo
-AINA: Você está bem Titor? 
-AINA: Você sabe que todos os anos eu ajudo a 
-AINA: Anika nos preparativos para o festival!
-AINA: Isso que dá acordar mais cedo do que o normal! Hehehehe!
-[end]

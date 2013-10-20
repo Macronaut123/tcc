@@ -1,7 +1,8 @@
 [call ignoreNpc NPC_Alvis]
 
 ULRIC: Gostei muito da missa hoje.
-ALVIS: Realmente, a energia estava muito boa, o festival também será assim.
+ALVIS: Realmente, a energia estava muito boa, 
+ALVIS: o festival também será assim.
 ULRIC: Será sim… Agora vou rezar por minha esposa.
 ALVIS: Estou a caminho da igreja, posso acompanhar o senhor?
 ULRIC: Claro, eu iria adorar.

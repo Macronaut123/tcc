@@ -1,13 +1,6 @@
-[call ignoreNpc NPC_Ulric]
+GUNVAR: Vá Klaus! Mais forte!
 
-ULRIC: Klaus.
-KLAUS: Pai! Como foi a caçada?
-ULRIC: Excelente! O javali é imenso.
-KLAUS: Eu queria ter ido.
-ULRIC: Da próxima vez eu levarei você e seu irmão comigo.
-KLAUS: O Persival? HAHA... Ele não aguentaria a caçada.
-ULRIC: Não subestime seu irmão Klaus, agora volte a treinar.
- 
-Klaus: Rahhhh…..Rahhhhh…. 
-Klaus: Estou treinando agora Titor cuidado para não se machucar…..
-Klaus: Rahhhh…..Rahhhhh..
+
+GUNVAR: ...Titor? Veio participar do treino também? Gahaha! 
+GUNVAR: Não quero atrapalhar o príncipe no seu treino.
+GUNVAR: Volte mais tarde, depois do treino.

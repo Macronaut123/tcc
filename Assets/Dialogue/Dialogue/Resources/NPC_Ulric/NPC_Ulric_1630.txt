@@ -1,11 +1,2 @@
-ULRIC: O que achou da missa deste ano Titor?
-Player {Player: Sim, gostei} [goto LineYes]
-Player {Player: Não fui a missa} [goto LineNo]
-
--LineYes
-ULRIC: Espero que todos tenham gostado assim como você.
-[end]
-
--LineNo
-ULRIC: Bom… Apareça pelo menos no festival!
-[end]
+ULRIC: Ola Titor. Estou indo para a forja agora e
+ULRIC: não pretendo me atrasar, nos vemos no fesival. 

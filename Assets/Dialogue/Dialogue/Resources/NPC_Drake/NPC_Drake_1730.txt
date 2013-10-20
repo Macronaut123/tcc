@@ -1,4 +1,5 @@
-[call ignoreNpc NPC_ulric]
+[call ignoreNpc NPC_Ulric]
+
 
 ULRIC: Drake! Como você está?
 DRAKE: Bem senhor… E como o senhor está?
@@ -6,12 +7,13 @@ ULRIC: Estou ótimo. Como estão as espadas que eu pedi?
 DRAKE: Estão prontas.
 ULRIC: Depois enviarei soldados para as levar ao castelo.
 
+(se Titor interagir)
 ULRIC: Jovem Titor,  você viu os meus filhos por aí?
 
-Player {Player: Sim} [gotoLineyes]
-Player {Player: No} [gotoLineNo]
+Player{PLAYER: Sim} [goto lineYes]
+Player{PLAYER: Não} [goto lineNo]
 
--LineYes
+-lineYes
 ULRIC: Neste ano pelo menos, eles participaram quietos da missa.
 DRAKE: Verdade... Ano passado foi um caos...
 ULRIC: Foi um desentendimento normal de irmãos.
@@ -19,7 +21,7 @@ DRAKE: Ahm sim...
 ULRIC: Só queria saber se eles ainda estavam por aqui. Obrigado Titor.
 [end]
 
--LineNo
+-lineNo
 ULRIC: Não acredito que eles já voltaram para o castelo!
 ULRIC: Não é possível!
 DRAKE: Calma senhor. Talvez eles estejam por aqui ainda...

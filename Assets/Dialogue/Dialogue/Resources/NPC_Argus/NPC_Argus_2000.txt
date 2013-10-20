@@ -1,1 +1,7 @@
-Argus: Agora não Titor, estou ouvindo o discurso do rei
+[call ignoreNpc NPC_Tobbie]
+
+TOBBIE: Sr Argus, Sr Argus! Será que eu já posso comer? Kikiki!
+ARGUS: Tobbie, hoje é dia de festa! Você DEVE comer bastante!
+TOBBIE: ...
+TOBBIE: Posso comer o javali inteiro? Kikiki!
+ARGUS: Coma até cair no chão! HAHAHAHAHAHA!

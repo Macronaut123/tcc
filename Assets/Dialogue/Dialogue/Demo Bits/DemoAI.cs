@@ -206,6 +206,10 @@ public class DemoAI : GenericFunction {
 	}
 	
 	public void ignoreNpc(string npc){
-		Destroy(GameObject.Find(npc).GetComponent<DemoAI>());
+		if(GameObject.Find(npc)){
+			Destroy(GameObject.Find(npc).GetComponent<DemoAI>());
+		}else{
+			Debug.Log("NPC :" + npc + " not found");
+		}
 	}
 }

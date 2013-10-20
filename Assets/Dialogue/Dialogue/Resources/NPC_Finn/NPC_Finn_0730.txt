@@ -1,11 +1,1 @@
-Finn: Ola Titor tudo bem? 
-Finn: Você poderia me ajudar a recolher o trigo?
-
-Player {Sim, claro} [goto lineYes]
-Player {humm agora não Finn, estou um pouco ocupado} [goto lineNo]
-
--lineYes
-Finn: É assim que se fala
-
--lineNo
-Finn: Ahh que pena.. bom então tudo bem. Nós vemos mais tarde.
+INDISPONÍVEL (MOINHO)

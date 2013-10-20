@@ -16,7 +16,7 @@ FINN: Ele é um menino engraçado, não?
 
 Player{PLAYER: Sim, gosto muito dele.} [goto lineOne]
 Player{PLAYER: Sim, mas não gosto muito dele.} [goto lineTwo]
-
+Player{PLAYER: É brincadera, ele é muito engraçado sim..} [goto lineTree]
 
 -lineOne
 FINN: Hahaha! Sabia! E aposto que você gosta mais da irmã dele! HAHAHA!
@@ -31,12 +31,9 @@ ANIKA: Ahm...
 AINA: Titor? Você está brincando né?
 [end]
 
-Player{PLAYER: Sim, gosto muito dele.} [goto lineTree]
-
-
 -lineTree
 AINA: Ai que susto! Hahahaha!
 ANIKA: Que susto mesmo!
 FINN: HAHAHA! Esses meninos dessa vila... Todos brincalhões!
 [end]
- 
+

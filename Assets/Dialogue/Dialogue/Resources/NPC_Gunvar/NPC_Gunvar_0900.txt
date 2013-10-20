@@ -1,1 +1,4 @@
-Gunvar: Titor, não quero desconcentrar o príncipe! Depois nos falamos!
+GUNVAR: Segure firme! Preste mais atenção! De novo!
+
+//(se Titor interagir)
+GUNVAR: Titor, não quero desconcentrar o príncipe! Depois nos falamos!

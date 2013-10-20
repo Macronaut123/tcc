@@ -1,0 +1,14 @@
+[call ignoreNpc NPC_Ulric]
+
+
+ULRIC: E o Persival, onde está?
+RIKI: Ele deve estar tendo aulas com Alvis,
+RIKI: o senhor quer ir ve-lo?
+ULRIC: Não vou atrapalhar os estudos dele. 
+ULRIC Vamos para o castelo.
+RIKI: Claro senhor.
+
+
+(se Titor interagir)
+RIKI: Me procure fora do meu horário de trabalho Titor. 
+RIKI: Agora eu realmente não posso conversar com você.

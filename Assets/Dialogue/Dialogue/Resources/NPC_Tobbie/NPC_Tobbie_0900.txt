@@ -1,14 +1,3 @@
-Tobbie:  Ahh oi Titor tudo bem? 
-Tobbie: Quero te perguntar uma coisa...você sabe guardar segredo?
-
-Player: {Player: Sim, claro que eu sei, porque não...} [goto lineSim]
-		{Player: Humm melhor não, não sei esconder segredos dos outros...} [goto lineNo]
--lineSim
-Tobbie:  Opa da uma olhada nesse livro.
-Player: Que livro é esse?
-Tobbie:  Eu peguei da sala do Alvis. 
-Tobbie: Parece ser um livro muito importante mas não consegui a chave para abrir o livro.
-Tobbie: Ainda deve estar la na sala dele mas não deu tempo de pega-la.
-
--lineNo
-Tobbie:  Ahh....ok . Mas olha é um segredo bem grandão.
+TOBBIE: Kikiki! Eaí Titor! Veio procurar pela Aina? Ela está aí dentro.
+TOBBIE: Mas ela disse que meninos sujos não pode entrar...
+TOBBIE: Por isso estou aqui do lado de fora brincando! Kikiki!

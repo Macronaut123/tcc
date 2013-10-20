@@ -1,3 +1,7 @@
-Tobbie: Ahh tudo bem titor. 
-Tobbie: Estou indo almoçar agora e estou morrendo de fome. 
-Tobbie: Me encontre mais tarde para brincarmos.... Até mais.
+[call ignoreNpc NPC_Aina]
+
+TOBBIE: Tenho um espírito que me consome de dentro! 
+TOBBIE: Estou com muuuuuita fome...
+TOBBIE: Acredita que a Aina não quis me dar nenhum 
+TOBBIE: dos pães quentinhos que saiu do forno Titor??
+AINA: Não reclama Tobbie.. Vc já vai comer bastante mais tarde.

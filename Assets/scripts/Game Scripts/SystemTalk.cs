@@ -77,6 +77,7 @@ public class SystemTalk : GenericFunction {
 			//NPC COM DEPENDENCIA
             switch (gameObject.name)
             {
+				/*
                 case "NPC_Aina" :
 
                     if(h == 6 && m < 30){
@@ -104,6 +105,7 @@ public class SystemTalk : GenericFunction {
                     npcInDependency = true;
 				
                 break;
+                */
 				
             }
 			

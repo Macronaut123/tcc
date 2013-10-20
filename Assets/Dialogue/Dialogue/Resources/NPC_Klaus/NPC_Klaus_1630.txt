@@ -1,2 +1,2 @@
-Klaus: Agora que a missa acabou, vou para o castelo me arrumar para o festival,
-Klaus: Ele vai ser excelente!
+KLAUS: Agora que a missa acabou, vou para o castelo 
+KLAUS: me arrumar para o festival.

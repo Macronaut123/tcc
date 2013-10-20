@@ -1,2 +1,9 @@
-Finn :Ahh até que enfim estou acabando a limpeza de hoje. 
-Finn :Daqui a pouco vou voltar para meu quarto e ir para o festival
+
+FINN: Só falta fazer aquilo... isso...
+ 
+(se Titor interagir)
+Finn: Titor! Que susto! Estava tão concentrado... Aconteceu alguma coisa?
+
+
+
+

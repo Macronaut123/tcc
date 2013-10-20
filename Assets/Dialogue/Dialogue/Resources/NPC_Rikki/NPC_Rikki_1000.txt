@@ -1,0 +1,13 @@
+
+
+RIKI: Quando eu ando por esta vila, 
+RIKI: consigo me sentir mais calmo ao mesmo tempo que…
+RIKI: Nada não Titor, vou continuar com a minha patrulha.
+
+
+(se Riki estiver próximo do bosque)
+
+
+RIKI: ...O que será que ele estava fazendo lá..?
+RIKI:...!!! 
+RIKI: Titor!! Não tinha visto você.

@@ -1,5 +1,17 @@
-Finn :Humm... tah sentindo esse cheiro Titor de torta quente.....
-Finn :parece que o festival esta quase pronto. 
-Finn :Estou indo arrumar o castelo agora, mas talvez de 
-Finn :tempo de dar mais uma cochilada.
+[call ignoreNpc NPC_Aina]
+[call ignoreNpc NPC_Anika]
+
+FINN: Vocês conseguiram organizar tudo para o festival?
+ANIKA: Sim, graças a ajuda da Aina, 
+ANIKA: nós conseguimos terminar tudo pai.
+AINA: Não foi nada... No final, acabei mais 
+AINA: trapalhando do que lhe ajudando Anika...
+ANIKA: Não fale assim Aina.. Ahm... 
+ANIKA: Você e o Tobbie acabaram alegrando muito o ambiete!
+AINA: Não foi essa a nossa intenção... Mas se você diz isso!
+ANIKA: Sim!
+FINN: HAHAHA! Esse menino Tobbie...Me faz sempre rir! HAHAHA!
+
+FINN: O que você acha do Tobbie Titor? HAHAHA!  
+FINN: Ele é um menino engraçado, não?
 

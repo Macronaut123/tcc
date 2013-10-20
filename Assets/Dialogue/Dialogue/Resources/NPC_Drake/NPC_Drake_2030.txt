@@ -1,16 +1,14 @@
 [call ignoreNpc NPC_Gunvar]
+[call ignoreNpc NPC_Ulric]
 
-GUNVAR: Discurso do rei estava ótimo! GAHAHA!! Não acha o mesmo Drake?
-DRAKE: Gunvar, até onde eu vi... Você estava dormindo seu cara de pau!
-GUNVAR: GAHAHA! É o cansaço do dia a dia!
-DRAKE: ...
-GUNVAR: Vamos Drake! Beba até cair no chão! GAHAHAHA!
-DRAKE: O que foi que eu fiz para merecer isso...
-DRAKE: ...!!!!
-GUNVAR: O que foi? Porque todo mundo está parad...
-GUNVAR:...!!!
-DRAKE:...!!!
 
+ULRIC: Drake! Como você está?
+DRAKE: Bem senhor… E como o senhor está?
+ULRIC: Estou ótimo. Como estão as espadas que eu pedi?
+DRAKE: Estão prontas.
+ULRIC: Depois enviarei soldados para as levar ao castelo.
+
+(se Titor interagir)
 GUNVAR: Esta carne de javali está uma delícia! 
 GUNVAR: Coma um pedaço antes do Drake comer tudo Titor! GAHAHAHA!!
 DRAKE: Eu não como carne.
@@ -20,3 +18,4 @@ GUNVAR:.....!!!!!!!!!!!!!!!!!!!!!!!
 DRAKE: ...
 GUNVAR: GAHAHA!
 DRAKE: ...
+ 

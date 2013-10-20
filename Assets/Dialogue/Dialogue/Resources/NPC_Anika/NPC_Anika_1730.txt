@@ -1,1 +1,17 @@
-Anika: indisponivel
+ANIKA: Agora falta eu me arrumar para o festival! 
+ANIKA: Titor, você não vai se arrumar?
+
+Player{PLAYER: Sim, estou indo agora me arrumar.} [goto lineOne]
+Player{PLAYER: Não, estou pensando em ir assim.} [goto lineTwo]
+
+-lineOne
+ANIKA: Nos encontramos no festival então! 
+ANIKA: Espero que não dê nada de errado! Rsrsrs!!
+[end]
+
+-lineTwo
+ANIKA: Eu acho melhor você se arrumar! Rs! 
+ANIKA: Lembre-se de que a Aina é uma dama e 
+ANIKA: ela precisa e um cavalheiro lindo ao lado dela... rsrsrs!
+[end]
+

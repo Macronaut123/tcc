@@ -1,7 +1,23 @@
 DRAKE: Garoto, está indo para a missa também? 
-DRAKE: Espero que este ano, os soldados do reino consigam participar também...
+DRAKE: Espero que este ano, os soldados do reino 
+DRAKE: consigam participar também...
  
- 
- //check_condition_player_know_gunvar
-[call knowgunvar knowgunvar_condition]
+// Condição = Conhecer o Gunvar
+Player{PLAYER: Preocupado com o Gunvar?} [goto lineYes]
+// Condição = Conhecer o Riki
+Player{PLAYER: Preocupado com o Riki?} [goto lineNo]
 
+-lineYes
+DRAKE: Todos os anos ele inventa alguma desculpa para não ir na missa...
+DRAKE: Desde pequeno, quando vai a essas missas, ele fica dormindo...
+[end]
+ 
+
+-lineNo
+DRAKE: ...
+DRAKE: Acredita que eu quase nunca conversei com aquele garoto?
+DRAKE: Ele é calado e muito fechado... 
+DRAKE: Espero que um dia ele consiga se abrir.
+DRAKE: Acho que ele e o Gunvar se dariam bem. 
+DRAKE: Você também não acha? Hahaha!
+[end]
