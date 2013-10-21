@@ -12,24 +12,11 @@ public class DemoAI : GenericFunction {
 	public bool talking = false;	//Are we talking?
 	
 	float timer;
-	public float setTimer = 5f;
+	public float setTimer = 10f;
 	public string cutScene = "";
 	public bool cutready = false;
 	
-	void Start(){
-		
-		switch(gameObject.name){
-		
-			case "NPC_Klaus":
-				setTimer = 5f;
-			break;
-			
-			case "NPC_Persival":
-				setTimer = 6f;
-			break;
-			
-		}
-		
+	void Start(){		
 		timer = setTimer;
 	}
 	
