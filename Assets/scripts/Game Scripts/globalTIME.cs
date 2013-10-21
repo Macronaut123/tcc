@@ -79,7 +79,7 @@ public class GlobalTime : MonoBehaviour
 
     private void OnGUI()
     {
-		if(Application.loadedLevelName != "Zeitland" ){
+		if(Application.loadedLevelName == "Zeitland" ){
         	GUI.Label(new Rect(10, 10, 150, 50), FormatSeconds());
 		}
     }

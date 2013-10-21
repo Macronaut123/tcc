@@ -58,7 +58,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_0800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1530.txt" />
-     <None Include="Assets\Dialogue\Dialogue\Resources\FINAL_TXT\FINAL_BAD.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_1830.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_2030.txt" />
@@ -154,7 +153,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_2000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1930.txt" />
-     <None Include="Assets\Dialogue\Dialogue\Resources\FINAL_TXT\FINAL_DEFAULT.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_1630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_0630.txt" />
@@ -181,7 +179,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_1000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_2100.txt" />
-     <None Include="Assets\Dialogue\Dialogue\Resources\FINAL_TXT\FINAL_PERFECT.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Percival\NPC_Persival_2000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1230.txt" />
@@ -400,7 +397,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Percival\NPC_Persival_2200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_2000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0930.txt" />
-     <None Include="Assets\Dialogue\Dialogue\Resources\FINAL_TXT\FINAL_GOOD.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_1030.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Percival\NPC_Persival_2130.txt" />
@@ -469,6 +465,8 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{13F4F123-E45F-1216-F501-7D4C3FFBBBE2}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{60AD079D-995A-7378-7ADC-4865149D0C48}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

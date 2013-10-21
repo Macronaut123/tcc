@@ -39,3 +39,4 @@ Drake: Já estou de saco cheio deste reino, perdi minha família aqui. Estou com
 Homem1: Condordo!
 Mulher1: Eu também.
 Homem2: Minha família esta com você!
+[call cutscene]

@@ -35,5 +35,6 @@ PERSIVAL: Eu? O que eu fiz? É você que queria que o pai morresse. É esse rei 
 DRAKE: Já estou de saco cheio deste reino, perdi minha família aqui. Estou com você Persival.
 HOMEM1: Condordo!
 MULHER1: Eu também.
-HOMEM2: Minha família esta com você!
+Homem2: Minha família esta com você!
+[call cutscene]
 

@@ -13,6 +13,8 @@ public class DemoAI : GenericFunction {
 	
 	float timer;
 	public float setTimer = 5f;
+	public string cutScene = "";
+	public bool cutready = false;
 	
 	void Start(){
 		
@@ -53,6 +55,14 @@ public class DemoAI : GenericFunction {
 	
 	void Update () {
 		
+		if(Application.loadedLevelName != "Zeitland" ){
+			if(this.cutready){
+				GameObject.Find("Main Camera").camera.farClipPlane -= 100 * Time.deltaTime;
+			}
+			if(	GameObject.Find("Main Camera").camera.farClipPlane < 0){
+				Application.LoadLevel(this.cutScene);	
+			}
+		}
 		//Transform player = GameObject.Find("Player").transform;
 		
 		//A basic AI behaviour to always look at the Player
@@ -81,15 +91,19 @@ public class DemoAI : GenericFunction {
 			
 			if(Application.loadedLevelName == "FINAL_DEFAULT" ){
 				this.fileName = "FINAL_TXT/FINAL_DEFAULT";
+				this.cutScene = "CUTSCENE_DEFAULT";
 			}
 			else if(Application.loadedLevelName == "FINAL_GOOD" ){
 				this.fileName = "FINAL_TXT/FINAL_GOOD";
+				this.cutScene = "CUTSCENE_GOOD";
 			}
 			else if(Application.loadedLevelName == "FINAL_PERFECT" ){
 				this.fileName = "FINAL_TXT/FINAL_PERFECT";
+				this.cutScene = "CUTSCENE_PERFECT";
 			}
 			else if(Application.loadedLevelName == "FINAL_BAD" ){
 				this.fileName = "FINAL_TXT/FINAL_BAD";
+				this.cutScene = "CUTSCENE_BAD";
 			}
 		}
 		
@@ -227,5 +241,9 @@ public class DemoAI : GenericFunction {
 		}else{
 			Debug.Log("NPC :" + npc + " not found");
 		}
+	}
+	
+	public void cutscene(){
+		cutready = true;
 	}
 }
