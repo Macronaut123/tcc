@@ -77,6 +77,22 @@ public class DemoAI : GenericFunction {
 	
 	public void setFileName (string filename) {
 		
+		if(Application.loadedLevelName != "Zeitland" ){
+			
+			if(Application.loadedLevelName == "FINAL_DEFAULT" ){
+				this.fileName = "FINAL_TXT/FINAL_DEFAULT";
+			}
+			else if(Application.loadedLevelName == "FINAL_GOOD" ){
+				this.fileName = "FINAL_TXT/FINAL_GOOD";
+			}
+			else if(Application.loadedLevelName == "FINAL_PERFECT" ){
+				this.fileName = "FINAL_TXT/FINAL_PERFECT";
+			}
+			else if(Application.loadedLevelName == "FINAL_BAD" ){
+				this.fileName = "FINAL_TXT/FINAL_BAD";
+			}
+		}
+		
 		this.fileName = filename;
 		this.timer = this.setTimer;
 		

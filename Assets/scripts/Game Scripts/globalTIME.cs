@@ -8,13 +8,23 @@ public class GlobalTime : MonoBehaviour
     public int minut = 0;
     public int hour = 6;
 	
+	public Camera mainCamera;
+	
 	private void Awake(){
 	
 		disable = true;
 	}
 	
     private void FixedUpdate()
-    {		
+    {
+		if(Application.loadedLevelName != "Zeitland" ){
+			return;	
+		}
+		
+		if(this.hour == 21){
+			checkWhatFinal();
+		}
+		
         if (disable)
         {
             if (second >= 60)
@@ -34,6 +44,26 @@ public class GlobalTime : MonoBehaviour
             }
         }
     }
+	
+	public void checkWhatFinal(){
+		var dp = GameObject.Find("Player").GetComponent<NpcObjectives>().dependencyActions;
+		
+		
+		if(dp["FINAL_BAD"] == true){
+			
+		}
+		else if(dp["FINAL_GOOD"] == true){
+			
+		}
+		else if(dp["FINAL_PERFECT"] == true){
+			
+		}else /*DEFAULT	*/ {
+			mainCamera.farClipPlane -= 100 * Time.deltaTime;
+			if(mainCamera.farClipPlane < 0){
+				Application.LoadLevel("FINAL_DEFAULT");
+			}
+		}
+	}
 
     public void setNewTimer(int hour, int minut, float second)
     {
@@ -49,7 +79,9 @@ public class GlobalTime : MonoBehaviour
 
     private void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 150, 50), FormatSeconds());
+		if(Application.loadedLevelName != "Zeitland" ){
+        	GUI.Label(new Rect(10, 10, 150, 50), FormatSeconds());
+		}
     }
 
     public void setNewDisable(bool disable)

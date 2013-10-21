@@ -17,6 +17,13 @@ public class NpcObjectives : MonoBehaviour
 				dependencyActions.Add("knowgunvar_condition", false);
 				dependencyActions.Add("knowriki_condition", false);
 				dependencyActions.Add("colar_condition", false);
+			
+				//FINAL
+				dependencyActions.Add("FINAL_DEFAULT", false);
+				dependencyActions.Add("FINAL_BAD", false);
+				dependencyActions.Add("FINAL_GOOD", false);
+				dependencyActions.Add("FINAL_PERFECT", false);
+			
             break;
 			
             case "NPC_Aina":
