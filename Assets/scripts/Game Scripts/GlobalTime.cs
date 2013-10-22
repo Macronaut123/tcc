@@ -7,6 +7,7 @@ public class GlobalTime : MonoBehaviour
     public float second = 0f;
     public int minut = 0;
     public int hour = 6;
+	public int multiplicador = 20;
 	
 	public Camera mainCamera;
 	
@@ -34,7 +35,7 @@ public class GlobalTime : MonoBehaviour
             }
             else
             {
-                second += Time.deltaTime * 20;
+                second += Time.deltaTime * multiplicador;
             }
 
             if (minut == 60)

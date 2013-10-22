@@ -177,6 +177,8 @@ public class ThirdPersonController : MonoBehaviour
 			if (Input.GetButton ("Jump"))
 			// Handle jumping
 			{
+				return;
+				
 				target.AddForce (
 					jumpSpeed * target.transform.up +
 						target.velocity.normalized * directionalJumpFactor,
