@@ -1,0 +1,30 @@
+[call ignoreNpc NPC_Tobbie]
+[call ignoreNpc NPC_Klaus]
+[call ignoreNpc NPC_Finn]
+[call ignoreNpc NPC_Rikki]
+
+
+TOBBIE: Briga! Briga!
+ANIKA: Pare com isso Tobbie! Persival e Klaus, 
+ANIKA: por favor parem de brigar, eu procuro a capa, 
+ANIKA: mas por favor, parem de brigar.
+KLAUS: Não! Ele a pegou, ele vai procurar!
+PERSIVAL: Eu não peguei! Você nunca me ouve!
+KLAUS: Você é um inútil! Fracote! Não sabe lutar! Não serve para nada!
+ANIKA: Por favor, parem, parem.
+RIKI: Hm...
+FINN: O que está acontecendo aqui?! Por quê vocês estão brigando?
+KLAUS: A culpa é do Persival.
+PERSIVAL: Eu não fiz nada! Ele que começou!
+FINN: Anika, o que aconteceu?
+ANIKA: A capa do Klaus sumiu e ele esta acusando 
+ANIKA: Persival de ter pegado ela.
+FINN: Eu peguei a capa para limpá-la antes do festival. Vem Klaus, a capa esta no seu quarto.
+PERSIVAL: Viu!? Não fui eu, seu idiota.
+KLAUS: Você que é idiota!
+FINN: Já chega, vem Klaus.
+ 
+(se Titor interagir com ou sem ter a carta)
+ANIKA: Titor, sabe como fazer para is dois pararem de brigar? Meu deus!
+ANIKA: Nunca vi eles assim!
+ 

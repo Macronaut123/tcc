@@ -1,0 +1,16 @@
+[call ignoreNpc NPC_Tobbie]
+
+AINA: TOBBIE! VOLTA AQUI!
+TOBBIE: O demônio está me perseguindo! Socorro Anika!
+ANIKA: O dia está tão bonito hoje! Um dia perfeito para o festival!
+AINA: Devolve essa vassoura!
+TOBBIE: Eu quero ajudarr!! Me deixa ajudar!!
+ANIKA: Tobbie, o que vale é a sua intenção em querer nos ajudar! Obrigada!
+TOBBIE: Anika, você é um anjo! Ao contrário da minha irmã... Que é um demômio! Kikiki!!
+AINA: TOBBIEEEEEEEE!!
+
+ANIKA: Os dois se dão tão bem! Você também não acha isso Titor?
+
+
+
+

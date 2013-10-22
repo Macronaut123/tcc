@@ -1,16 +1,29 @@
+[call ignoreNpc NPC_Aina]
 [call ignoreNpc NPC_Tobbie]
 
-AINA: TOBBIE! VOLTA AQUI!
-TOBBIE: O demônio está me perseguindo! Socorro Anika!
-ANIKA: O dia está tão bonito hoje! Um dia perfeito para o festival!
-AINA: Devolve essa vassoura!
-TOBBIE: Eu quero ajudarr!! Me deixa ajudar!!
-ANIKA: Tobbie, o que vale é a sua intenção em querer nos ajudar! Obrigada!
-TOBBIE: Anika, você é um anjo! Ao contrário da minha irmã... Que é um demômio! Kikiki!!
-AINA: TOBBIEEEEEEEE!!
+PERSIVAL: ...
+AINA: Bom dia Persival!
+PERSIVAL: Olá Aina... Quanta felicidade a essa hora da manhã...
+AINA: É sempre bom começar o dia bem! Hehehe! Está indo para a igreja?
+PERSVIAL: Sim, o Sr Alvis quer revisar algumas coisas comigo...
+AINA: Estudioso e esforçado como sempre! Nós temos muito orgulho dos príncipes!
+PERSIVAL: ...
+TOBBIE: Príncipe tááá envergonhadooo!
+AINA: Tobbie! Desculpe pela má educação do meu irmão...
+PERSIVAL: haha, eu vou indo então... Aina, ergh.... Obrigado pelo elogio...
+AINA: Só falei a verdade! Hehehe!
 
-ANIKA: Os dois se dão tão bem! Você também não acha isso Titor?
+Player {PLAYER: Ei, Aina!} [goto lineEiAina]
+Player {PLAYER: Não quero atrapalhar.} [goto lineTchau]
 
+-lineEiAina
+AINA: Olha Titor! Quem veio aqui!
+PERSIVAL: Oh, Titor… Ahm.. Eu já vou indo…
+AINA: Mas já? Você acabou de chegar!
+PERSIVAL: Nos falamos uma outra hora Aina...
+TOBBIE: Humm... Kikiki!
+[end]
 
-
-
+-lineTchau
+Titor: Não quero atrapalhar.
+[end]

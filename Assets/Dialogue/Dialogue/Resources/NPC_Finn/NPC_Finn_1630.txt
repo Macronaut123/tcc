@@ -1,17 +1,47 @@
+[call ignoreNpc NPC_Finn]
 [call ignoreNpc NPC_Aina]
-[call ignoreNpc NPC_Anika]
 
 FINN: Vocês conseguiram organizar tudo para o festival?
-ANIKA: Sim, graças a ajuda da Aina, 
-ANIKA: nós conseguimos terminar tudo pai.
-AINA: Não foi nada... No final, acabei mais 
-AINA: trapalhando do que lhe ajudando Anika...
+ANIKA: Sim, graças a ajuda da Aina, nós conseguimos terminar tudo pai.
+AINA: Não foi nada... No final, 
+AINA: acabei mais atrapalhando do que lhe ajudando Anika...
 ANIKA: Não fale assim Aina.. Ahm... 
 ANIKA: Você e o Tobbie acabaram alegrando muito o ambiete!
 AINA: Não foi essa a nossa intenção... Mas se você diz isso!
 ANIKA: Sim!
 FINN: HAHAHA! Esse menino Tobbie...Me faz sempre rir! HAHAHA!
 
-FINN: O que você acha do Tobbie Titor? HAHAHA!  
-FINN: Ele é um menino engraçado, não?
 
+Player{PLAYER: Boa noite.} [goto lineOne]
+Player{PLAYER: Melhor não atrapalhar.} [goto lineFim]
+
+-lineOne
+FINN: O que você acha do Tobbie, Titor? HAHAHA!  
+FINN:Ele é um menino engraçado, não?
+
+Player{PLAYER: Sim, gosto muito dele.} [goto lineTwo]
+Player{PLAYER: ...} [goto lineNao]
+
+-lineTwo
+FINN: Hahaha! Sabia! 
+FINN: E aposto que você gosta mais da irmã dele! HAHAHA!
+ANIKA: PAI!
+AINA: ...
+FINN: Perdão...
+[end]
+
+-lineNao
+FINN: Ahm...
+ANIKA: Ahm...
+AINA: Titor? Você está brincando né?
+TITOR: ...
+AINA: Ai que susto! Hahahaha!
+ANIKA: Que susto mesmo!
+FINN: HAHAHA! Esses meninos dessa vila... Todos brincalhões!
+[end]
+
+-lineFim
+Titor: Eles estão conversando...
+Titor: Melhor não atrapalhar...
+[end]
+ 

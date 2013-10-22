@@ -20,5 +20,14 @@ FINN: Eu peguei a capa para limpá-la antes do festival. Vem Klaus, a capa esta 
 PERSIVAL: Viu!? Não fui eu, seu idiota.
 KLAUS: Você que é idiota!
 FINN: Já chega, vem Klaus.
- 
+
+Player{PLAYER: Boa noite.} [goto lineNao]
+Player{PLAYER: Não se meter.} [goto lineSair]
+
+-lineNao
 KLAUS: Agora não Titor!
+[end]
+
+-lineSair
+Titor: Como eu posso parar essa briga...?
+[end]

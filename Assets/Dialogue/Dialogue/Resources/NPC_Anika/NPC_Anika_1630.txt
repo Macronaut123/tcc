@@ -12,14 +12,17 @@ ANIKA: Sim!
 FINN: HAHAHA! Esse menino Tobbie...Me faz sempre rir! HAHAHA!
 
 
-(se Titor interagir)
+Player{PLAYER: Boa noite.} [goto lineOne]
+Player{PLAYER: Melhor não atrapalhar.} [goto lineFim]
+
+-lineOne
 FINN: O que você acha do Tobbie, Titor? HAHAHA!  
 FINN:Ele é um menino engraçado, não?
 
-Player{PLAYER: Sim, gosto muito dele.} [goto lineOne]
-Player{PLAYER: ...} [goto lineTwo]
+Player{PLAYER: Sim, gosto muito dele.} [goto lineTwo]
+Player{PLAYER: ...} [goto lineNao]
 
--lineOne
+-lineTwo
 FINN: Hahaha! Sabia! 
 FINN: E aposto que você gosta mais da irmã dele! HAHAHA!
 ANIKA: PAI!
@@ -27,7 +30,7 @@ AINA: ...
 FINN: Perdão...
 [end]
 
--lineTwo
+-lineNao
 FINN: Ahm...
 ANIKA: Ahm...
 AINA: Titor? Você está brincando né?
@@ -35,5 +38,10 @@ TITOR: ...
 AINA: Ai que susto! Hahahaha!
 ANIKA: Que susto mesmo!
 FINN: HAHAHA! Esses meninos dessa vila... Todos brincalhões!
+[end]
+
+-lineFim
+Titor: Eles estão conversando...
+Titor: Melhor não atrapalhar...
 [end]
  

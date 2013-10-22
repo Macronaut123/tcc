@@ -9,6 +9,9 @@ ULRIC Vamos para o castelo.
 RIKI: Claro senhor.
 
 
-(se Titor interagir)
+Player{PLAYER: Bom dia!}  [goto lineOla]
+
+-lineOla
 RIKI: Me procure fora do meu horário de trabalho Titor. 
 RIKI: Agora eu realmente não posso conversar com você.
+[end]

@@ -2,7 +2,10 @@ GUNVAR: Ha!
 GUNVAR: Hm!
 GUNVAR: Haaaa!
 
-//(se titor interagir)
+Player {Player: Bom dia Sr Gunvar.} [goto lineOla]
+Player {Player: Não atrapalhar} [goto lineTchau]
+
+-lineOla
 GUNVAR: Finalmente aceitou o meu convite e veio treinar Titor? GAHAHAHA!
 
 Player {Player: Não, só estou esperando por alguém... } [goto LineNo1]
@@ -17,4 +20,8 @@ GUNVAR: Se quiser esperar, sente-se aí! Ou venha treinar comigo! GAHAHAHA!
 GUNVAR: ...
 GUNVAR: Você só pode estar de brincadeira! GAHAHA!
 GUNVAR: Sente-se aí ou venha treinar comigo!
+[end]
+
+-lineTchau
+Titor: Melhor não atrapalhar o treino.
 [end]

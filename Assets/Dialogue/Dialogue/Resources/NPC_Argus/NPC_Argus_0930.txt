@@ -1,2 +1,21 @@
 ARGUS: Eaí Titor, o que lhe devo a honra?
 
+Player{PLAYER: Este reino entra muito em conflitos?}  [goto lineGuerra]
+Player{PLAYER: Não, obrigado}  [goto lineOne]
+
+-lineGuerra
+ARGUS: Ahm? Pra que você quer saber sobre isso?
+ARGUS: Bem... A relação entre os reinos até onde eu saiba é amigável...
+ARGUS: Vem muita gente de outros reinos trabalhar neste.
+ARGUS: Um deles é o Riki. 
+ARGUS: Ele era um soldado do reino vizinho e veio pra cá há um tempo atrás.
+ARGUS: Isso você já deve saber... 
+ARGUS: Mas ele é um cara bem fechado...
+ARGUS: E quase ninguém sabe muito sobre a vida dele.
+ARGUS: Enfim, consegui refrescar a sua memória Titor? HAHA!
+[end]
+
+-lineOne
+ARGUS: Ahhh! E você não vai ajudar hoje? HAHAHA!
+ARGUS: Deixa o velho Alvis saber disso!
+[end]

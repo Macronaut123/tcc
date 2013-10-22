@@ -1,6 +1,9 @@
 ANIKA: ...
 
-(se Titor interagir)
+Player{PLAYER: Vocês que arrumam as casas dos nobres?} [goto lineOi]
+Player{PLAYER: Ahm...} [goto lineTchau]
+
+-lineOi
 ANIKA: Oi Titor! Desculpe-me pela minha falta de atenção!
 ANIKA:  Estava pensando em várias coisas ao mesmo tempo...
 ANIKA: Mas no que eu posso te ajudar?
@@ -36,4 +39,10 @@ ANIKA: Mas acho que ele sempre me viu como uma menina! Rs!
 ANIKA: Rs! Ele sempre está se mexendo mesmo!
 ANIKA: Mas... As vezes, eu o vejo descansando um pouco depois da hora 
 ANIKA: de almoço! Rs! Não conte a ninguém ok?
+[end]
+
+-lineTchau
+Titor: Ahm...
+ANIKA: ...
+Titor: Eu acho que ela não me ouviu.
 [end]

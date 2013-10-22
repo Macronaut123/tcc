@@ -1,4 +1,12 @@
 GUNVAR: Segure firme! Preste mais atenção! De novo!
 
-//(se Titor interagir)
+Player{PLAYER: Olá!}  [goto lineOla]
+Player{PLAYER: Olá!}  [goto lineTchau]
+
+-lineOla
 GUNVAR: Titor, não quero desconcentrar o príncipe! Depois nos falamos!
+[end]
+
+-lineTchau
+Titor: Melhor não atrapalhar os dois.
+[end]

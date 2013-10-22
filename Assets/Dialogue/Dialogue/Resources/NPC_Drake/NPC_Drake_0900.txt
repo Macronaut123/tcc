@@ -1,11 +1,14 @@
 
 DRAKE: Tenho isso... isso...
 
-(se Titor interagir)
+Player{PLAYER: Olá!} [goto lineYes]
+Player{PLAYER: Não atrapalhar.} [goto lineTchau]
+
 DRAKE: Titor, no que eu posso lhe ajudar?
 
 Player{PLAYER: O Sr fica aqui o dia todo?} [goto lineYes]
 Player{PLAYER: O SR é amigo do Sr Gunvar?} [goto lineNo] 
+
 //condição da lineNo é conhecer Gunvar
 
 -lineYes
@@ -22,4 +25,7 @@ DRAKE: Ele é a pessoa que me perturba desde que ele era menor.
 DRAKE: No fundo, gosto dele como um filho. Mas não conte isso a ele eim?
 DRAKE: Ele vai ficar se achando como um líder gorila. Hahahaha!
 [end]
+
+-linelineTchau
+Titor: Melhor eu não atrapalhar.
  

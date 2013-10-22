@@ -3,5 +3,9 @@
 GUNVAR: Segure firme! Preste mais atenção! De novo!
 KLAUS: Rahhhh... Rahhhh...
 
+Player{PLAYER: Olá.} [goto lineNao]
+
+-lineNao
 GUNVAR: Titor, não quero desconcentrar o príncipe! 
 GUNVAR: Depois você conversa com ele!
+[end]

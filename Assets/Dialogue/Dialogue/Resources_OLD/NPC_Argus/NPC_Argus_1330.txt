@@ -1,0 +1,16 @@
+[call ignoreNpc NPC_Ben]
+
+BEN: Argus! Como vai? Este reino não muda nada eim!
+ARGUS: Claro que mudou! Hahaha! Você não está sabendo?
+BEN: Sabendo do que? Houve alguma coisa?
+ARGUS: A relação dos príncipes só tem piorado...
+ARGUS: Klaus tem se tornado um príncipe muito nariz empinado.
+BEN: Nossa! Dessa eu realmente não sabia...O que o rei acha disto?
+ARGUS: Ele acha que é uma briga normal de irmãos.
+BEN: É uma pena... Essa é uma das poucas vilas que eu gosto.
+ARGUS: Só se for pra ganhar dinheiro, não? Hahahahaha!
+
+ARGUS:  Titor, veio comprar alguma coisa?
+BEN: Você tem namorada Titor? Estou vendendo algumas flores aqui! Hahahaha!
+ARGUS: Esse aí namorando? HAHAHAHA!! Ele não consegue nem chamar a menina para sair!
+ARGUS: Se conseguir segurar na mão da menina já é um lucro heim?

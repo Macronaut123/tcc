@@ -1,0 +1,6 @@
+[call ignoreNpc NPC_Aina]
+
+AINA: Hoje está um lindo dia para o festival! 
+AINA: Você também não acha isso Titor?
+AINA: Espero que dê tudo certo hoje!
+

@@ -1,0 +1,26 @@
+FINN: Humm. Está realmente tudo delicioso! O Rei caprichou como nunca na caçada deste ano!
+AINA: TOBBIE! VOLTA AQUI!
+TOBBIE: Me deixa comer a carne!
+AINA: MAS NÃO TUDO NÉ! DEVOLVE O JAVALIII!!
+FINN: Festival mais alegre como este, nunca tivemos!
+ANIKA: Rs! Espero ser assim todos os anos!
+FINN: Mas... O que?!
+ANIKA:...!!!!
+AINA: Tobbie, feche os olhos!
+Tobbie: O que? Eu quero ver! Me larga Aina!
+
+(se Titor interagir)
+ANIKA: Titor, se alimente direitinho ok?
+
+Player{PLAYER:Sim}[goto lineYes]
+Player{PLAYER:No}[goto lineNo]
+
+-lineYes
+ANIKA: Tem que comer bastante para ficar forte e proteger 
+ANIKA: as pessoas que ama! Rsrsrs!
+[end]
+
+-lineNo
+ANIKA: Ele ainda é criança e precisa se alimentar bastante! 
+ANIKA: Rsrsrs! Coma um pouco de salada que tem ali no canto Titor!
+[end]

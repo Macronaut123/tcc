@@ -1,0 +1,14 @@
+[call ignoreNpc NPC_Ben]
+[call ignoreNpc NPC_Klaus]
+
+BEN: Estou indo então Alvis, boa sorte nas pesquisas, 
+BEN: nos vemos mais tarde.
+ALVIS: Obrigado Ben, nos vemos no festival
+Klaus chega
+KLAUS: Alvis,  você pode chamar o Persival? 
+KLAUS: Tenho que conversar com ele.
+ALVIS: Ele já foi embora Klaus, 
+ALVIS: acredito que ele tenha voltado para o castelo.
+KLAUS: Tudo bem vou procurar por ele. Se você o ver, 
+KLAUS: me avise, quero falar com ele.
+ 

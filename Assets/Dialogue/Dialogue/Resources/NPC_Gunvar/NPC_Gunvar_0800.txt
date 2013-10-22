@@ -1,5 +1,7 @@
 GUNVAR: Vá Klaus! Mais forte!
 
-//(se o titor interagir)
+Player {Player: Bom dia.} [goto lineOla]
 
+-lineOla
 GUNVAR: ...Titor? Veio participar do treino também? Gahaha!
+[end]

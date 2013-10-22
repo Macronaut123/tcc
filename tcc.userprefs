@@ -1,9 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Game Scripts\GlobalTime.cs">
-    <Files>
-      <File FileName="Assets\scripts\Game Scripts\GlobalTime.cs" Line="38" Column="57" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
@@ -14,10 +11,13 @@
                   <Node name="Demo Bits" expanded="True" />
                 </Node>
               </Node>
-              <Node name="scripts" expanded="True">
-                <Node name="Game Scripts" expanded="True">
-                  <Node name="GlobalTime.cs" selected="True" />
+              <Node name="Modelos Finais" expanded="True">
+                <Node name="Drake" expanded="True">
+                  <Node name="DrakeAnimation.cs" selected="True" />
                 </Node>
+              </Node>
+              <Node name="scripts" expanded="True">
+                <Node name="Game Scripts" expanded="True" />
               </Node>
             </Node>
           </Node>

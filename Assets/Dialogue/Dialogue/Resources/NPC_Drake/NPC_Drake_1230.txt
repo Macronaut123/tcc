@@ -3,9 +3,7 @@ DRAKE: Que susto garoto! Não o ouvi chegando perto!
 DRAKE: O que você quer?
 
 Player{PLAYER: Aonde o Senhor está indo?} [goto lineOne]
-Player{PLAYER: Mas porque é tão importante assim?} [goto lineTwo]
-Player{PLAYER: De nada Senhor Drake} [goto lineTree]
-
+Player{PLAYER: Nada de mais.} [goto lineTwo]
 
 -lineOne
 DRAKE: Estou indo a praça. 
@@ -14,18 +12,5 @@ DRAKE: encomenda que eu recebi do Gunvar agora a pouco.
 [end]
 
 -lineTwo
-DRAKE: Ahm… Há 24 anos atrás, quando o meu filho nasceu, 
-DRAKE: eu pedi para que fosse feito esse pingente.
-DRAKE: Mas minha esposa foi morta enquanto saía 
-DRAKE: do reino junto com o meu filho. 
-DRAKE: Encontraram o corpo dela, mas o dele...
-DRAKE: Ninguém sabe o que realmente aconteceu.
-DRAKE: Seria muito difícil de uma criança da 
-DRAKE: idade dele ter sobrevivido.
-DRAKE: Enfim, muito obrigado.
-[end]
-
--lineTree
-DRAKE: Obrigado mesmo Titor. 
-DRAKE:Você não sabe o quanto isso é importante pra mim.
+DRAKE: Então nos falamos uma outra hora garoto.
 [end]

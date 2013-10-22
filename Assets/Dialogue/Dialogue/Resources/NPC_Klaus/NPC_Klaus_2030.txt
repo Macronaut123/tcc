@@ -8,5 +8,28 @@ KLAUS: Ah, obrigado. Mas este festival é divertido assim, graças a todos da vi
 BEN: Ah, claro o seu pai… Mas parabéns mesmo assim!
 KLAUS: Obrigado. 
 
+Player{PLAYER: Boa noite.} [goto lineNao]
+Player{PLAYER: Não atrapalhar.} [goto lineTchau]
+
+-lineNao
 BEN: Este festival realmente é muito divertido!
-KLAUS: Você está se divertindo Titor?
+KLAUS: Realmente! Você está se divertindo Titor?
+
+Player{PLAYER: Sim, estou!} [goto lineSim]
+Player{PLAYER: Sim, estou!} [goto lineNops]
+
+-lineSim
+KLAUS: Que bom! Mal espero para o festival do ano que vem!
+KLAUS: Você está convidado também Ben!
+BEN: Obrigado pelo convite!
+[end]
+
+-lineNops
+KLAUS: HAHAHA! Tobbie realmente é um menino arteiro! 
+KLAUS: No ano que vem, irei junto com o meu pai a caça!
+KLAUS: Iremos trazer um javali com o dobro de tamanho para todos! HAHAHA!
+BEN: Claro que vai... Kkkkk!!
+[end]
+
+-lineTchau
+Titor: Não quero atrapalhar a conversa.

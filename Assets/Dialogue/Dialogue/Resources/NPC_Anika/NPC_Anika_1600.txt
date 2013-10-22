@@ -16,7 +16,14 @@ ANIKA: Até mais então SR Gunvar!
 GUNVAR:...
 GUNVAR: Agora vamos ver o que estes estão planejando.
 
-(se Titor interagir)
-GUNVAR: Titor, acho melhor você voltar para um lugar mais segur... 
-GUNVAR: Mais povoado! Volte para a missa! AGORA!
+Player{PLAYER: Boa noite.} [goto lineOne]
+Player{PLAYER: Não atrapalhar} [goto lineTwo]
 
+-lineOne
+GUNVAR: Titor, acho melhor você voltar para um lugar mais segur... 
+GUNVAR: Com mais gente! Volte para a missa! AGORA!
+[end]
+
+-lineTwo
+Titor: Melhor eu não atrapalhar os dois.
+[end]

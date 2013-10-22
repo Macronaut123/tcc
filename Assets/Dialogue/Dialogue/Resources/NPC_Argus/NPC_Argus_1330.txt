@@ -10,7 +10,16 @@ ARGUS: Ele acha que é uma briga normal de irmãos.
 BEN: É uma pena... Essa é uma das poucas vilas que eu gosto.
 ARGUS: Só se for pra ganhar dinheiro, não? Hahahahaha!
 
+Player{PLAYER: Olá.}  [goto lineOne]
+Player{PLAYER: Não atrapalhar}  [goto lineTwo]
+
+-lineOne
 ARGUS:  Titor, veio comprar alguma coisa?
 BEN: Você tem namorada Titor? Estou vendendo algumas flores aqui! Hahahaha!
 ARGUS: Esse aí namorando? HAHAHAHA!! Ele não consegue nem chamar a menina para sair!
 ARGUS: Se conseguir segurar na mão da menina já é um lucro heim?
+[end]
+
+-lineTwo
+Titor: Melhor não atrapalhar a conversa dos dois.
+[end]

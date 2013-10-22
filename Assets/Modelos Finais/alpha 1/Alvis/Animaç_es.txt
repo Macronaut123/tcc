@@ -1,0 +1,8 @@
+Animações Alvis
+Andando- 10-80
+Agacha PegaItem Guarda - 50-220
+Sentando- 230-286
+Idle Sentado- 286-564
+Levantando do trono- 565-609
+Conversando- 620-659
+Idle em Pé- 660-975

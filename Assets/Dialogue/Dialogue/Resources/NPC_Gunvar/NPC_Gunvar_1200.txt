@@ -1,40 +1,40 @@
+call ignoreNpc NPC_Gunvar]
+
 GUNVAR: Está um belo dia GAHAHAHA senhorita Anika!
 ANIKA: Rs... Boa tarde Sr Gunvar! Realmente está um belo dia.
 GUNVAR: Ahm... GAHAHAHA! Como vai o GAHAHA! seu dia?
-ANIKA: O meu dia está ótimo! A Aina é uma boa garota... 
-ANIKA: Está me ajudando nos preparativos para o festival.
-GUNVAR: Espero que dê tudo certo hoje! E falando no festival... 
-GUNVAR: Ahm.. Senhorita Anika....
+ANIKA: O meu dia está ótimo! A Aina é uma boa garota... Está me ajudando nos preparativos para o festival.
+GUNVAR: Espero que dê tudo certo hoje! E falando no festival... Ahm.. Senhorita Anika....
 ANIKA: Aconteceu alguma coisa Sr Gunvar?
 GUNVAR: Ahm sim! Argh, quero dizer não!
 ANIKA: ...?
-GUNVAR: Ahm sim... Você gostaria de por acaso... de... 
-GUNVAR: Passear comigo? Quero dizer...
-ANIKA: O Sr quer dizer... Um encontro durante a missa 
-ANIKA: que eu participo todos os anos junto com o meu pai? RS...
-GUNVAR: Ahm sim... Claro... Você precisa ficar com o seu pai... 
-GUNVAR: Desculpe-me pela pergunta...  gahahaha....
+GUNVAR: Ahm sim... Você gostaria de por acaso... de... Passear comigo? Quero dizer...
+ANIKA: O Sr quer dizer... Um encontro durante a missa que eu participo todos os anos junto com o meu pai? RS...
+GUNVAR: Ahm sim... Claro... Você precisa ficar com o seu pai... Desculpe-me pela pergunta...  gahahaha....
 ANIKA: Mas ainda não respondi o seu convite!
 GUNVAR: ...!
-ANIKA: Infelizmente não posso ir ficar com o senhor durante o festival... 
-ANILA: Me desculpe.
+ANIKA: Infelizmente não posso ir ficar com o senhor durante o festival... Me desculpe.
 GUNVAR: ... gaha..ha...
 ANIKA: Mas se o senhor quiser a minha companhia durante a missa... rs
 GUNVAR: ...!
-GUNVAR: CLARO! Digo... Claro! Nos encontramos um pouco 
-GUNVAR: antes da missa no bosque!
-ANIKA: Rs! Combinado então! Eu tenho que me retirar agora 
-ANIKA: Sr Gunvar! Com licença!
+GUNVAR: CLARO! Digo... Claro! Nos encontramos um pouco antes da missa no bosque!
+ANIKA: Rs! Combinado então! Eu tenho que me retirar agora Sr Gunvar! Com licença!
 GUNVAR: Até mais tarde então!
 ANIKA: Até mais tarde.
 
+Player{PLAYER: Olá!}  [goto lineOla]
+Player{PLAYER: Não atrapalhar}  [goto lineTchau]
 
+-lineOla
 ANIKA: Oi Titor, você quer se juntar conosco?
 GUNVAR: ... gahah..a..ha...
 
-Player{PLAYER: Não, obrigado}  [goto lineOne]
+Player{PLAYER: Não, obrigado} [goto lineOne]
 
 -lineOne
 GUNVAR: GAHAHA!! Vá lá fazer companhia para a Aina Titor!
 [end]
 
+-lineTchau
+Titor: Melhor não atrapalhar os dois.
+[end]

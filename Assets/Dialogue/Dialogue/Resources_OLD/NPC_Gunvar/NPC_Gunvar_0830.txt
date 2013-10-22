@@ -1,0 +1,28 @@
+[call ignoreNpc NPC_Riki]
+
+GUNVAR: E aí?
+RIKI: Estou bem.
+GUNVAR: Vai fazer a patrulha depois?
+RIKI: Só depois de levar o rei para o castelo. 
+RIKI: Aliás, você deveria fazer o mesmo.
+GUNVAR: Pelas minhas habilidades, 
+GUNVAR: fui designado a treinar o príncipe.
+RIKI: ...
+GUNVAR: ...
+
+GUNVAR: ...
+GUNVAR: Riki deveria ser mais gentil com todos.
+
+Player {Player: Comigo ele é gentil.} [gotoLine1]
+Player {Player: Eu também acho isso Sr GUNVAR.} [gotoLine2]
+
+-Line1
+GUNVAR: Quem? O Riki? Você só pode estar de brincadeira comigo! GAHAHA!!
+GUNVAR: Mesmo ele morando aqui há anos, 
+GUNVAR: mantém uma distância de todos sem querer interagir com ninguém.
+[end]
+
+-Line2
+
+GUNVAR: Não me entenda mal Titor, o Riki tem um bom coração... 
+GUNVAR: Só o acho um pouco fechado que o comum de mais, apenas isso.

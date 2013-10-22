@@ -1,0 +1,24 @@
+[call ignoreNpc NPC_Gunvar]
+
+GUNVAR: BOA NOITE SENHORITA ANIKA!
+ANIKA: Boa noite Sr Gunvar, o Sr chegou cedo!
+GUNVAR: Não muito cedo... Acabei de chegar!
+ANIKA: Então tá.. RS.. Vamos então?
+GUNVAR: SIM! Quero dizer... Sim!
+ANIKA: Queria lhe fazer uma pergunta Sr Gunvar...
+GUNVAR: Pode fazer GAHAHAHA! A pergunta que quiser!
+ANIKA: Sr saberia me dizer do Sr Riki?
+GUNVAR: O que tem ele?
+ANIKA: Ele parece estar sonhando o tempo todo... 
+ANIKA: E sinto que está cada vez mais distante a cada dia que passa.
+
+
+(se Titor interagir)
+ANIKA: Boa noite Titor, você quer se juntar conosco?
+GUNVAR: ... gahah..a..ha...
+
+Player{PLAYER: Não, obrigado} [goto lineOne]
+
+-lineOne
+GUNVAR: GAHAHA!! Vá lá fazer companhia para a Aina na missa!
+ 

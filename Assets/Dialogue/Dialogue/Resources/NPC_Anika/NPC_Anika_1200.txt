@@ -22,7 +22,10 @@ ANIKA: Rs! Combinado então! Eu tenho que me retirar agora Sr Gunvar! Com licen�
 GUNVAR: Até mais tarde então!
 ANIKA: Até mais tarde.
 
-(se Titor interagir)
+Player{PLAYER: Olá!}  [goto lineOla]
+Player{PLAYER: Não atrapalhar}  [goto lineTchau]
+
+-lineOla
 ANIKA: Oi Titor, você quer se juntar conosco?
 GUNVAR: ... gahah..a..ha...
 
@@ -30,3 +33,8 @@ Player{PLAYER: Não, obrigado} [goto lineOne]
 
 -lineOne
 GUNVAR: GAHAHA!! Vá lá fazer companhia para a Aina Titor!
+[end]
+
+-lineTchau
+Titor: Melhor não atrapalhar os dois.
+[end]

@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Argus]
+[call ignoreNpc NPC_Tobbie]
 
 TOBBIE: Sr Argus! Me dá um pouco de cerveja?
 ARGUS: UHAHAHA!! Quando você crescer mais um pouco Tobbie!
@@ -7,9 +7,28 @@ ARGUS: Um pouco mais! Dxo ver...
 ARGUS: Quando você for mais alto que o Titor! UHAHAHA!
 TOBBIE: Ahhhhh... Que chato! Só porque eu tava brincando de ser rei!
 TOBBIE: Agora eu vou ser uma outra coisa! 
-TOBBIE: Que aventureiro não bebe cerveja Sr Argus?
+ARGUS: Que aventureiro não bebe cerveja Sr Argus?
 ARGUS: Um pirata! UHAHAHA!
 
+Player{PLAYER: O que houve?}  [goto lineOne]
+Player{PLAYER: Não atrapalhar.}  [goto linePosta]
+
+-lineTwo
+Tobbie: Logo mais serei um adulto!
+Tobbie: Vocês vão ver só!
+
+-lineOne
 TOBBIE: Quando será que eu vou ser um adulto Titor?
 
 
+Player{PLAYER: Quando crescer.}  [goto lineRes]
+Player{PLAYER: Não sei.}  [goto lineTwo]
+
+-lineRes
+TOBBIE: ...
+TOBBIE: Você vai ver, eu vou crescer rapidinho!
+[end]
+
+-linePosta
+Titor: Melhor não atrapalhar a conversa dos dois.
+[end]

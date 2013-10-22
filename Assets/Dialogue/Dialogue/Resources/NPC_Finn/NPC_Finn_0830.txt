@@ -1,3 +1,16 @@
 FINN: Uffa, terminei uma boa parte do que eu tinha que fazer...
 FINN:No que eu posso lhe ajudar Titor?
 
+Player{PLAYER: Perguntar do festival} [goto lineOne]
+Player{PLAYER: Precisa de ajuda?} [goto lineTwo]
+-lineOne
+FINN: Como assim? É o festival dos anjos Titor!
+FINN: Fazemos este mesmo festival todos os anos!
+FINN: Não se esqueça de que a missa começa entre o horário do almoço e do jantar!
+[end]
+
+-lineTwo
+FINN: Hum... Obrigado pela sua preocupação Titor,
+FINN: mas se você tiver algum tempo livre, vá ajudar a minha filha ANIKA, ela deve estar junto com a Aina e o Toby.
+FINN: Vá a praça! Eles devem estar por lá!
+[end]

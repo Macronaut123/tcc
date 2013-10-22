@@ -10,8 +10,16 @@ RIKI: Assim espero…
 ULRIC: Vamos! Quero ver o Klaus.
 RIKI: Claro senhor.
 
-(se Titor interagir)
+Player {PLAYER: Bom dia.} [goto lineYes]
+Player {PLAYER: Não falar nada.} [goto lineNo]
+
+-lineYes
 ULRIC: Ahh Olá Titor como está? 
 ULRIC: Hoje foi uma excelente caçada, 
 ULRIC: mal posso esperar pelo festival para assar o javali
 ULRIC: que pegamos e comemorar com muita cerveja.
+[end]
+
+-lineNo
+Titor: Melhor não atrapalhar a conversa.
+[end]

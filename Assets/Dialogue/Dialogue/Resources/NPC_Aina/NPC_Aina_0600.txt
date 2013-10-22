@@ -8,7 +8,16 @@ AINA: Ok, mas promete não atrapalhar?
 TOBBIE: Prometo! Kikikiki!!
 AINA: ...
 
+Player{PLAYER: Acho que não devo conversar com ela agora.} [goto lineOne]
+Player{PLAYER: Bom dia Aina.} [goto lineTwo]
+
+-lineTwo
 AINA: Bom dia Titor! Acordou cedo hoje!  
 AINA: Estamos nos arrumando para ir ajudar a Anika!
 AINA: Estarei... Ahm... Estaremos esperando você! 
 AINA: Aparece por lá mais tarde!  Hehehe!
+[end]
+
+-lineOne
+TITOR: ...
+[end]

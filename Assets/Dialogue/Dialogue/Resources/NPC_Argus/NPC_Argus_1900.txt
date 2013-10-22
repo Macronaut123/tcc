@@ -1,2 +1,19 @@
 ARGUS: Eaí Titor! Noite linda para o festival, não?
 
+Player{PLAYER: Onde está indo?}  [goto lineOne]
+Player{PLAYER: Vai para o festival?}  [goto lineTwo]
+
+-lineOne
+ARGUS: Estou indo ao bosque! É um dos meus locais preferidos aqui neste reino!
+ARGUS: Antigamente, eu tinha uma casa lá... Onde morava com a minha família.
+ARGUS: Assim como a família do Drake, a minha também já se foi.
+ARGUS: Mas diferente dele, eu já aceitei isso...
+ARGUS: Vou ficar sozinho no bosque um pouco.
+ARGUS Nos falamos uma outra hora.
+[end]
+ 
+-lineTwo
+ARGUS: Claro que vou! Mas antes, eu preciso ficar um pouco sozinho no bosque.
+ARGUS: As palavras do Alvis durante a missa, me fez lembrar de várias coisas.
+ARGUS: Nos vemos depois no festival Titor!
+[end]

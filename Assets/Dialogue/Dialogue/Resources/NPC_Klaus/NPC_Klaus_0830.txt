@@ -7,8 +7,17 @@ KLAUS: Eu queria ter ido.
 ULRIC: Da próxima vez eu levarei você e seu irmão comigo.
 KLAUS: O Persival? HAHA... Ele não aguentaria a caçada.
 ULRIC: Não subestime seu irmão Klaus, agora volte a treinar.
- 
+
+Player{PLAYER: Tudo bem com você?} [goto lineVai]
+Player{PLAYER: Não vou atrapalhar.} [goto lineNao]
+
+-lineVai
 KLAUS: Rahhhh…..Rahhhhh…. 
-KLAUS: Estou treinando agora Titor 
-KLAUS: cuidado para não se machucar…..
-KLAUS: Rahhhh…..Rahhhhh..
+KLAUS: O treino hoje está bem puxado...
+KLAUS: Vamos recomeçar o treino em breve.
+KLAUS: cuidado para não se machucar Titor.
+[end]
+
+-lineNao
+Titor: Melhor não atrapalhar o trieno.
+[end]

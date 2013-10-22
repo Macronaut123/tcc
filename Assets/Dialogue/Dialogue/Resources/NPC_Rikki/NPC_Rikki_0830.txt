@@ -1,16 +1,19 @@
-[call ignoreNpc NPC_Gunvar]
+[call ignoreNpc NPC_Riki]
 
 GUNVAR: E aí?
-RIKI: ...bem.
-GUNVAR: Vai na patrulha depois?
-RIKI: Depois que levar vossa majestade, sim. 
-RIKI: Aliás você também deveria fazer isso, 
-RIKI: invés de gastar tempo com a serva…
-GUNVAR: … Não é da sua conta.
-RIKI: Sim, não mesmo.
+RIKI: Estou bem.
+GUNVAR: Vai fazer a patrulha depois?
+RIKI: Só depois de levar o rei para o castelo. 
+RIKI: Aliás, você deveria fazer o mesmo.
+GUNVAR: Pelas minhas habilidades, 
+GUNVAR: fui designado a treinar o príncipe.
+RIKI: ...
 GUNVAR: ...
-RIKI: …
 
+Player{PLAYER: Aconteceu alguma coisa?}  [goto lineOla]
 
-(se Titor interagir)
-RIKI: Podemos falar depois? Estou trabalhando agora.
+-lineOla
+Riki: Podemos nos falar uma outra hora?
+Riki: Estou trabalhando agora.
+
+[end]

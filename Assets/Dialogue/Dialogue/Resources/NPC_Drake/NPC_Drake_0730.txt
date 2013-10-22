@@ -1,6 +1,8 @@
 DRAKE: ... 
 
-//(se Titor interagir)
+Player{PLAYER: Bom dia.} [goto lineOla]
+
+-lineOla
 DRAKE: Titor, você por aqui? 
 DRAKE: Já te apresentei para a minha esposa?
 DRAKE: Esta é a minha esposa Titor... 

@@ -1,0 +1,22 @@
+[call ignoreNpc NPC_Alvis]
+
+ALVIS: Ben! Você conseguiu todos os itens?
+BEN: Consegui sim, estão aqui.
+ALVIS: Quanto ficou?
+BEN: Depois vemos isso, estou vendendo flores agora, 
+BEN: você gostaria de comprar algumas?
+ALVIS: Não, não, obrigado, é só isso mesmo.
+BEN: Tudo bem então, se você precisar de mais alguma coisa,
+BEN: é só me procurar na praça.
+
+Player{PLAYER: Não devo atrapalhar} [goto lineTwo]
+Player{PLAYER: Olá} [goto lineOne]
+-lineOne
+Ben: Olá garoto, como vai?
+Ben: Preciso falar com o Alvis agora...
+Ben: Depois nos falamos mais... Kkkkk!
+[end]
+
+-lineTwo
+Titor: Acho que não devo atrapalhar.
+[end]

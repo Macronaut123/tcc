@@ -1,0 +1,17 @@
+BEN: Ahmmm… Você sabe aonde o Sr Alvis está? 
+BEN: Será que ele está na igreja?
+
+Player{PLAYER: Sr Alvis deve estar na igreja.} [goto lineOne]
+Player{PLAYER: Não faço ideia.} [goto lineTwo]
+
+-lineOne
+BEN: Ele ainda dá aula para aquele príncipe? 
+BEN: Já devia ter imaginado isso… Kkkkk!!
+BEN: Até uma outra hora então.
+[end]
+
+-lineTwo
+BEN: Ahmmm… Vou tentar procurar ele na igreja…
+BEN: Aposto que ele deve estar lá fazendo 
+BEN: as maluq… coisas dele. Kkkkkk!
+[end]

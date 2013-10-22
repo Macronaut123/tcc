@@ -1,0 +1,12 @@
+Player: Hello
+Friend: Hi, how are you?
+
+Player: {Tired}		[goto Tired]
+		{Good}		[end]
+		{Sick}		[call BuyCarrots 10]
+		
+Friend:	Why are you buying carrots then?
+[end]
+		
+-Tired
+Firend:	Go to sleep then

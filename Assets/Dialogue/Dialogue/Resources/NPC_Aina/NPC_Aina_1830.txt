@@ -9,6 +9,13 @@ ALVIS: Espero que ele chegue no horário...
 ALVIS: E não tenha ido brincar no bosque!
 AINA: Eu vou indo na frente então Sr Alvis. Até mais tarde!
 
+Player{PLAYER: Boa noite.} [goto lineOne]
+Player{PLAYER: Sair de fininho} [goto lineTwo]
+
+-lineOne
 AINA: Boa noite Titor! Hehehe! 
 AINA: Estava agradecendo por este ano que tivemos...
 ALVIS: Você deveria agradecer e fazer o mesmo Titor.
+
+-lineTwo
+Titor: Melhor eu não atrapalhar a conversa deles.

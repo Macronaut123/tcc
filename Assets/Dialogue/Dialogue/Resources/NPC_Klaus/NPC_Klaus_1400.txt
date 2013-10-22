@@ -6,7 +6,16 @@ KLAUS: Sou o melhor filho que você tem, não é?’
 ULRIC: Você e Percival são igualmente importantes para mim e para o reino.
 KLAUS: Mas eu que vou ser rei.
 ULRIC:Sem a família, um rei se torna fraco.
- 
+
+Player{PLAYER: Não atrapalhar.} [goto lineSim]
+Player{PLAYER: Olá.} [goto lineNao]
+
+-lineNao
 KLAUS: Arff... Arff... 
 KLAS: Não foi dessa vez que eu venci o meu pai...
 KLAUS: Quem sabe outro dia... Preciso treinar mais! 
+[end]
+
+-lineSim
+Titor: Melhor não atrapalhar a conversa dos dois.
+[end]

@@ -8,6 +8,8 @@ GUNVAR: Hoje parece ser o meu dia de sorte!
 GUNVAR: Adivinha quem vai se encontrar com a 
 GUNVAR: senhorita Anika hoje? GAHAHAHA! 
 GUNVAR: EU! GAHAHAHA!! Depois nos falamos Titor!
-	
+[end]
+
 -Line2
 GUNVAR: Esse ano não Titor! Esse ano vou... GAHAHAHA!
+[end]

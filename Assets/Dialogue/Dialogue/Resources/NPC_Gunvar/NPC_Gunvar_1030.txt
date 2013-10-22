@@ -5,7 +5,6 @@ GUNVAR: Mas você já é velho! Gahahaha!
 DRAKE: ...
 GUNVAR: Estou brincando meu velho amigo! Vim pedir a sua ajuda!
 GUNVAR: Olhe a minha espada!
- 
 DRAKE: Deixei aí, tenho as encomendas do castelo na sua frente.
 GUNVAR: Ok, obrigado mais uma vez DRAKE! GAHAHAHA!
 

@@ -1,7 +1,3 @@
-[call ignoreNpc NPC_Aina]
-[call ignoreNpc NPC_Anika]
-[call ignoreNpc NPC_Tobbie]
-
 FINN: Humm. Está realmente tudo delicioso! O Rei caprichou como nunca na caçada deste ano!
 AINA: TOBBIE! VOLTA AQUI!
 TOBBIE: Me deixa comer a carne!
@@ -13,7 +9,25 @@ ANIKA:...!!!!
 AINA: Tobbie, feche os olhos!
 Tobbie: O que? Eu quero ver! Me larga Aina!
 
-FINN: Titor, conseguiu comer o javali?
+Player{PLAYER: Oi Anika!}[goto lineDefault]
+Player{PLAYER: Ficar quieto}[goto lineTchau]
 
+-lineDefault
+ANIKA: Titor, se alimente direitinho ok?
 
+Player{PLAYER:Sim}[goto lineYes]
+Player{PLAYER:No}[goto lineNo]
 
+-lineYes
+ANIKA: Tem que comer bastante para ficar forte e proteger 
+ANIKA: as pessoas que ama! Rsrsrs!
+[end]
+
+-lineNo
+ANIKA: Ele ainda é criança e precisa se alimentar bastante! 
+ANIKA: Rsrsrs! Coma um pouco de salada que tem ali no canto Titor!
+[end]
+
+-lineTchau
+Titor: Melhor eu não me meter...
+[end]

@@ -1,0 +1,27 @@
+//An demonstration of using gotos to write the dialogue upside down...
+
+[goto line1]
+
+-line6
+Player:			Oh ok, I will. Thanks.
+[end]
+
+-line5
+Robot 2:		You'll see that the code is using goto directions to go backwards through the code.
+[goto line6]
+
+-line4
+Robot 2:		I demo the "goto" direction and the "end" direction, if you want to see what's happening look in the Dialogue Demo 2 file in the Resources folder,
+[goto line5]
+
+-line3
+Player:			What do you demo?
+[goto line4]
+
+-line2
+Robot 2:		Hello!
+[goto line3]
+
+-line1
+Player:			Hello!
+[goto line2]

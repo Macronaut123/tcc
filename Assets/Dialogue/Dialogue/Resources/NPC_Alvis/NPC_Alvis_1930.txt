@@ -1,0 +1,15 @@
+ALVIS: Esta animado para o festival Titor? Eu estou! 
+ALVIS: Você está indo para lá agora?
+
+Player{PLAYER: Estou indo sim} [goto lineOne]
+Player{PLAYER: Ainda não, vou mais tarde} [goto lineTwo]
+
+-lineOne
+ALVIS: Então vamos juntos.
+[end]
+
+-lineTwo
+ALVIS: Tudo bem, mas não vai se atrasar, 
+ALVIS: o rei fará um discurso
+[end]
+

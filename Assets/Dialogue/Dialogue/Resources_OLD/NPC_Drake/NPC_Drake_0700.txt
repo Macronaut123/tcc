@@ -1,0 +1,23 @@
+
+DRAKE: ... (Segurando o pingente)
+
+(se Titor interagir)
+DRAKE: Titor, você por aqui? Já te apresentei para a minha esposa?
+DRAKE: Esta é a minha esposa Titor... 
+DRAKE: Ela é um pouco tímida, e quase não fala.
+
+Player{PLAYER:O que houve com ela?} [goto lineOne] 
+Player{PLAYER:...?} [goto lineTwo] 
+
+-lineOne
+DRAKE: Não gosto de falar desse assunto sem motivos...
+DRAKE: Agora eu vou continuar aqui falando com ela... 
+DRAKE: Até mais Titor. E Obrigado...
+[end]
+
+-lineTwo
+DRAKE: ...
+DRAKE: Pense o que quiser de mim Titor, me deixe sozinho.
+[end]
+
+//OBS: Aqui que o DRAKE derruba o pingente dele.

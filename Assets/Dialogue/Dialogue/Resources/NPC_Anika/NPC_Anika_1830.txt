@@ -1,7 +1,7 @@
 [call ignoreNpc NPC_Tobbie]
 [call ignoreNpc NPC_Klaus]
 [call ignoreNpc NPC_Finn]
-[call ignoreNpc NPC_Rikki]
+[call ignoreNpc NPC_Riki]
 
 
 TOBBIE: Briga! Briga!
@@ -24,7 +24,15 @@ PERSIVAL: Viu!? Não fui eu, seu idiota.
 KLAUS: Você que é idiota!
 FINN: Já chega, vem Klaus.
  
-(se Titor interagir com ou sem ter a carta)
-ANIKA: Titor, sabe como fazer para is dois pararem de brigar? Meu deus!
+Player{PLAYER: O que houve?} [goto lineOne]
+Player{PLAYER: Ficar quieto} [goto lineTwo]
+
+-lineOne
+ANIKA: Titor, sabe como fazer para os dois pararem de brigar? Meu deus!
 ANIKA: Nunca vi eles assim!
+[end]
+
+-lineTwo
+Titor: Melhor eu não me meter nessa confusão.
+[end]
  

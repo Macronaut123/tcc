@@ -1,0 +1,14 @@
+[call ignoreNpc NPC_Ulric]
+
+ULRIC: Klaus.
+KLAUS: Pai! Como foi a caçada?
+ULRIC: Excelente! O javali é imenso.
+KLAUS: Eu queria ter ido.
+ULRIC: Da próxima vez eu levarei você e seu irmão comigo.
+KLAUS: O Persival? HAHA... Ele não aguentaria a caçada.
+ULRIC: Não subestime seu irmão Klaus, agora volte a treinar.
+ 
+KLAUS: Rahhhh…..Rahhhhh…. 
+KLAUS: Estou treinando agora Titor 
+KLAUS: cuidado para não se machucar…..
+KLAUS: Rahhhh…..Rahhhhh..

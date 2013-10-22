@@ -10,5 +10,25 @@ TOBBIE: Agora eu vou ser uma outra coisa!
 ARGUS: Que aventureiro não bebe cerveja Sr Argus?
 ARGUS: Um pirata! UHAHAHA!
 
+Player{PLAYER: O que houve?}  [goto lineOne]
+Player{PLAYER: Não atrapalhar.}  [goto linePosta]
+
+-lineTwo
+Tobbie: Logo mais serei um adulto!
+Tobbie: Vocês vão ver só!
+
+-lineOne
 TOBBIE: Quando será que eu vou ser um adulto Titor?
 
+
+Player{PLAYER: Quando crescer.}  [goto lineRes]
+Player{PLAYER: Não sei.}  [goto lineTwo]
+
+-lineRes
+TOBBIE: ...
+TOBBIE: Você vai ver, eu vou crescer rapidinho!
+[end]
+
+-linePosta
+Titor: Melhor não atrapalhar a conversa dos dois.
+[end]

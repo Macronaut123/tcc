@@ -1,0 +1,13 @@
+Alvis: Gostou da missa de hoje Titor?
+
+Player{PLAYER: Não deu para ir} [goto lineOne]
+Player{PLAYER: Ahm... Sim!} [goto lineTwo]
+
+-lineTwo
+ALVIS: Espero que tenha gostado da missa.
+[end]
+
+-lineOne
+ALVIS: Realmente eu não te vi na missa hoje Titor.
+ALVIS: você não pode continuar faltando as missas meu bom jovem.
+[end]

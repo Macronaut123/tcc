@@ -10,7 +10,10 @@ ANIKA: Tobbie, o que vale é a sua intenção em querer nos ajudar! Obrigada!
 TOBBIE: Anika, você é um anjo! Ao contrário da minha irmã... Que é um demômio! Kikiki!!
 AINA: TOBBIEEEEEEEE!!
 
-(se Titor interagir)
+Player{PLAYER: O que houve?} [goto lineVai]
+Player{PLAYER: Ficar quieto} [goto lineNaoVai]
+
+-lineVai
 ANIKA: Os dois se dão tão bem! Você também não acha isso Titor?
 
 Player{PLAYER: Sim.} [goto lineYes]
@@ -31,4 +34,8 @@ TOBBIE: Que a Aina... Ahm.. Nada não SENHORITA Anika!
 ANIKA: Eu acho que ouvi coisas então... Rs...
 AINA: (que medo...) <<< Pensamentos
 TOBBIE: (que medo...) <<< Pensamentos
+[end]
+
+-lineNaoVai
+Titor: Melhor eu não me meter nessa confusão.
 [end]

@@ -10,11 +10,14 @@ GUNVAR: fui designado a treinar o príncipe.
 RIKI: ...
 GUNVAR: ...
 
+Player{PLAYER: Aconteceu alguma coisa?}  [goto lineOla]
+
+-lineOla
 GUNVAR: ...
 GUNVAR: Riki deveria ser mais gentil com todos.
 
-Player {Player: Comigo ele é gentil.} [gotoLine1]
-Player {Player: Eu também acho isso Sr GUNVAR.} [gotoLine2]
+Player {Player: Comigo ele é gentil.} [goto Line1]
+Player {Player: Eu também acho isso Sr GUNVAR.} [goto Line2]
 
 -Line1
 GUNVAR: Quem? O Riki? Você só pode estar de brincadeira comigo! GAHAHA!!
@@ -26,3 +29,4 @@ GUNVAR: mantém uma distância de todos sem querer interagir com ninguém.
 
 GUNVAR: Não me entenda mal Titor, o Riki tem um bom coração... 
 GUNVAR: Só o acho um pouco fechado que o comum de mais, apenas isso.
+[end]

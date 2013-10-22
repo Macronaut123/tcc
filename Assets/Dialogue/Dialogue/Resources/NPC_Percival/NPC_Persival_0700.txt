@@ -12,3 +12,18 @@ TOBBIE: Príncipe tááá envergonhadooo!
 AINA: Tobbie! Desculpe pela má educação do meu irmão...
 PERSIVAL: haha, eu vou indo então... Aina, ergh.... Obrigado pelo elogio...
 AINA: Só falei a verdade! Hehehe!
+
+Player {PLAYER: Ei, Aina!} [goto lineEiAina]
+Player {PLAYER: Não quero atrapalhar.} [goto lineTchau]
+
+-lineEiAina
+AINA: Olha Titor! Quem veio aqui!
+PERSIVAL: Oh, Titor… Ahm.. Eu já vou indo…
+AINA: Mas já? Você acabou de chegar!
+PERSIVAL: Nos falamos uma outra hora Aina...
+TOBBIE: Humm... Kikiki!
+[end]
+
+-lineTchau
+Titor: Não quero atrapalhar.
+[end]

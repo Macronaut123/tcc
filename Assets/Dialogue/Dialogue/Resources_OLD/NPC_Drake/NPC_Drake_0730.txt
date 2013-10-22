@@ -1,0 +1,26 @@
+DRAKE: ... 
+
+//(se Titor interagir)
+DRAKE: Titor, você por aqui? 
+DRAKE: Já te apresentei para a minha esposa?
+DRAKE: Esta é a minha esposa Titor... 
+DRAKE: Ela é um pouco tímida, e quase não fala.
+
+Player{PLAYER:O que houve com ela?} [goto lineOne] 
+Player{PLAYER:Ahm?} [goto lineTwo] 
+
+-lineOne
+DRAKE: Ela se foi a 24 anos... 
+DRAKE: Perdi ela enquanto ela saía do reino junto com o meu filho.
+DRAKE: Ela foi morta e ninguém sabe o paradeiro do meu filho.
+DRAKE: Desculpe ficar falando sobre isso...
+DRAKE: Agora eu vou continuar aqui falando com ela... 
+DRAKE: Até mais Titor. E Obrigado...
+[end]
+
+-lineTwo
+DRAKE: ...
+DRAKE: Pense o que quiser de mim Titor, me deixe sozinho.
+[end]
+
+//OBS: Aqui que o DRAKE derruba o pingente dele.

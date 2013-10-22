@@ -12,6 +12,10 @@ ANIKA:...!!!!
 AINA: Tobbie, feche os olhos!
 Tobbie: O que? Eu quero ver! Me larga Aina!
 
+Player{PLAYER: Sim!} [goto Falar]
+Player{PLAYER: Sim!} [goto NoTalk]
+
+-Falar
 AINA: Titor, se alimente direitinho ok?
 
 Player{PLAYER: Sim!} [goto lineYes]
@@ -27,3 +31,7 @@ AINA: proteger as pessoas que ama! Rsrsrs!
 AINA: Ele ainda é criança e precisa se alimentar bastante! 
 AINA: Rsrsrs! Coma um pouco de salada que tem ali no canto Titor!
 [end]
+
+-NoTalk
+Titor: Devo falar com outra pessoa.
+

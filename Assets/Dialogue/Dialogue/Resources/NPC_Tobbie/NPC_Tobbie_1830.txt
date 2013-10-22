@@ -2,6 +2,7 @@
 [call ignoreNpc NPC_Klaus]
 [call ignoreNpc NPC_Anika]
 [call ignoreNpc NPC_Finn]
+[call ignoreNpc NPC_Riki]
 
 TOBBIE: Briga! Briga!
 ANIKA: Pare com isso Tobbie! Persival e Klaus, por favor parem de brigar, eu procuro a capa, mas por favor, parem de brigar.
@@ -20,5 +21,8 @@ PERSIVAL: Viu!? Não fui eu, seu idiota.
 KLAUS: Você que é idiota!
 FINN: Já chega, vem Klaus.
 
+Player{PLAYER: O que houve?} [goto lineNao]
+-lineNao
 TOBBIE: Olha Titor! Brigaaa!! Ainda bem que a Aina não tá aqui!
 TOBBIE: Porque será que eles estão brigando assim Titor?
+[end]

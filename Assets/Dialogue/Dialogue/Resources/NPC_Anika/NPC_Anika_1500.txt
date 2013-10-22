@@ -12,8 +12,10 @@ GUNVAR: O que tem ele?
 ANIKA: Ele parece estar sonhando o tempo todo... 
 ANIKA: E sinto que está cada vez mais distante a cada dia que passa.
 
+Player{PLAYER: Boa noite.} [goto linePrimeiro]
+Player{PLAYER: Não falar nada} [goto lineTchau]
 
-(se Titor interagir)
+-linePrimeiro
 ANIKA: Boa noite Titor, você quer se juntar conosco?
 GUNVAR: ... gahah..a..ha...
 
@@ -21,4 +23,8 @@ Player{PLAYER: Não, obrigado} [goto lineOne]
 
 -lineOne
 GUNVAR: GAHAHA!! Vá lá fazer companhia para a Aina na missa!
- 
+[end]
+
+-lineTchau
+Titor: ...
+[end]

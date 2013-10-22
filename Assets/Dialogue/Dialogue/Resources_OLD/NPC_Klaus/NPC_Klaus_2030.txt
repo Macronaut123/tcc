@@ -1,0 +1,12 @@
+[call ignoreNpc NPC_Ben]
+
+BEN: Boa noite príncipe Klaus!
+KLAUS: Boa noite… Ahm… Você é o comerciante da vila, não?
+BEN: Que honra! Sim, sim! sou comerciante da vila!
+BEN: Só gostaria de parabenizar o festival da vila de vocês!
+KLAUS: Ah, obrigado. Mas este festival é divertido assim, graças a todos da vila! E ao meu pai! Hahaha!
+BEN: Ah, claro o seu pai… Mas parabéns mesmo assim!
+KLAUS: Obrigado. 
+
+BEN: Este festival realmente é muito divertido!
+KLAUS: Você está se divertindo Titor?

@@ -1,0 +1,11 @@
+[call ignoreNpc NPC_Ulric]
+
+ULRIC: Já faz tanto tempo que ela se foi...
+ALVIS: Sim, já faz 16 anos, eu também sinto falta dela.
+ULRIC: A perda dela foi muito grande, mas em troca ela 
+ULRIC: me deixou outro filho especial.
+ALVIS: Sim, Persival é muito dedicado e aprende rápido,
+ALVIS: será um grande conselheiro quando Klaus assumir o trono.
+ULRIC: Assim espero…
+ALVIS: Bom senhor, vou voltar a arrumar a igreja, nos vemos no festival.
+ULRIC: Nos vemos lá, velho amigo.

@@ -1,0 +1,13 @@
+ALVIS: Bom dia Titor! Estou esperando Persival, 
+ALVIS: ele tem aula hoje, esta de saída?
+
+Player{PLAYER: Sim, estou} [goto lineOne]
+Player{PLAYER: Não, vou ficar aqui na igreja} [goto lineTwo]
+
+-lineOne
+ALVIS: Não se esqueça de aparecer durante a missa.
+[end]
+
+-lineTwo
+ALVIS: Você deveria ajudar na preparação do festival junto com a Aina.
+[end]
