@@ -1,0 +1,6 @@
+[call ignoreNpc NPC_Klaus]
+
+Klaus: O quê? Como assim? Aonde você achou isso?
+Klaus: O quê? Como assim? Aonde você achou isso?
+Persival: O pai deve estar no cemitério! Ele sempre vai rezar essa hora.
+Klaus: Vou buscar o Gunvar e Riki. Persival, vá avisar nosso pai!.

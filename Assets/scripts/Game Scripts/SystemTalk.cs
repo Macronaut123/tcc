@@ -72,6 +72,94 @@ public class SystemTalk : GenericFunction {
                         }
                     }
                     break;
+                case "NPC_Benn":
+                    npcManager.Benn = true;
+                    NpcInfo npcControlBenn = gameObject.GetComponent<NpcInfo>();
+                    for (var i = 0; i < npcControlBenn.dailyRoutine.Length; i++)
+                    {
+                        if (npcControlBenn.dailyRoutine[i] == h)
+                        {
+                            npcControlBenn.dailyRoutineCondition[i] = true;
+                        }
+                    }
+                    break;
+                case "NPC_Aina":
+                    npcManager.Aina = true;
+                    NpcInfo npcControlAina = gameObject.GetComponent<NpcInfo>();
+                    for (var i = 0; i < npcControlAina.dailyRoutine.Length; i++)
+                    {
+                        if (npcControlAina.dailyRoutine[i] == h)
+                        {
+                            npcControlAina.dailyRoutineCondition[i] = true;
+                        }
+                    }
+                    break;
+                case "NPC_Alvis":
+                    npcManager.Alvis = true;
+                    NpcInfo npcControlAlvis = gameObject.GetComponent<NpcInfo>();
+                    for (var i = 0; i < npcControlAlvis.dailyRoutine.Length; i++)
+                    {
+                        if (npcControlAlvis.dailyRoutine[i] == h)
+                        {
+                            npcControlAlvis.dailyRoutineCondition[i] = true;
+                        }
+                    }
+                    break;
+                case "NPC_Argus":
+                    npcManager.Argus = true;
+                    NpcInfo npcControlArgus = gameObject.GetComponent<NpcInfo>();
+                    for (var i = 0; i < npcControlArgus.dailyRoutine.Length; i++)
+                    {
+                        if (npcControlArgus.dailyRoutine[i] == h)
+                        {
+                            npcControlArgus.dailyRoutineCondition[i] = true;
+                        }
+                    }
+                    break;
+                case "NPC_Finn":
+                    npcManager.Finn = true;
+                    NpcInfo npcControlFinn = gameObject.GetComponent<NpcInfo>();
+                    for (var i = 0; i < npcControlFinn.dailyRoutine.Length; i++)
+                    {
+                        if (npcControlFinn.dailyRoutine[i] == h)
+                        {
+                            npcControlFinn.dailyRoutineCondition[i] = true;
+                        }
+                    }
+                    break;
+                case "NPC_Gunvar":
+                    npcManager.Gunvar = true;
+                    NpcInfo npcControlGunvar = gameObject.GetComponent<NpcInfo>();
+                    for (var i = 0; i < npcControlGunvar.dailyRoutine.Length; i++)
+                    {
+                        if (npcControlGunvar.dailyRoutine[i] == h)
+                        {
+                            npcControlGunvar.dailyRoutineCondition[i] = true;
+                        }
+                    }
+                    break;
+                case "NPC_Rikki":
+                    npcManager.Rikki = true;
+                    NpcInfo npcControlRikki = gameObject.GetComponent<NpcInfo>();
+                    for (var i = 0; i < npcControlRikki.dailyRoutine.Length; i++)
+                    {
+                        if (npcControlRikki.dailyRoutine[i] == h)
+                        {
+                            npcControlRikki.dailyRoutineCondition[i] = true;
+                        }
+                    }
+                    break;
+                case "NPC_Encapuzado":
+                    npcManager.Encapuzado = true;
+                    NpcInfo npcControlEncapuzado = gameObject.GetComponent<NpcInfo>();
+                    for (var i = 0; i < npcControlEncapuzado.dailyRoutine.Length; i++)
+                    {
+                        if (npcControlEncapuzado.dailyRoutine[i] == h)
+                        {
+                            npcControlEncapuzado.dailyRoutineCondition[i] = true;
+                        }
+                    }
+                    break;
             }
 			
 			//NPC COM DEPENDENCIA

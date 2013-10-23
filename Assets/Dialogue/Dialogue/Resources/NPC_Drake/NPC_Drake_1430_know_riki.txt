@@ -1,0 +1,9 @@
+Player {Player: Preocupado com o Riki?} [goto line1]
+
+-line1
+DRAKE: ...
+DRAKE: Acredita que eu quase nunca conversei com aquele garoto?
+DRAKE: Ele é calado e muito fechado... Espero que um dia ele consiga se abrir.
+DRAKE: Acho que ele e o Gunvar se dariam bem. Você também não acha? Hahaha!
+[end]
+

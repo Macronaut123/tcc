@@ -8,7 +8,6 @@ public class change_target : MonoBehaviour {
     public exSpriteFont[] hours_to_change;
     public GameObject new_target;
     public GameObject[] menus_to_show;
-	public Vector3[] placetoGo;
 	public float timeDelay;
 
     private int age;
@@ -38,13 +37,6 @@ public class change_target : MonoBehaviour {
 	}
 
     void OnMouseDown() {
-        if (menus_to_show != null)
-        {
-            for(int i=0; i < menus_to_show.Length; i++){
-				iTween.MoveTo(menus_to_show[i],placetoGo[i],timeDelay);
-			}
-        }
-
         text_to_change.text = "\nIdade: " + age.ToString() +"\nNome: " + name + "\nClasse: " + subinfo + "\nDescricao: " + description[0];
         for (int o = 0; o < dailySettings.Length; o++) {
             if (dailyConditions[o])

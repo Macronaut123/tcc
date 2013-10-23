@@ -1,0 +1,24 @@
+[call ignoreNpc NPC_Argus]
+
+BEN: Bom dia Argus! Como estão as coisas no reino?
+ARGUS: Nossa, Ben! Quanto tempo não o via! 
+ARGUS: Estava lucrando muito por aí?
+BEN: Não devo estar lucrando tanto quanto você! Kkkk!!
+BEN: Voltei hoje pra cá por vários motivos... 
+BEN: Uma delas, é uma entrega pendente aí.
+ARGUS: Bom... Bem vindo de volta! Espero que goste do festival!
+BEN: Espero que hoje dê tudo certo... Para todos... Kkkkk!
+
+Player{PLAYER: Bom dia Sr Argus.} [goto lineTwo]
+Player{PLAYER: Melhor não atrapalhar.} [goto lineOne]
+
+-lineTwo
+ARGUS: Titor! Lembra do Ben?
+BEN: Nossa, ele é o Titor? Como ele cresceu!
+ARGUS: E você cada vez mais velho! Hahahaha!
+BEN: Não tanto quanto você! Kkkkk!!
+[end]
+
+-lineOne
+Titor: Melhor não atrapalhar eles...
+[end]
