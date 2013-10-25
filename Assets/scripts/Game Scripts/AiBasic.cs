@@ -267,7 +267,7 @@ public class AiBasic : GenericFunction
         if (direction.magnitude > 1)
         {
             var rotate = Quaternion.LookRotation(next - transform.position);
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotate, 0.1F);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotate, 0F);
         }
 
         if (direction.magnitude <= 1)

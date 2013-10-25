@@ -109,6 +109,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1530.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_0730.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0830_know_gunvar.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_1030.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_1530.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_1730.txt" />
@@ -137,6 +138,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1530.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_2130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_1300.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_1800_have_letter.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_0930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_2200.txt" />
@@ -166,6 +168,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_1330.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1400.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Persival\NPC_Persival_1800_have_letter.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Anika\NPC_Anika_1530.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1000.txt" />
@@ -179,6 +182,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_1830.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1930.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alviss\NPC_Alviss_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_0800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_1630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Persival\NPC_Persival_1730.txt" />
@@ -221,6 +225,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1330.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_0700.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0830_dont_know_gunvar.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_0600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_1600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0830.txt" />
@@ -254,6 +259,8 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_0730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_2000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1930.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_1800_dont_have_letter.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alviss\NPC_Alviss_0600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1100.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_1630.txt" />
@@ -265,6 +272,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_1730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_0730.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1000_know_gunvar.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_1230.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_1600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_2130.txt" />
@@ -299,11 +307,13 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_2130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1800.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alviss\NPC_Alviss_0600_player_knowledge_to_got_churchkey.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_1900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_1830.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1100.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alviss\NPC_Alviss_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_1000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_0930.txt" />
@@ -368,6 +378,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Persival\NPC_Persival_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_2200.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0930_dont_know_gunvar.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_0930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_1800.txt" />
@@ -412,6 +423,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_0830.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_0730.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0900_know_gunvar.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_1330.txt" />
@@ -451,6 +463,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_0600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_1800.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1000_dont_know_gunvar.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_1500.txt" />
@@ -514,8 +527,10 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_0830.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_1530.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1000.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1430_dont_know_gunvar.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_0700.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0900_dont_know_gunvar.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_1830.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_0600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1230.txt" />
@@ -548,6 +563,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_1200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_0730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1730.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1430_dont_know_riki.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_1630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_2200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_1430.txt" />
@@ -613,6 +629,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1530.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_2000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1830.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Persival\NPC_Persival_1800_dont_have_letter.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_1500.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_1500.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_1000.txt" />
@@ -729,6 +746,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_0800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_1130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_1000.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alviss\NPC_Alviss_0600_player_got_churchkey.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Persival\NPC_Persival_1000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_1200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_1300.txt" />
@@ -754,6 +772,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_2030.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_0900.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1430_know_gunvar.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_2100.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_0730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1130.txt" />
@@ -814,6 +833,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1830.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_1500.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0930_know_gunvar.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_2000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1500.txt" />
@@ -823,6 +843,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_1630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_1500.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1900.txt" />
+     <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1430_know_riki.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1400.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_1230.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_2100.txt" />
