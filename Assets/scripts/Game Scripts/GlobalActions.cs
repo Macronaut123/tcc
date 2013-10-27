@@ -7,17 +7,20 @@ public class GlobalActions : GenericFunction
 
     public void action(int hour, int minut, float second, bool resetAll)
     {
-        setNewTimer(hour, minut, second);
-        GameObject[] a = GameObject.FindGameObjectsWithTag("canBack");
-		
-        foreach (GameObject temp in a)
+        if (PlayerCollides.Igreja || PlayerCollides.Cemiterio || PlayerCollides.Cidade)
         {
-            if (temp.GetComponent<AiBasic>())
+            setNewTimer(hour, minut, second);
+            GameObject[] a = GameObject.FindGameObjectsWithTag("canBack");
+
+            foreach (GameObject temp in a)
             {
-                temp.GetComponent<AiBasic>().getNewCurrentContainer();
+                if (temp.GetComponent<AiBasic>())
+                {
+                    temp.GetComponent<AiBasic>().getNewCurrentContainer();
+                }
+
+                temp.GetComponent<NpcSystemBackTime>().goToPosition(temp.GetComponent<AiBasic>().getSubContainerWayPoint());
             }
-			
-   			temp.GetComponent<NpcSystemBackTime>().goToPosition(temp.GetComponent<AiBasic>().getSubContainerWayPoint());
         }
     }
 

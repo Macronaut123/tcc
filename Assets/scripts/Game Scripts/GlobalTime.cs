@@ -68,9 +68,12 @@ public class GlobalTime : MonoBehaviour
 
     public void setNewTimer(int hour, int minut, float second)
     {
-        this.hour = hour;
-        this.minut = minut;
-        this.second = second;
+        if (PlayerCollides.Igreja || PlayerCollides.Cemiterio || PlayerCollides.Cidade)
+        {
+            this.hour = hour;
+            this.minut = minut;
+            this.second = second;
+        }
     }
 
     private string FormatSeconds()
