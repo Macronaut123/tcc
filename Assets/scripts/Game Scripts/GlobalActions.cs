@@ -7,7 +7,7 @@ public class GlobalActions : GenericFunction
 
     public void action(int hour, int minut, float second, bool resetAll)
     {
-        if (PlayerCollides.Igreja || PlayerCollides.Cemiterio || PlayerCollides.Cidade)
+        if (PlayerCollides.Quarto)
         {
             setNewTimer(hour, minut, second);
             GameObject[] a = GameObject.FindGameObjectsWithTag("canBack");
