@@ -211,7 +211,7 @@ public class UIPopupList : UIWidgetContainer
 				}
 			}
 			// Clear the selection for menu items
-			if (textLabel == null) mSelectedItem = null;
+			//if (textLabel == null) mSelectedItem = null;
 		}
 	}
 
@@ -282,7 +282,7 @@ public class UIPopupList : UIWidgetContainer
 
 		if (Application.isPlaying)
 		{
-			if (textLabel != null)
+			//if (textLabel != null)
 			{
 				// Automatically choose the first item
 				if (string.IsNullOrEmpty(mSelectedItem))
@@ -296,7 +296,7 @@ public class UIPopupList : UIWidgetContainer
 					value = s;
 				}
 			}
-			else mSelectedItem = null;
+			//else mSelectedItem = null;
 		}
 	}
 
@@ -600,6 +600,8 @@ public class UIPopupList : UIWidgetContainer
 				listener.onHover = OnItemHover;
 				listener.onPress = OnItemPress;
 				listener.parameter = s;
+				
+				Highlight(lbl,false);
 
 				// Move the selection here if this is the right label
 				if (mSelectedItem == s) Highlight(lbl, true);
@@ -609,7 +611,8 @@ public class UIPopupList : UIWidgetContainer
 			}
 
 			// The triggering widget's width should be the minimum allowed width
-			x = Mathf.Max(x, bounds.size.x * dynScale - (bgPadding.x + padding.x) * 2f);
+			x = Mathf.Max(x, bounds.size.x - (bgPadding.x + padding.x) * 2f);
+
 
 			float cx = x / dynScale;
 			Vector3 bcCenter = new Vector3(cx * 0.5f, -fontHeight * 0.5f, 0f);

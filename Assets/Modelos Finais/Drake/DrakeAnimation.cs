@@ -3,7 +3,7 @@ using System.Collections;
 
 public class DrakeAnimation : MonoBehaviour {
 
-    public Animator animControl;
+    public Animation animControl;
     private float currentSpeed;
 
 	// Use this for initialization
@@ -15,7 +15,17 @@ public class DrakeAnimation : MonoBehaviour {
 	void Update () {
 
         currentSpeed = gameObject.GetComponent<AiBasic>().direction.magnitude;
-        animControl.SetFloat("Speed", currentSpeed);
+
+        
+
+        if (currentSpeed > 3)
+        {
+            animControl.CrossFade("Andando");
+        }
+        else
+        {
+            animControl.CrossFade("Idle");
+        }
 
 	}
 }

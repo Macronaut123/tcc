@@ -5,7 +5,6 @@ public delegate void JumpDelegate ();
 
 public class ThirdPersonController : MonoBehaviour
 {
-    private TitorAnimation titorControl;
 
 	public Rigidbody target;
 		// The object we're steering
@@ -69,8 +68,6 @@ public class ThirdPersonController : MonoBehaviour
 	// Verify setup, configure rigidbody
 	{
 
-        titorControl = gameObject.GetComponent<TitorAnimation>();
-
 		Setup ();
 			// Retry setup if references were cleared post-add
 		
@@ -88,18 +85,7 @@ public class ThirdPersonController : MonoBehaviour
 	
 	void Update ()
 	// Handle rotation here to ensure smooth application.
-	{
-		
-		if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)){
-            titorControl.Anim1 = false;
-            titorControl.Anim2 = true;
-		}
-		
-		if(!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S)){
-            titorControl.Anim1 = true;
-            titorControl.Anim2 = false;
-		}
-		
+	{	
 		float rotationAmount;
 		
 		if(Input.GetKeyDown(KeyCode.LeftShift)){

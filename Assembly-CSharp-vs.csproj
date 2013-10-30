@@ -50,6 +50,7 @@
      <Compile Include="Assets\Dialogue\Dialogue\Demo Bits\Player.cs" />
      <Compile Include="Assets\Dialogue\Dialogue\DialogueTemplate.cs" />
      <Compile Include="Assets\Dialogue\Dialogue\Plugins\Dialogue.cs" />
+     <Compile Include="Assets\Modelos Finais\AinaNova\Aina.cs" />
      <Compile Include="Assets\Modelos Finais\Drake\DrakeAnimation.cs" />
      <Compile Include="Assets\Modelos Finais\Persival\PersivalAnimation.cs" />
      <Compile Include="Assets\Modelos Finais\Titor\TitorAnimation.cs" />
@@ -172,8 +173,6 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
-     <Compile Include="Assets\Pixelplacement\ScreenFade\Example\Scripts\Tester.cs" />
-     <Compile Include="Assets\Pixelplacement\ScreenFade\ScreenFade.cs" />
      <Compile Include="Assets\ex2D\_demo\Scripts\Player.cs" />
      <Compile Include="Assets\ex2D\_demo\Scripts\ScrollView.cs" />
      <Compile Include="Assets\ex2D\_demo\Scripts\SpAnimEventHandle.cs" />
@@ -183,7 +182,6 @@
      <Compile Include="Assets\iTween\Sample\SampleInfo.cs" />
      <Compile Include="Assets\scripts\Game Scripts\AiBasic.cs" />
      <Compile Include="Assets\scripts\Game Scripts\AiTwoActions.cs" />
-     <Compile Include="Assets\scripts\Game Scripts\AnimatorControl.cs" />
      <Compile Include="Assets\scripts\Game Scripts\CamManager.cs" />
      <Compile Include="Assets\scripts\Game Scripts\DisableObject.cs" />
      <Compile Include="Assets\scripts\Game Scripts\GenericFunction.cs" />
@@ -657,7 +655,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_0600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_1800.txt" />
-     <None Include="Assets\Pixelplacement\ScreenFade\Example\Shaders\RimDiffuse.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1000_dont_know_gunvar.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_0900.txt" />

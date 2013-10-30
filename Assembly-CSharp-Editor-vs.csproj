@@ -537,7 +537,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_0600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_1800.txt" />
-     <None Include="Assets\Pixelplacement\ScreenFade\Example\Shaders\RimDiffuse.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1000_dont_know_gunvar.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_0900.txt" />
