@@ -266,12 +266,16 @@ public class AiBasic : GenericFunction
 
         if (direction.magnitude > 1)
         {
-            var rotate = Quaternion.LookRotation(next - transform.position);
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotate, 0F);
+            GetComponent<NavMeshAgent>().updatePosition = true;
+            GetComponent<NavMeshAgent>().updateRotation = true;
         }
 
         if (direction.magnitude <= 1)
         {
+
+            GetComponent<NavMeshAgent>().updatePosition = false;
+            GetComponent<NavMeshAgent>().updateRotation = false;
+
             currentWayPoint++;
 
             if (currentWayPoint >= wayPoints.ToArray().Length)
