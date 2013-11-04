@@ -1,7 +1,7 @@
 ----------------------------------------------
             NGUI: Next-Gen UI kit
  Copyright © 2011-2013 Tasharen Entertainment
-                Version 3.0.3d
+                Version 3.0.4
     http://www.tasharen.com/?page_id=197
             support@tasharen.com
 ----------------------------------------------
@@ -34,6 +34,28 @@ Using NGUI with JavaScript (UnityScript)? Read this first: http://www.tasharen.c
 -----------------
  Version History
 -----------------
+
+3.0.4 (merged 3.0.3 letter updates)
+- NEW: UIPanel will now show the render queue number used to draw the geometry.
+- NEW: You can now specify a bitmap font in the widget wizard.
+- NEW: Added the ability to auto-resize the widget's box collider.
+- FIX: Draggable panel's scroll bars will now hide correctly when they should be hidden.
+- FIX: Scroll bar will no longer force the sprite to be pixel perfect.
+- FIX: UIInput was not hiding the password characters on deselect.
+- FIX: Additional checks to ensure the UILabel cleans up texture rebuild callbacks.
+- FIX: Adjusting the depth of a panel via NGUITools.AdjustDepth will now affect child panels.
+- FIX: UILabel.ProcessAndRequest was not calling ProcessText for labels using bitmap fonts.
+- FIX: Labels with encoded colors will now wrap properly.
+- FIX: It's no longer possible to set the sprite width and height to zero before assigning a sprite.
+- FIX: Raycasts that hit no widgets will now be ignored.
+- FIX: Fixed out of bounds exception when labels ended with [-].
+- FIX: UIWidget.ResizeCollider no longer does anything if the widget is disabled.
+- FIX: UIInput will no longer clear the text of multiple labels on mobile platforms.
+- FIX: UIInput.Submit() now sets the UIInput.current correctly.
+- FIX: Backwards compatibility additions.
+- FIX: Event delegate setting fix.
+- FIX: Unity 3.5 fixes.
+- FIX: WP8 fixes.
 
 3.0.3:
 - NEW: You no longer need to create UIFonts for dynamic fonts and can now specify font size and style directly on your labels.

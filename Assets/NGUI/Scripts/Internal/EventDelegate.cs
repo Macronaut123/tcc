@@ -3,7 +3,7 @@
 // Copyright © 2011-2013 Tasharen Entertainment
 //----------------------------------------------
 
-#if UNITY_EDITOR || (!UNITY_FLASH && !UNITY_WP8 && !UNITY_METRO)
+#if UNITY_EDITOR || !UNITY_FLASH
 #define REFLECTION_SUPPORT
 #endif
 
@@ -66,16 +66,28 @@ public class EventDelegate
 	/// Windows 8 is retarded.
 	/// </summary>
 
-#if UNITY_METRO || UNITY_WP8
+#if !UNITY_EDITOR && UNITY_WP8
 	static string GetMethodName (Callback callback)
 	{
-		Delegate d = callback as Delegate;
+		System.Delegate d = callback as System.Delegate;
+		return d.Method.Name;
+	}
+
+	static bool IsValid (Callback callback)
+	{
+		System.Delegate d = callback as System.Delegate;
+		return d != null && d.Method != null;
+	}
+#elif !UNITY_EDITOR && UNITY_METRO
+	static string GetMethodName (Callback callback)
+	{
+		System.Delegate d = callback as System.Delegate;
 		return d.GetMethodInfo().Name;
 	}
 
 	static bool IsValid (Callback callback)
 	{
-		Delegate d = callback as Delegate;
+		System.Delegate d = callback as System.Delegate;
 		return d != null && d.GetMethodInfo() != null;
 	}
 #else

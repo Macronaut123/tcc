@@ -3,7 +3,7 @@ using System.Collections;
 
 public class StartGame : MonoBehaviour {
 
-    public UILabel buttonText;
+    
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +16,6 @@ public class StartGame : MonoBehaviour {
 	}
 
     void OnClick() {
-        //COMEÇAR O JOGO//
+        Application.LoadLevel("Zeitland");
     }
 }

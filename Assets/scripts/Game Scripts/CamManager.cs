@@ -8,10 +8,6 @@ public class CamManager : MonoBehaviour {
     public Camera firstPerson;
     public Camera thirdPerson;
 
-    public Texture2D blackScreen;
-
-    public GameObject disableCamera;
-
 	// Use this for initialization
 	void Start () {
         camFirst = false;
@@ -29,7 +25,6 @@ public class CamManager : MonoBehaviour {
             
             firstPerson.gameObject.SetActive(true);
             thirdPerson.gameObject.SetActive(false);
-            disableCamera.gameObject.SetActive(false);
         }
     }
 
@@ -38,7 +33,6 @@ public class CamManager : MonoBehaviour {
             camFirst = false;
             firstPerson.gameObject.SetActive(false);
             thirdPerson.gameObject.SetActive(true);
-            disableCamera.gameObject.SetActive(true);
         }
     }
 }

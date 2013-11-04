@@ -50,6 +50,14 @@
      <Compile Include="Assets\Dialogue\Dialogue\Demo Bits\Player.cs" />
      <Compile Include="Assets\Dialogue\Dialogue\DialogueTemplate.cs" />
      <Compile Include="Assets\Dialogue\Dialogue\Plugins\Dialogue.cs" />
+     <Compile Include="Assets\HUD Text\Examples\Scripts\ChatManager.cs" />
+     <Compile Include="Assets\HUD Text\Examples\Scripts\ChatParticipant.cs" />
+     <Compile Include="Assets\HUD Text\Examples\Scripts\ColliderDisplayText.cs" />
+     <Compile Include="Assets\HUD Text\Examples\Scripts\HUDRoot.cs" />
+     <Compile Include="Assets\HUD Text\Examples\Scripts\LightFlicker.cs" />
+     <Compile Include="Assets\HUD Text\Examples\Scripts\Rotate.cs" />
+     <Compile Include="Assets\HUD Text\Scripts\HUDText.cs" />
+     <Compile Include="Assets\HUD Text\Scripts\UIFollowTarget.cs" />
      <Compile Include="Assets\Modelos Finais\AinaNova\Aina.cs" />
      <Compile Include="Assets\Modelos Finais\Drake\DrakeAnimation.cs" />
      <Compile Include="Assets\Modelos Finais\Persival\PersivalAnimation.cs" />
@@ -173,9 +181,6 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
-     <Compile Include="Assets\ex2D\_demo\Scripts\Player.cs" />
-     <Compile Include="Assets\ex2D\_demo\Scripts\ScrollView.cs" />
-     <Compile Include="Assets\ex2D\_demo\Scripts\SpAnimEventHandle.cs" />
      <Compile Include="Assets\iTween\Plugins\iTween.cs" />
      <Compile Include="Assets\iTween\Sample\MoveSample.cs" />
      <Compile Include="Assets\iTween\Sample\RotateSample.cs" />
@@ -208,23 +213,13 @@
      <Compile Include="Assets\scripts\Game Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\scripts\Game Scripts\ThirdPersonController.cs" />
      <Compile Include="Assets\scripts\Game Scripts\getItem.cs" />
-     <Compile Include="Assets\scripts\Interface Scripts\ChangeNPCs.cs" />
-     <Compile Include="Assets\scripts\Interface Scripts\DisablePause.cs" />
-     <Compile Include="Assets\scripts\Interface Scripts\DisableSound.cs" />
-     <Compile Include="Assets\scripts\Interface Scripts\PauseSystem.cs" />
-     <Compile Include="Assets\scripts\Interface Scripts\TimeChange.cs" />
-     <Compile Include="Assets\scripts\Interface Scripts\change_target.cs" />
-     <Compile Include="Assets\scripts\Interface Scripts\exitApplication.cs" />
-     <Compile Include="Assets\scripts\Interface Scripts\itweenCamera.cs" />
-     <Compile Include="Assets\scripts\Interface Scripts\itweenMovement.cs" />
-     <Compile Include="Assets\scripts\Interface Scripts\npcManager.cs" />
-     <Compile Include="Assets\scripts\Interface Scripts\simpleChange.cs" />
-     <Compile Include="Assets\scripts\Interface Scripts\simple_close.cs" />
-     <Compile Include="Assets\scripts\Interface Scripts\simple_feedback.cs" />
-     <Compile Include="Assets\scripts\Interface Scripts\simple_open.cs" />
-     <Compile Include="Assets\scripts\Interface Scripts\startGame.cs" />
+     <Compile Include="Assets\scripts\NGUI Scripts\GameScreen\ButtonFunction.cs" />
+     <Compile Include="Assets\scripts\NGUI Scripts\GameScreen\ChangeTime.cs" />
+     <Compile Include="Assets\scripts\NGUI Scripts\GameScreen\PauseManage.cs" />
+     <Compile Include="Assets\scripts\NGUI Scripts\GameScreen\PopupManage.cs" />
+     <Compile Include="Assets\scripts\NGUI Scripts\GameScreen\ReturnToMenu.cs" />
+     <Compile Include="Assets\scripts\NGUI Scripts\GameScreen\SliderSetup.cs" />
      <Compile Include="Assets\scripts\NGUI Scripts\InitScreen\ExitGame.cs" />
-     <Compile Include="Assets\scripts\NGUI Scripts\InitScreen\SoundSystem.cs" />
      <Compile Include="Assets\scripts\NGUI Scripts\InitScreen\StartGame.cs" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1230.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_0900.txt" />
@@ -272,7 +267,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1800.txt" />
-     <None Include="Assets\ex2D\_demo\Fonts\Amaranth.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0930.txt" />
      <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_0900.txt" />
@@ -303,10 +297,8 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_1300.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Anika\NPC_Anika_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Persival\NPC_Persival_0730.txt" />
-     <None Include="Assets\ex2D\Core\Shaders\SpriteBlendClipping.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_2200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1100.txt" />
-     <None Include="Assets\ex2D\Core\Shaders\SpriteBlendPixelPerfect.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1300.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_0930.txt" />
@@ -612,7 +604,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_0730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_1300.txt" />
-     <None Include="Assets\ex2D\_demo\Fonts\springSteel.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_0830.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_0730.txt" />
@@ -708,6 +699,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_2000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_1330.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Anika\NPC_Anika_1000.txt" />
+     <None Include="Assets\HUD Text\ReadMe - 1.8.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_1930.txt" />
      <None Include="Assets\NGUI\ReadMe - 3.0.3d.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_1730.txt" />
@@ -845,6 +837,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Anika\NPC_Anika_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_1730.txt" />
+     <None Include="Assets\HUD Text\Examples\Atlases\Arimo20.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_2200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_1230.txt" />
@@ -872,7 +865,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_2130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_1730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_0830.txt" />
-     <None Include="Assets\ex2D\Core\Shaders\SpriteBlendNoZTest.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_2100.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1600.txt" />
@@ -881,7 +873,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1730.txt" />
      <None Include="Assets\NGUI\1. Which Version To Import.txt" />
-     <None Include="Assets\ex2D\Core\Shaders\SpriteBlend.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1400.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1730.txt" />
@@ -972,7 +963,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_1200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\ExampleDialogue.txt" />
-     <None Include="Assets\ex2D\_demo\Fonts\otari.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_0700.txt" />
@@ -981,6 +971,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1430_know_gunvar.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_2100.txt" />
+     <None Include="Assets\HUD Text\Examples\Atlases\Large.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_0730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_1130.txt" />
@@ -1105,9 +1096,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1500.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_2030.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_0600.txt" />
- <Reference Include="ex2D.Runtime">
- <HintPath>Assets\ex2D\Core\ex2D.Runtime.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">

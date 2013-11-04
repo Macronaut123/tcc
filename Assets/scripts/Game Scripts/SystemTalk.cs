@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 public class SystemTalk : GenericFunction {
 	
+	public GameObject addPopup;
+	public int[] daily;
+	public bool[] dailyCond;
 	
 	public void OnTriggerEnter(Collider hit){
 
@@ -18,145 +21,160 @@ public class SystemTalk : GenericFunction {
 
             switch (gameObject.name) { 
                 case "NPC_Drake":
-                    npcManager.Drake = true;
-                    NpcInfo npcControlDrake = gameObject.GetComponent<NpcInfo>();
-                    for (var i = 0; i < npcControlDrake.dailyRoutine.Length; i++)
-                    {
-                        if (npcControlDrake.dailyRoutine[i] == h)
-                        {
-                            npcControlDrake.dailyRoutineCondition[i] = true;
-                        }
-                    }
-                    break;
+				daily = gameObject.GetComponent<NpcInfo>().dailyRoutine;
+				dailyCond = gameObject.GetComponent<NpcInfo>().dailyRoutineCondition;
+				if(!addPopup.gameObject.GetComponent<UIPopupList>().items.Contains("Drake")){
+				addPopup.gameObject.GetComponent<UIPopupList>().items.Add("Drake");}
+				for(int i = 0; i < daily.Length; i++){
+					if(daily[i] == h){
+						dailyCond[i] = true;
+					}
+				}
+					break;
                 case "NPC_Klaus":
-                    npcManager.Klaus = true;
-                    NpcInfo npcControlKlaus = gameObject.GetComponent<NpcInfo>();
-                    for (var i = 0; i < npcControlKlaus.dailyRoutine.Length; i++)
-                    {
-                        if (npcControlKlaus.dailyRoutine[i] == h)
-                        {
-                            npcControlKlaus.dailyRoutineCondition[i] = true;
-                        }
-                    }
+				daily = gameObject.GetComponent<NpcInfo>().dailyRoutine;
+				dailyCond = gameObject.GetComponent<NpcInfo>().dailyRoutineCondition;
+				if(!addPopup.gameObject.GetComponent<UIPopupList>().items.Contains("Klaus")){
+				addPopup.gameObject.GetComponent<UIPopupList>().items.Add("Klaus");}
+				for(int i = 0; i < daily.Length; i++){
+					if(daily[i] == h){
+						dailyCond[i] = true;
+					}
+				}
                     break;
-                case "NPC_Persival":
-                    npcManager.Persival = true;
-                    NpcInfo npcControlPersival = gameObject.GetComponent<NpcInfo>();
-                    for (var i = 0; i < npcControlPersival.dailyRoutine.Length; i++)
-                    {
-                        if (npcControlPersival.dailyRoutine[i] == h)
-                        {
-                            npcControlPersival.dailyRoutineCondition[i] = true;
-                        }
-                    }
+                case "NPC_Persival":             
+				daily = gameObject.GetComponent<NpcInfo>().dailyRoutine;
+				dailyCond = gameObject.GetComponent<NpcInfo>().dailyRoutineCondition;
+				if(!addPopup.gameObject.GetComponent<UIPopupList>().items.Contains("Persival")){
+				addPopup.gameObject.GetComponent<UIPopupList>().items.Add("Persival");}
+				for(int i = 0; i < daily.Length; i++){
+					if(daily[i] == h){
+						dailyCond[i] = true;
+					}
+				}
                     break;
                 case "NPC_Tobbie":
-                    npcManager.Tobbie = true;
-                    NpcInfo npcControlTobbie = gameObject.GetComponent<NpcInfo>();
-                    for (var i = 0; i < npcControlTobbie.dailyRoutine.Length; i++)
-                    {
-                        if (npcControlTobbie.dailyRoutine[i] == h)
-                        {
-                            npcControlTobbie.dailyRoutineCondition[i] = true;
-                        }
-                    }
+				daily = gameObject.GetComponent<NpcInfo>().dailyRoutine;
+				dailyCond = gameObject.GetComponent<NpcInfo>().dailyRoutineCondition;
+				if(!addPopup.gameObject.GetComponent<UIPopupList>().items.Contains("Tobbie")){
+				addPopup.gameObject.GetComponent<UIPopupList>().items.Add("Tobbie");}
+				for(int i = 0; i < daily.Length; i++){
+					if(daily[i] == h){
+						dailyCond[i] = true;
+					}
+				}
                     break;
-                case "NPC_Ulric":
-                    npcManager.Ulric = true;
-                    NpcInfo npcControlUlric = gameObject.GetComponent<NpcInfo>();
-                    for (var i = 0; i < npcControlUlric.dailyRoutine.Length; i++)
-                    {
-                        if (npcControlUlric.dailyRoutine[i] == h)
-                        {
-                            npcControlUlric.dailyRoutineCondition[i] = true;
-                        }
-                    }
+                case "NPC_Ulric":  
+				daily = gameObject.GetComponent<NpcInfo>().dailyRoutine;
+				dailyCond = gameObject.GetComponent<NpcInfo>().dailyRoutineCondition;
+				if(!addPopup.gameObject.GetComponent<UIPopupList>().items.Contains("Ulric")){
+				addPopup.gameObject.GetComponent<UIPopupList>().items.Add("Ulric");}
+				for(int i = 0; i < daily.Length; i++){
+					if(daily[i] == h){
+						dailyCond[i] = true;
+					}
+				}
                     break;
-                case "NPC_Benn":
-                    npcManager.Benn = true;
-                    NpcInfo npcControlBenn = gameObject.GetComponent<NpcInfo>();
-                    for (var i = 0; i < npcControlBenn.dailyRoutine.Length; i++)
-                    {
-                        if (npcControlBenn.dailyRoutine[i] == h)
-                        {
-                            npcControlBenn.dailyRoutineCondition[i] = true;
-                        }
-                    }
+                case "NPC_Benn":                 
+				daily = gameObject.GetComponent<NpcInfo>().dailyRoutine;
+				dailyCond = gameObject.GetComponent<NpcInfo>().dailyRoutineCondition;
+				if(!addPopup.gameObject.GetComponent<UIPopupList>().items.Contains("Benn")){
+				addPopup.gameObject.GetComponent<UIPopupList>().items.Add("Benn");}
+				for(int i = 0; i < daily.Length; i++){
+					if(daily[i] == h){
+						dailyCond[i] = true;
+					}
+				}
                     break;
                 case "NPC_Aina":
-                    npcManager.Aina = true;
-                    NpcInfo npcControlAina = gameObject.GetComponent<NpcInfo>();
-                    for (var i = 0; i < npcControlAina.dailyRoutine.Length; i++)
-                    {
-                        if (npcControlAina.dailyRoutine[i] == h)
-                        {
-                            npcControlAina.dailyRoutineCondition[i] = true;
-                        }
-                    }
+				daily = gameObject.GetComponent<NpcInfo>().dailyRoutine;
+				dailyCond = gameObject.GetComponent<NpcInfo>().dailyRoutineCondition;
+				if(!addPopup.gameObject.GetComponent<UIPopupList>().items.Contains("Aina")){
+				addPopup.gameObject.GetComponent<UIPopupList>().items.Add("Aina");}
+				for(int i = 0; i < daily.Length; i++){
+					if(daily[i] == h){
+						dailyCond[i] = true;
+					}
+				}
+					break;
+                case "NPC_Alvis":                    
+				daily = gameObject.GetComponent<NpcInfo>().dailyRoutine;
+				dailyCond = gameObject.GetComponent<NpcInfo>().dailyRoutineCondition;
+				if(!addPopup.gameObject.GetComponent<UIPopupList>().items.Contains("Alvis")){
+				addPopup.gameObject.GetComponent<UIPopupList>().items.Add("Alvis");}
+				for(int i = 0; i < daily.Length; i++){
+					if(daily[i] == h){
+						dailyCond[i] = true;
+					}
+				}
                     break;
-                case "NPC_Alvis":
-                    npcManager.Alvis = true;
-                    NpcInfo npcControlAlvis = gameObject.GetComponent<NpcInfo>();
-                    for (var i = 0; i < npcControlAlvis.dailyRoutine.Length; i++)
-                    {
-                        if (npcControlAlvis.dailyRoutine[i] == h)
-                        {
-                            npcControlAlvis.dailyRoutineCondition[i] = true;
-                        }
-                    }
+                case "NPC_Argus":                    
+				daily = gameObject.GetComponent<NpcInfo>().dailyRoutine;
+				dailyCond = gameObject.GetComponent<NpcInfo>().dailyRoutineCondition;
+				if(!addPopup.gameObject.GetComponent<UIPopupList>().items.Contains("Argus")){
+				addPopup.gameObject.GetComponent<UIPopupList>().items.Add("Argus");}
+				for(int i = 0; i < daily.Length; i++){
+					if(daily[i] == h){
+						dailyCond[i] = true;
+					}
+				}
                     break;
-                case "NPC_Argus":
-                    npcManager.Argus = true;
-                    NpcInfo npcControlArgus = gameObject.GetComponent<NpcInfo>();
-                    for (var i = 0; i < npcControlArgus.dailyRoutine.Length; i++)
-                    {
-                        if (npcControlArgus.dailyRoutine[i] == h)
-                        {
-                            npcControlArgus.dailyRoutineCondition[i] = true;
-                        }
-                    }
+                case "NPC_Finn":                
+				daily = gameObject.GetComponent<NpcInfo>().dailyRoutine;
+				dailyCond = gameObject.GetComponent<NpcInfo>().dailyRoutineCondition;
+				if(!addPopup.gameObject.GetComponent<UIPopupList>().items.Contains("Finn")){
+				addPopup.gameObject.GetComponent<UIPopupList>().items.Add("Finn");}
+				for(int i = 0; i < daily.Length; i++){
+					if(daily[i] == h){
+						dailyCond[i] = true;
+					}
+				}
                     break;
-                case "NPC_Finn":
-                    npcManager.Finn = true;
-                    NpcInfo npcControlFinn = gameObject.GetComponent<NpcInfo>();
-                    for (var i = 0; i < npcControlFinn.dailyRoutine.Length; i++)
-                    {
-                        if (npcControlFinn.dailyRoutine[i] == h)
-                        {
-                            npcControlFinn.dailyRoutineCondition[i] = true;
-                        }
-                    }
+                case "NPC_Gunvar":                    
+				daily = gameObject.GetComponent<NpcInfo>().dailyRoutine;
+				dailyCond = gameObject.GetComponent<NpcInfo>().dailyRoutineCondition;
+				if(!addPopup.gameObject.GetComponent<UIPopupList>().items.Contains("Gunvar")){
+				addPopup.gameObject.GetComponent<UIPopupList>().items.Add("Gunvar");}
+				for(int i = 0; i < daily.Length; i++){
+					if(daily[i] == h){
+						dailyCond[i] = true;
+					}
+				}
                     break;
-                case "NPC_Gunvar":
-                    npcManager.Gunvar = true;
-                    NpcInfo npcControlGunvar = gameObject.GetComponent<NpcInfo>();
-                    for (var i = 0; i < npcControlGunvar.dailyRoutine.Length; i++)
-                    {
-                        if (npcControlGunvar.dailyRoutine[i] == h)
-                        {
-                            npcControlGunvar.dailyRoutineCondition[i] = true;
-                        }
-                    }
+                case "NPC_Rikki":                    
+				daily = gameObject.GetComponent<NpcInfo>().dailyRoutine;
+				dailyCond = gameObject.GetComponent<NpcInfo>().dailyRoutineCondition;
+				if(!addPopup.gameObject.GetComponent<UIPopupList>().items.Contains("Rikki")){
+				addPopup.gameObject.GetComponent<UIPopupList>().items.Add("Rikki");}
+				for(int i = 0; i < daily.Length; i++){
+					if(daily[i] == h){
+						dailyCond[i] = true;
+					}
+				}
                     break;
-                case "NPC_Rikki":
-                    npcManager.Rikki = true;
-                    NpcInfo npcControlRikki = gameObject.GetComponent<NpcInfo>();
-                    for (var i = 0; i < npcControlRikki.dailyRoutine.Length; i++)
-                    {
-                        if (npcControlRikki.dailyRoutine[i] == h)
-                        {
-                            npcControlRikki.dailyRoutineCondition[i] = true;
-                        }
-                    }
+                case "NPC_Encapuzado":                    
+				daily = gameObject.GetComponent<NpcInfo>().dailyRoutine;
+				dailyCond = gameObject.GetComponent<NpcInfo>().dailyRoutineCondition;
+				if(!addPopup.gameObject.GetComponent<UIPopupList>().items.Contains("Encapuzado")){
+				addPopup.gameObject.GetComponent<UIPopupList>().items.Add("Encapuzado");}
+				for(int i = 0; i < daily.Length; i++){
+					if(daily[i] == h){
+						dailyCond[i] = true;
+					}
+				}
                     break;
-                case "NPC_Encapuzado":
-                    npcManager.Encapuzado = true;
-                    NpcInfo npcControlEncapuzado = gameObject.GetComponent<NpcInfo>();
-                    for (var i = 0; i < npcControlEncapuzado.dailyRoutine.Length; i++)
+                case "NPC_Anika":
+                    daily = gameObject.GetComponent<NpcInfo>().dailyRoutine;
+                    dailyCond = gameObject.GetComponent<NpcInfo>().dailyRoutineCondition;
+                    if (!addPopup.gameObject.GetComponent<UIPopupList>().items.Contains("Anika"))
                     {
-                        if (npcControlEncapuzado.dailyRoutine[i] == h)
+                        addPopup.gameObject.GetComponent<UIPopupList>().items.Add("Anika");
+                    }
+                    for (int i = 0; i < daily.Length; i++)
+                    {
+                        if (daily[i] == h)
                         {
-                            npcControlEncapuzado.dailyRoutineCondition[i] = true;
+                            dailyCond[i] = true;
                         }
                     }
                     break;

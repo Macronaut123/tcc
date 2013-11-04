@@ -403,8 +403,11 @@ public class UIWidget : MonoBehaviour
 
 	void ResizeCollider ()
 	{
-		BoxCollider box = collider as BoxCollider;
-		if (box != null) NGUITools.UpdateWidgetCollider(box);
+		if (NGUITools.IsActive(this))
+		{
+			BoxCollider box = collider as BoxCollider;
+			if (box != null) NGUITools.UpdateWidgetCollider(box, true);
+		}
 	}
 
 	/// <summary>
@@ -497,6 +500,8 @@ public class UIWidget : MonoBehaviour
 	protected virtual void OnValidate()
 	{
 		mChanged = true;
+		if (mWidth < minWidth) mWidth = minWidth;
+		if (mHeight < minHeight) mHeight = minHeight;
 		if (autoResizeBoxCollider) ResizeCollider();
 	}
 
