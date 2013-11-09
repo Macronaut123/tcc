@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Riki]
+////[call ignoreNpc NPC_Riki]
 
 GUNVAR: E aí?
 RIKI: Estou bem.

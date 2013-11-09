@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Ben]
+////[call ignoreNpc NPC_Ben]
 
 ALVIS: Ben! Você conseguiu todos os itens?
 BEN: Consegui sim, estão aqui.

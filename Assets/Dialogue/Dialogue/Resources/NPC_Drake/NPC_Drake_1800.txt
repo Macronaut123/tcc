@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Ulric]
+//[call ignoreNpc NPC_Ulric]
 
 
 ULRIC: Drake! Como você está?

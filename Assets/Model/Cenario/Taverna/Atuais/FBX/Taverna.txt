@@ -1,0 +1,1 @@
+Taverna = Telhado + Parede + Rodape + Pedra dos Pilares + Pilares de Madeira + Chao de Terra + Chao de Madeira + Balcao + Janela + Porta

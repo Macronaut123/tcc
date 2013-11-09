@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Alvis]
+////[call ignoreNpc NPC_Alvis]
 
 BEN: Estou indo então Alvis, 
 BEN: boa sorte nas pesquisas, nos vemos mais tarde.

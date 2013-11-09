@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Alvis]
+//[call ignoreNpc NPC_Alvis]
 
 ULRIC: Gostei muito da missa hoje.
 ALVIS: Realmente, a energia estava muito boa, 

@@ -1,5 +1,5 @@
-[call ignoreNpc NPC_Aina]
-[call ignoreNpc NPC_Tobbie]
+////[call ignoreNpc NPC_Aina]
+////[call ignoreNpc NPC_Tobbie]
 
 PERSIVAL: ...
 AINA: Bom dia Persival!

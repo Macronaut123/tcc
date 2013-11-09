@@ -194,7 +194,7 @@ public class AiBasic : GenericFunction
 	            wayPoints.Add(currentContainer[i]);   
 			}
 		}else{
-            Debug.Log("subWP " + index + "nao encontrado");
+            Debug.Log(gameObject.name + " - subWP " + index + "nao encontrado");
 		}
     }
 	

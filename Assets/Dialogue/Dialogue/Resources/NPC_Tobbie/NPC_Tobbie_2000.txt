@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Argus]
+//[call ignoreNpc NPC_Argus]
 
 TOBBIE: Sr Argus, Sr Argus! Será que eu já posso comer? Kikiki!
 ARGUS: Tobbie, hoje é dia de festa! Você DEVE comer bastante!

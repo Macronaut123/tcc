@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Gunvar]
+////[call ignoreNpc NPC_Gunvar]
 
 GUNVAR: Segure firme! Preste mais atenção! De novo!
 KLAUS: Rahhhh... Rahhhh...

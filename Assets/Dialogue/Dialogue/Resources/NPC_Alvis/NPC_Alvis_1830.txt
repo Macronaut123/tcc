@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Ulric]
+//[call ignoreNpc NPC_Ulric]
 
 ULRIC: Já faz tanto tempo que ela se foi...
 ALVIS: Sim, já faz 16 anos, eu também sinto falta dela.

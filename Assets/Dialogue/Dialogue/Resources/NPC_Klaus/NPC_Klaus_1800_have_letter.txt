@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Persival]
+////[call ignoreNpc NPC_Persival]
 Klaus: O quê? Como assim? Aonde você achou isso?
 Klaus: O quê? Como assim? Aonde você achou isso?
 Persival: O pai deve estar no cemitério! Ele sempre vai rezar essa hora.

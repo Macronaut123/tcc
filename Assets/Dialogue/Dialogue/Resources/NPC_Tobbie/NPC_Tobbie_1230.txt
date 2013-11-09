@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Tobbie]
+////[call ignoreNpc NPC_Tobbie]
 
 TOBBIE: Sr Argus! Me dá um pouco de cerveja?
 ARGUS: UHAHAHA!! Quando você crescer mais um pouco Tobbie!

@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Argus]
+////[call ignoreNpc NPC_Argus]
 
 BEN: Bom dia Argus! Como estão as coisas no reino?
 ARGUS: Nossa, Ben! Quanto tempo não o via! 

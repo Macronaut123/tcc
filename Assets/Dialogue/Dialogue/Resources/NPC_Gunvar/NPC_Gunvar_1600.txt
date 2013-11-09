@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_ANIKA]
+////[call ignoreNpc NPC_ANIKA]
 
 GUNVAR: ...
 ANIKA: Sr Gunvar...?

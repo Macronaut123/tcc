@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Argus]
+////[call ignoreNpc NPC_Argus]
 
 ALVIS: Graças aos céus tudo deu certo hoje...
 ALVIS: Vamos comemorar e descansar do dia de hoje!

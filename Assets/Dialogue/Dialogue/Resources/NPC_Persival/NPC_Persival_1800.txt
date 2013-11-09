@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Persival]
+////[call ignoreNpc NPC_Persival]
 
 KLAUS: Persival, até que enfim te achei. Onde está a capa que minha mãe fez pra mim?!
 PERSIVAL: Do que você está falando? Eu não peguei nada!

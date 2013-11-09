@@ -12,32 +12,18 @@ public class DemoAI : GenericFunction {
 	public bool talking = false;	//Are we talking?
 	
 	float timer;
-	public float setTimer = 10f;
+	public float setTimer = 5f;
 	public string cutScene = "";
 	public bool cutready = false;
 	
 	void Start(){		
 		timer = setTimer;
 	}
-	
-	public void OnTriggerEnter(Collider hit){
-        if (hit.name == "Player"){
-			talking = true;
-			setDisableTime(false);
-			gameObject.GetComponent<DisableObject>().disableAll(false);
-		}else{
-			talking = false;
-			setDisableTime(true);
-			gameObject.GetComponent<DisableObject>().disableAll(true);
-		}
-	}
-	
-	public void OnTriggerExit(Collider hit){
-        if (hit.name == "Player"){
-			talking = false;
-			setDisableTime(true);
-			gameObject.GetComponent<DisableObject>().disableAll(true);
-		}
+		
+	public void StartTalk(){
+		talking = true;
+		setDisableTime(false);
+		gameObject.GetComponent<DisableObject>().disableAll(false);
 	}
 	
 	void Update () {
@@ -128,15 +114,15 @@ public class DemoAI : GenericFunction {
 					}
 				}
 				if(items[0].type == DialogueItem.ItemType.Text){
-					timer -= Time.deltaTime;
+					//timer -= Time.deltaTime;
 						
-						if(timer <= 0){
-							items = d.GetNextOutput();
-							timer = setTimer;
-						}
+						//if(timer <= 0){
+							//items = d.GetNextOutput();
+							//timer = setTimer;
+						//}
 				
-					//if( GUILayout.Button("Next") )
-					//	items = d.GetNextOutput();
+					if( GUILayout.Button("Proximo") )
+						items = d.GetNextOutput();
 				}
 			}
 		

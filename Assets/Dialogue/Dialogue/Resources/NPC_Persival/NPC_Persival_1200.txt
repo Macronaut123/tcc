@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Persival]
+////[call ignoreNpc NPC_Persival]
 
 AINA: Boa tarde Persival, o que está fazendo aqui no bosque?
 PERSIVAL:...!!!!!

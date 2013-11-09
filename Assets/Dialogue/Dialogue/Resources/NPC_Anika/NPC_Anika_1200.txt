@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Gunvar]
+////[call ignoreNpc NPC_Gunvar]
 
 GUNVAR: Está um belo dia GAHAHAHA senhorita Anika!
 ANIKA: Rs... Boa tarde Sr Gunvar! Realmente está um belo dia.

@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Ulric]
+////[call ignoreNpc NPC_Ulric]
 
 ULRIC:Ahhh! Que caçada espetacular! 
 ULRIC: Esse javali era realmente grande, 

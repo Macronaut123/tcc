@@ -1,8 +1,8 @@
-[call ignoreNpc NPC_Persival]
-[call ignoreNpc NPC_Klaus]
-[call ignoreNpc NPC_Anika]
-[call ignoreNpc NPC_Finn]
-[call ignoreNpc NPC_Riki]
+////[call ignoreNpc NPC_Persival]
+////[call ignoreNpc NPC_Klaus]
+////[call ignoreNpc NPC_Anika]
+////[call ignoreNpc NPC_Finn]
+////[call ignoreNpc NPC_Riki]
 
 TOBBIE: Briga! Briga!
 ANIKA: Pare com isso Tobbie! Persival e Klaus, por favor parem de brigar, eu procuro a capa, mas por favor, parem de brigar.

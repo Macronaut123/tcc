@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Tobbie]
+//[call ignoreNpc NPC_Tobbie]
 
 AINA: Tobbie, eu tenho que ir ajudar a Anika hoje com os preparativos.
 TOBBIE: Eu também quero ajudar a Anika!

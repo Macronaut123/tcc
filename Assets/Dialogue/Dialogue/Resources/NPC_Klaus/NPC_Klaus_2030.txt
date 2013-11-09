@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Ben]
+////[call ignoreNpc NPC_Ben]
 
 BEN: Boa noite príncipe Klaus!
 KLAUS: Boa noite… Ahm… Você é o comerciante da vila, não?

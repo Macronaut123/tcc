@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Klaus]
+////[call ignoreNpc NPC_Klaus]
 
 Klaus: O quê? Como assim? Aonde você achou isso?
 Klaus: O quê? Como assim? Aonde você achou isso?

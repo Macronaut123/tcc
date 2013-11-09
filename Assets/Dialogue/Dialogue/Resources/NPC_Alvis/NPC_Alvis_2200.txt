@@ -1,8 +1,8 @@
-[call ignoreNpc NPC_Finn]
-[call ignoreNpc NPC_Persival]
-[call ignoreNpc NPC_Klaus]
-[call ignoreNpc NPC_Drake]
-[call ignoreNpc NPC_Gunvar]
+//[call ignoreNpc NPC_Finn]
+//[call ignoreNpc NPC_Persival]
+//[call ignoreNpc NPC_Klaus]
+//[call ignoreNpc NPC_Drake]
+//[call ignoreNpc NPC_Gunvar]
 
 
 KLAUS: Pai, o senhor esta bem?

@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Gunvar]
+//[call ignoreNpc NPC_Gunvar]
 
 DRAKE: …
 DRAKE: Eu não sou surdo Gunvar.

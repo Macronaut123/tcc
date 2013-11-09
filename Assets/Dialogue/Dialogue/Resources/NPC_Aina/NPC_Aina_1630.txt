@@ -1,5 +1,5 @@
-[call ignoreNpc NPC_Finn]
-[call ignoreNpc NPC_Anika]
+//[call ignoreNpc NPC_Finn]
+//[call ignoreNpc NPC_Anika]
 
 FINN: Vocês conseguiram organizar tudo para o festival?
 ANIKA: Sim, graças a ajuda da Aina, nós conseguimos terminar tudo pai.

@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Aina]
+//[call ignoreNpc NPC_Aina]
 
 TOBBIE: Tenho um espírito que me consome de dentro! 
 TOBBIE: Estou com muuuuuita fome...

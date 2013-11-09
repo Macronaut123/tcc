@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Klaus]
+//[call ignoreNpc NPC_Klaus]
 
 
 KLAUS: Titor! Você tambem está indo para a missa?

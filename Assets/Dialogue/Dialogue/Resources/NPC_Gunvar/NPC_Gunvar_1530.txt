@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Gunvar]
+////[call ignoreNpc NPC_Gunvar]
 
 GUNVAR: BOA NOITE SENHORITA ANIKA!
 ANIKA: Boa noite Sr Gunvar, o Sr chegou cedo!

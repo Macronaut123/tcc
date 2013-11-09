@@ -1,5 +1,5 @@
-[call ignoreNpc NPC_Tobiie]
-[call ignoreNpc NPC_Aina]
+////[call ignoreNpc NPC_Tobiie]
+////[call ignoreNpc NPC_Aina]
 
 AINA: TOBBIE! VOLTA AQUI!
 TOBBIE: O demônio está me perseguindo! Socorro Anika!

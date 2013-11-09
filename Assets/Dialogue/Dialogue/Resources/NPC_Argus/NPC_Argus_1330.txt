@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Ben]
+////[call ignoreNpc NPC_Ben]
 
 BEN: Argus! Como vai? Este reino não muda nada eim!
 ARGUS: Claro que mudou! Hahaha! Você não está sabendo?

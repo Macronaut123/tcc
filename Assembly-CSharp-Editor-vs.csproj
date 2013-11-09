@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{E5105FB8-2D3D-29D5-81F3-85E496437A16}</ProjectGuid>
+	<ProjectGuid>{EC7BA184-803B-9258-F8E9-506D8E1BDC55}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -109,6 +109,7 @@
      <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetContainerEditor.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1230.txt" />
+     <None Include="Assets\Model\Personagem\Persival\Persival.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_0900.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_0830.txt" />
@@ -120,7 +121,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_1130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_0800.txt" />
-     <None Include="Assets\Demo\Shaders\NewShader.shader" />
      <None Include="Assets\Standard Assets\water well\readme.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_0730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1730.txt" />
@@ -281,7 +281,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_0830.txt" />
-     <None Include="Assets\Modelos Finais\alpha 1\Alvis\Animaç_es.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_1700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_1200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_0600.txt" />
@@ -362,7 +361,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_1600.txt" />
-     <None Include="Assets\Model\Alviss\Animações.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_2130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_2100.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_2030.txt" />
@@ -554,7 +552,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Persival\NPC_Persival_1130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1800.txt" />
-     <None Include="Assets\Model\Anika\Versão mais Atual esta com a Mei.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_0730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_0800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1430.txt" />
@@ -609,10 +606,10 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0900_dont_know_gunvar.txt" />
+     <None Include="Assets\Model\Cenario\Taverna\Atuais\FBX\Taverna.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_1830.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_0600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1230.txt" />
-     <None Include="Assets\Model\Drake\VOU TENTAR FINALIZAR ELE HOJE, SE NAO CONSEGUIR, USE ESTE MODELO MESMO, POR FAVOR.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_1230.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1300.txt" />
@@ -755,7 +752,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_2100.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1600.txt" />
-     <None Include="Assets\notes.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_1630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1730.txt" />
@@ -1004,9 +1000,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{13F4F123-E45F-1216-F501-7D4C3FFBBBE2}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+      <Project>{5E3A2948-D24F-2D70-5A87-DC8CBCAF2C11}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp-vs.csproj">
-      <Project>{60AD079D-995A-7378-7ADC-4865149D0C48}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+      <Project>{A38EBBB7-B612-8204-C36B-937AA3C44457}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

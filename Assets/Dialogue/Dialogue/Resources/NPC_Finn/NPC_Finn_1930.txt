@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Anika]
+//[call ignoreNpc NPC_Anika]
 
 FINN: Você não vai lá ficar com o Gunvar, filha?
 ANIKA: Pai! Como assim? Todos os anos sempre passei com o senhor...

@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Alvis]
+//[call ignoreNpc NPC_Alvis]
 
 AINA: Sr Alvis!
 ALVIS: Boa noite Aina. Como foi o seu dia?

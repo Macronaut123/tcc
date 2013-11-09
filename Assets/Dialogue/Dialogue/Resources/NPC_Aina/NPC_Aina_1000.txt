@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Tobbie]
+//[call ignoreNpc NPC_Tobbie]
 
 AINA: Os pães parecem estar deliciosos! A Anika realmente sabe cozinhar!
 TOBBIE: Me dá um pão Aina!

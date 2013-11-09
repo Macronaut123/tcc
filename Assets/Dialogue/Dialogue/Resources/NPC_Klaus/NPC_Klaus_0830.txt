@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Ulric]
+////[call ignoreNpc NPC_Ulric]
 
 ULRIC: Klaus.
 KLAUS: Pai! Como foi a caçada?

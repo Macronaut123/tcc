@@ -1,7 +1,7 @@
-[call ignoreNpc NPC_Tobbie]
-[call ignoreNpc NPC_Klaus]
-[call ignoreNpc NPC_Finn]
-[call ignoreNpc NPC_Riki]
+//[call ignoreNpc NPC_Tobbie]
+//[call ignoreNpc NPC_Klaus]
+//[call ignoreNpc NPC_Finn]
+//[call ignoreNpc NPC_Riki]
 
 
 TOBBIE: Briga! Briga!

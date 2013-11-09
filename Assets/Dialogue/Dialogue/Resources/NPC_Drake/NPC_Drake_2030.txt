@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Gunvar]
+////[call ignoreNpc NPC_Gunvar]
 
 GUNVAR: Discurso do rei estava ótimo! GAHAHA!! Não acha o mesmo Drake?
 DRAKE: Gunvar, até onde eu vi... Você estava dormindo seu cara de pau!

@@ -1,5 +1,5 @@
-[call ignoreNpc NPC_Finn]
-[call ignoreNpc NPC_Anika]
+//[call ignoreNpc NPC_Finn]
+//[call ignoreNpc NPC_Anika]
 
 FINN: Humm. Está realmente tudo delicioso! O Rei caprichou como nunca na caçada deste ano!
 AINA: TOBBIE! VOLTA AQUI!

@@ -1,7 +1,7 @@
-[call ignoreNpc NPC_Tobiie]
-[call ignoreNpc NPC_Aina]
-[call ignoreNpc NPC_Anika]
-[call ignoreNpc NPC_Persival]
+////[call ignoreNpc NPC_Tobiie]
+////[call ignoreNpc NPC_Aina]
+////[call ignoreNpc NPC_Anika]
+////[call ignoreNpc NPC_Persival]
 
 Tobbie: O que aquele cara quer com a Aina eim...
 Tobbie: Não se preocupe Titor... Eu vou ficar de olho nele!

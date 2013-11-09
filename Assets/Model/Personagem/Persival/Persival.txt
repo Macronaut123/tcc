@@ -1,0 +1,8 @@
+Animações Persival
+Andando - 10~45
+Agaichando/Pegando Item - 50~219
+Sentando - 230~286
+Idle Sentado - 286~565
+Levantando - 565~609
+Conversando - 625~660
+Idle Em Pé - 660~976

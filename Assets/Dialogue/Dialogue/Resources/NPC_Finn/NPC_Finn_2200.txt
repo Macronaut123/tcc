@@ -1,9 +1,9 @@
-[call ignoreNpc NPC_Persival]
-[call ignoreNpc NPC_Ulric]
-[call ignoreNpc NPC_Klaus]
-[call ignoreNpc NPC_Gunvar]
-[call ignoreNpc NPC_Alvis]
-[call ignoreNpc NPC_Drake]
+//[call ignoreNpc NPC_Persival]
+//[call ignoreNpc NPC_Ulric]
+//[call ignoreNpc NPC_Klaus]
+//[call ignoreNpc NPC_Gunvar]
+//[call ignoreNpc NPC_Alvis]
+//[call ignoreNpc NPC_Drake]
 
 KLAUS: Pai, o senhor esta bem?
 Ulric: Urgr.

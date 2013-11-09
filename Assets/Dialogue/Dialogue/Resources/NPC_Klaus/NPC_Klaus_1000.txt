@@ -1,4 +1,4 @@
-[call ignoreNpc NPC_Alvis]
+////[call ignoreNpc NPC_Alvis]
 
 KLAUS: Alvis,  você pode chamar o Persival? 
 KLAUS: Tenho que conversar com ele.

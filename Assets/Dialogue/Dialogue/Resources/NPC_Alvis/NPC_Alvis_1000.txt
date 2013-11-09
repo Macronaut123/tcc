@@ -1,5 +1,5 @@
-[call ignoreNpc NPC_Ben]
-[call ignoreNpc NPC_Klaus]
+//[call ignoreNpc NPC_Ben]
+//[call ignoreNpc NPC_Klaus]
 
 BEN: Estou indo então Alvis, boa sorte nas pesquisas, 
 BEN: nos vemos mais tarde.
