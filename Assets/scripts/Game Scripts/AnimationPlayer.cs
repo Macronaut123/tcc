@@ -20,7 +20,7 @@ public class AnimationPlayer : MonoBehaviour {
 	
 	void Update () {
 		
-		if(keyD(KeyCode.W)){
+		if(keyD(KeyCode.W) || keyD(KeyCode.S)){
 			animControl.CrossFade("Andando");
 		}
 		

@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{5E3A2948-D24F-2D70-5A87-DC8CBCAF2C11}</ProjectGuid>
+	<ProjectGuid>{13F4F123-E45F-1216-F501-7D4C3FFBBBE2}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -100,6 +100,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1800.txt" />
+     <None Include="Assets\ex2D\_demo\Fonts\Amaranth.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0930.txt" />
      <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_0900.txt" />
@@ -130,8 +131,10 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_1300.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Anika\NPC_Anika_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Persival\NPC_Persival_0730.txt" />
+     <None Include="Assets\ex2D\Core\Shaders\SpriteBlendClipping.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_2200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1100.txt" />
+     <None Include="Assets\ex2D\Core\Shaders\SpriteBlendPixelPerfect.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1300.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_0930.txt" />
@@ -435,6 +438,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_0730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_1300.txt" />
+     <None Include="Assets\ex2D\_demo\Fonts\springSteel.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_0830.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_0730.txt" />
@@ -695,6 +699,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_2130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_1730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_0830.txt" />
+     <None Include="Assets\ex2D\Core\Shaders\SpriteBlendNoZTest.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_2100.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1600.txt" />
@@ -702,6 +707,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1730.txt" />
      <None Include="Assets\NGUI\1. Which Version To Import.txt" />
+     <None Include="Assets\ex2D\Core\Shaders\SpriteBlend.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1400.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1730.txt" />
@@ -792,8 +798,10 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_1200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\ExampleDialogue.txt" />
+     <None Include="Assets\ex2D\_demo\Fonts\otari.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1900.txt" />
+     <None Include="Assets\UniversalVideoTexture\_Shaders\3DText_DepthAware.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_2030.txt" />
@@ -925,6 +933,9 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1500.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_2030.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_0600.txt" />
+ <Reference Include="ex2D.Runtime">
+ <HintPath>Assets\ex2D\Core\ex2D.Runtime.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

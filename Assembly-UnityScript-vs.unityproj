@@ -44,9 +44,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\scripts\Game Scripts\FadeSystem.js" />
+     <Compile Include="Assets\ex2D\_demo\Scripts\ninja.js" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1230.txt" />
+     <None Include="Assets\Model\Personagem\Persival\Persival.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_0900.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_0830.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_1900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_0730.txt" />
@@ -56,7 +58,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_1130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_0800.txt" />
-     <None Include="Assets\Demo\Shaders\NewShader.shader" />
      <None Include="Assets\Standard Assets\water well\readme.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_0730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1730.txt" />
@@ -92,6 +93,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1800.txt" />
      <None Include="Assets\ex2D\_demo\Fonts\Amaranth.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0930.txt" />
+     <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_2200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_2000.txt" />
@@ -103,6 +105,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_1000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_1800.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1530.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_0730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0830_know_gunvar.txt" />
@@ -113,6 +116,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_1600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_2130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Anika\NPC_Anika_2200.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_2130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_1300.txt" />
@@ -149,6 +153,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_0630.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (SoftClip).shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_1200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_1900.txt" />
@@ -168,6 +173,8 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Anika\NPC_Anika_1530.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1000.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font (AlphaClip).shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Anika\NPC_Anika_1900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_2000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1330.txt" />
@@ -189,6 +196,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_0930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_2200.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\Demo Dialogue 2.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_2000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_1600.txt" />
@@ -213,11 +221,11 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_0830.txt" />
-     <None Include="Assets\Modelos Finais\alpha 1\Alvis\Animaç_es.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_1700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_1200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_0600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_0830.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (AlphaClip) .shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1330.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_0700.txt" />
@@ -252,6 +260,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_1200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_2130.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_0730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_2000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1930.txt" />
@@ -260,6 +269,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1100.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_1630.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (AlphaClip).shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1500.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_0800.txt" />
@@ -291,7 +301,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_1600.txt" />
-     <None Include="Assets\Model\Alviss\Animações.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_2130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_2100.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_2030.txt" />
@@ -312,6 +321,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alviss\NPC_Alviss_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_1000.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (AlphaClip).shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_0930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0800.txt" />
@@ -327,6 +337,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_0800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Anika\NPC_Anika_1130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_1700.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (AlphaClip).shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_0930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0900.txt" />
@@ -338,6 +349,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_1700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_1630.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1230.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1500.txt" />
@@ -361,6 +373,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_0800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_1100.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_1600.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1400.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_1700.txt" />
@@ -392,6 +405,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_1830.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_2030.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1600.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font (SoftClip).shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_1000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_2100.txt" />
@@ -462,6 +476,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1000_dont_know_gunvar.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1730.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (SoftClip).shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_1500.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_1300.txt" />
@@ -469,6 +484,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1100.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_0800.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (SoftClip).shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_0600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_0900.txt" />
@@ -477,7 +493,6 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Persival\NPC_Persival_1130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1800.txt" />
-     <None Include="Assets\Model\Anika\Versão mais Atual esta com a Mei.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_0730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_0800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1430.txt" />
@@ -489,6 +504,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_2200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_0930.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1100.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_2000.txt" />
@@ -503,14 +519,18 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_1630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1000.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Anika\NPC_Anika_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_2000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_1330.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Anika\NPC_Anika_1000.txt" />
+     <None Include="Assets\HUD Text\ReadMe - 1.8.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_1930.txt" />
+     <None Include="Assets\NGUI\ReadMe - 3.0.3d.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_1730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_1930.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1500.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_0930.txt" />
@@ -527,10 +547,10 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0900_dont_know_gunvar.txt" />
+     <None Include="Assets\Model\Cenario\Taverna\Atuais\FBX\Taverna.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_1830.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_0600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1230.txt" />
-     <None Include="Assets\Model\Drake\VOU TENTAR FINALIZAR ELE HOJE, SE NAO CONSEGUIR, USE ESTE MODELO MESMO, POR FAVOR.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_1230.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1300.txt" />
@@ -566,12 +586,15 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1230.txt" />
      <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_1330.txt" />
+     <None Include="Assets\NGUI\Examples\Other\English.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_0800.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_1700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_0600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_2100.txt" />
+     <None Include="Assets\NGUI\Examples\Other\French.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_1900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_1130.txt" />
@@ -596,6 +619,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_2100.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_1130.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed).shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Anika\NPC_Anika_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\TutorialScript.txt" />
@@ -638,6 +662,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Anika\NPC_Anika_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_1730.txt" />
+     <None Include="Assets\HUD Text\Examples\Atlases\Arimo20.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Ulric\NPC_Ulric_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_2200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_1230.txt" />
@@ -669,10 +694,10 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_2100.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1600.txt" />
-     <None Include="Assets\notes.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_1630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1730.txt" />
+     <None Include="Assets\NGUI\1. Which Version To Import.txt" />
      <None Include="Assets\ex2D\Core\Shaders\SpriteBlend.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1400.txt" />
@@ -709,6 +734,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Aina\NPC_Aina_1530.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Argus\NPC_Argus_0730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_0630.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Additive Colored.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_0630.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_1700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Gunvar\NPC_Gunvar_1000.txt" />
@@ -742,6 +768,8 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_0800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_1130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_1000.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+     <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alviss\NPC_Alviss_0600_player_got_churchkey.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Persival\NPC_Persival_1000.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Argus\NPC_Argus_1200.txt" />
@@ -764,12 +792,14 @@
      <None Include="Assets\ex2D\_demo\Fonts\otari.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1900.txt" />
+     <None Include="Assets\UniversalVideoTexture\_Shaders\3DText_DepthAware.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Klaus\NPC_Klaus_1800.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_2030.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_0900.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_1430_know_gunvar.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_2100.txt" />
+     <None Include="Assets\HUD Text\Examples\Atlases\Large.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Tobbie\NPC_Tobbie_0730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_1130.txt" />
@@ -781,6 +811,7 @@
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_2130.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_1600.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Drake\NPC_Drake_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_1200.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_2030.txt" />
@@ -790,6 +821,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Rikki\NPC_Rikki_1300.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_2130.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Anika\NPC_Anika_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Benn\NPC_Benn_1930.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1130.txt" />
@@ -819,6 +851,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Alvis\NPC_Alvis_1400.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_1500.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Anika\NPC_Anika_0800.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_0700.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Finn\NPC_Finn_0730.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Tobbie\NPC_Tobbie_1230.txt" />
@@ -848,6 +881,7 @@
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Anika\NPC_Anika_1100.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Percival\NPC_Persival_1430.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Finn\NPC_Finn_1300.txt" />
+     <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Aina\NPC_Aina_0830.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Klaus\NPC_Klaus_1600.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Gunvar\NPC_Gunvar_1600.txt" />
@@ -890,6 +924,9 @@
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Ulric\NPC_Ulric_1500.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources\NPC_Drake\NPC_Drake_2030.txt" />
      <None Include="Assets\Dialogue\Dialogue\Resources_OLD\NPC_Rikki\NPC_Rikki_0600.txt" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
  <Reference Include="ex2D.Runtime">
  <HintPath>Assets\ex2D\Core\ex2D.Runtime.dll</HintPath>
  </Reference>
