@@ -7,7 +7,7 @@ public class GlobalActions : GenericFunction
 
     public void action(int hour, int minut, float second, bool resetAll)
     {
-        if (PlayerCollides.Quarto)
+        if (true)
         {
             setNewTimer(hour, minut, second);
             GameObject[] a = GameObject.FindGameObjectsWithTag("canBack");
@@ -18,15 +18,22 @@ public class GlobalActions : GenericFunction
                 {
                     temp.GetComponent<AiBasic>().getNewCurrentContainer();
                 }
-
+				temp.GetComponent<AiBasic>().enabled = false;
+				temp.GetComponent<NavMeshAgent>().enabled = false;
                 temp.GetComponent<NpcSystemBackTime>().goToPosition(temp.GetComponent<AiBasic>().getSubContainerWayPoint());
+            }
+			
+			foreach (GameObject temp in a)
+            {
+				temp.GetComponent<AiBasic>().enabled = true;
+				temp.GetComponent<NavMeshAgent>().enabled = true;
             }
         }
     }
 
     public void Update()
     {
-        if (!GameObject.Find("PlayerRoom").GetComponent<GlobalActivePlayerRoom>().isReadyToBack)
+        if (true)
         {
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {

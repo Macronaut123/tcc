@@ -17,15 +17,6 @@ public class SystemTalk : GenericFunction {
         if (hit.name == "Player"){
 		}
 	}
-		
-	public void a(){
-		
-	    float speed = 0.1F;
-	 	//transform.rotation = Quaternion.Slerp(gameObject.transform.rotation, GameObject.Find("Player").transform.rotation, Time.time * speed);
-		
-		transform.rotation = Quaternion.Slerp(gameObject.transform.rotation, Quaternion.LookRotation(GameObject.Find("Player") - gameObject.transform.position), 5);
-		
-	}
 	
 	public void startFromHere(){
 		int h = 0;

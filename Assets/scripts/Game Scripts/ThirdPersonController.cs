@@ -163,19 +163,28 @@ public class ThirdPersonController : MonoBehaviour
 			if (Input.GetButton ("Jump"))
 			// Handle jumping
 			{
-				return;
+				Vector3 movement = Input.GetAxis ("Vertical") * target.transform.forward +
+					SidestepAxisInput * target.transform.right;
 				
-				target.AddForce (
-					jumpSpeed * target.transform.up +
-						target.velocity.normalized * directionalJumpFactor,
-					ForceMode.VelocityChange
-				);
-					// When jumping, we set the velocity upward with our jump speed
-					// plus some application of directional movement
+				float appliedSpeed = walking ? speed / walkSpeedDownscale : speed;
+					// Scale down applied speed if in walk mode
 				
-				if (onJump != null)
+				if (Input.GetAxis ("Vertical") < 0.0f)
+				// Scale down applied speed if walking backwards
 				{
-					onJump ();
+					appliedSpeed /= walkSpeedDownscale;
+				}
+
+				if (movement.magnitude > inputThreshold)
+				// Only apply movement if we have sufficient input
+				{
+					target.AddForce (movement.normalized * appliedSpeed, ForceMode.VelocityChange);
+				}
+				else
+				// If we are grounded and don't have significant input, just stop horizontal movement
+				{
+					target.velocity = new Vector3 (0.0f, target.velocity.y, 0.0f);
+					return;
 				}
 			}
 			else
