@@ -1,0 +1,27 @@
+[call ignoreNpc NPC_Persival]
+[call ignoreNpc NPC_Drake]
+[call ignoreNpc NPC_Gunvar]
+[call ignoreNpc NPC_Alvis]
+[call ignoreNpc NPC_Ulric]
+[call ignoreNpc NPC_Argus]
+[call ignoreNpc NPC_Finn]
+[call ignoreNpc NPC_Anika]
+[call ignoreNpc NPC_Aina]
+[call ignoreNpc NPC_Tobbie]
+[call ignoreNpc NPC_Ben]
+[call ignoreNpc NPC_Encapuzado]
+[call ignoreNpc NPC_Riki]
+
+Player {Este pingente é seu?} [goto lineTalk]
+Player {Não deve ser dele} [goto lineNoTalk]
+
+-lineTalk
+KLAUS: Olha, nunca vi este pingente na vida. Talvez seja do Tobbie. 
+KLAUS: Ele vive perdendo coisas por aí...
+[end]
+
+-lineNoTalk
+KLAUS: Você ainda tem alguma coisa para me falar?
+KLAUS: Eu vou me retirar então.
+KLAUS: Até mais Titor.
+[end]

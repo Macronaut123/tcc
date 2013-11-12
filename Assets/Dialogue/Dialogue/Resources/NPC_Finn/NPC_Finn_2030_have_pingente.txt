@@ -1,0 +1,32 @@
+[call ignoreNpc NPC_Persival]
+[call ignoreNpc NPC_Drake]
+[call ignoreNpc NPC_Gunvar]
+[call ignoreNpc NPC_Klaus]
+[call ignoreNpc NPC_Ulric]
+[call ignoreNpc NPC_Argus]
+[call ignoreNpc NPC_Alvis]
+[call ignoreNpc NPC_Anika]
+[call ignoreNpc NPC_Aina]
+[call ignoreNpc NPC_Tobbie]
+[call ignoreNpc NPC_Ben]
+[call ignoreNpc NPC_Encapuzado]
+[call ignoreNpc NPC_Riki]
+
+FINN: Você quer algo comigo jovem Titor?
+FINN: No que eu posso te ajudar?
+
+Player{Este pindente é so Sr?} [goto lineSim]
+Player{Não é nada.} [goto lineNao]
+
+-lineSim
+FINN: Hum... Isso me lembra o pingente que o Drake sempre carrega com ele…
+FINN: Ele fes este pingente quando o seu filho nasceu.
+FINN: É uma pena a esposa dele ter falecido daquela forma…
+FINN: Drake ainda tem esperanças de encontrar o filho dele que desapareceu no dia…
+FINN: Entregue logo de volta ao Drake.
+FINN: Ele deve estar sentindo falta.
+[end]
+
+-lineNao
+FINN: Se precisar de algo, só me falar Titor.
+[end]

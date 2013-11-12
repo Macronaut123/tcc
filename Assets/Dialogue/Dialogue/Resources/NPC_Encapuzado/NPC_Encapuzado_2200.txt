@@ -1,0 +1,17 @@
+[call ignoreNpc NPC_Persival]
+[call ignoreNpc NPC_Drake]
+[call ignoreNpc NPC_Gunvar]
+[call ignoreNpc NPC_Klaus]
+[call ignoreNpc NPC_Alvis]
+[call ignoreNpc NPC_Argus]
+[call ignoreNpc NPC_Finn]
+[call ignoreNpc NPC_Anika]
+[call ignoreNpc NPC_Aina]
+[call ignoreNpc NPC_Tobbie]
+[call ignoreNpc NPC_Ben]
+[call ignoreNpc NPC_Ulrick]
+[call ignoreNpc NPC_Riki]
+
+????: ...
+????: Porque você não vai enxer o saco de outro...?
+????: ...

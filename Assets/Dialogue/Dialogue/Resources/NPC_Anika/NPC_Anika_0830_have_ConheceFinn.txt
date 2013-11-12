@@ -1,0 +1,43 @@
+[call ignoreNpc NPC_Persival]
+[call ignoreNpc NPC_Drake]
+[call ignoreNpc NPC_Gunvar]
+[call ignoreNpc NPC_Klaus]
+[call ignoreNpc NPC_Ulric]
+[call ignoreNpc NPC_Argus]
+[call ignoreNpc NPC_Finn]
+[call ignoreNpc NPC_Alvis]
+[call ignoreNpc NPC_Aina]
+[call ignoreNpc NPC_Tobbie]
+[call ignoreNpc NPC_Ben]
+[call ignoreNpc NPC_Encapuzado]
+[call ignoreNpc NPC_Riki]
+
+ANIKA: Oi Titor!!
+ANIKA: Eu posso te ajudar em alguma coisa?
+
+Player{Vocês que arrumam as casas dos nobres?} [goto lineOne]
+Player{Nada não.} [goto lineTchau]
+Player{O seu pai sempre está trabalhando} [goto linePai]
+
+-lineOne
+ANIKA: Rsrs! Meu pai tem as chaves de algumas casas deste reino!
+ANIKA: As vezes pedem para nós irmos limpar a casa deles. 
+ANIKA: Então as vezes nós temos que ir limpar a casa do Sr Gunvar 
+ANIKA: e do Sr Riki por exemplo!
+ANIKA: O Sr Riki ainda é organizado... Mas a casa do Sr Gunvar...
+ANIKA: É um pouco mais bagunçada que uma casa comum...
+ANIKA: Nada como uma boa limpeza não resolva!
+[end]
+
+-linePai
+ANIKA: Rs! Ele sempre está se mexendo mesmo!
+ANIKA: Mas... As vezes, eu o vejo descansando um pouco depois da hora de almoço!
+ANIKA: Rs! Não conte a ninguém ok?
+
+-lineTchau
+ANIKA: Então tá bom!
+ANIKA: Se precisar, só me chamar!
+[end]
+
+[call checkCondition item_pingente]
+

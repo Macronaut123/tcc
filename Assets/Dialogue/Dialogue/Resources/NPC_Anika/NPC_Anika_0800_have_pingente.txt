@@ -1,0 +1,31 @@
+[call ignoreNpc NPC_Persival]
+[call ignoreNpc NPC_Drake]
+[call ignoreNpc NPC_Gunvar]
+[call ignoreNpc NPC_Klaus]
+[call ignoreNpc NPC_Ulric]
+[call ignoreNpc NPC_Argus]
+[call ignoreNpc NPC_Finn]
+[call ignoreNpc NPC_Alvis]
+[call ignoreNpc NPC_Aina]
+[call ignoreNpc NPC_Tobbie]
+[call ignoreNpc NPC_Ben]
+[call ignoreNpc NPC_Encapuzado]
+[call ignoreNpc NPC_Riki]
+
+ANIKA: Você quer me perguntar mais alguma coisa Titor?
+
+Player{Esse pingente é seu?} [goto lineVai]
+Player{Nada não...} [goto lineNaoVai]
+
+-lineVai
+ANIKA: Ahm... 
+ANIKA: Será que este pingente é do príncipe Klaus?
+ANIKA: Eu não sei de quem é...
+ANIKA: Mas talvez seja do príncipe Klaus mesmo.
+ANIKA: Me desculpe se caso não for Titor.
+[end]
+
+-lineNaoVai
+ANIKA: Então tá! Rs!
+ANIKA: Até mais então Titor!
+[end]

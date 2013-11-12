@@ -1,0 +1,30 @@
+[call ignoreNpc NPC_Persival]
+[call ignoreNpc NPC_Drake]
+[call ignoreNpc NPC_Gunvar]
+[call ignoreNpc NPC_Klaus]
+[call ignoreNpc NPC_Alvis]
+[call ignoreNpc NPC_Argus]
+[call ignoreNpc NPC_Finn]
+[call ignoreNpc NPC_Anika]
+[call ignoreNpc NPC_Ulrick]
+[call ignoreNpc NPC_Tobbie]
+[call ignoreNpc NPC_Ben]
+[call ignoreNpc NPC_Encapuzado]
+[call ignoreNpc NPC_Riki]
+
+AINA: ...?
+AINA: Você quer me falar algo?
+
+Player {Ahm... Você sabe de quem é este pingente?} [goto lineEiAina]
+Player {Não é nada...} [goto lineSonho]
+
+-lineEiAina
+AINA: Hum… Não sei te dizer Titor. 
+AINA: Pergunte ao Sr Alvis. Ele deve saber de quem é.
+AINA: Eu acho que ele vai te ajudar a encontrar o dono!
+[end]
+
+-lineSonho
+AINA: Hummm...
+AINA: Se precisar de algo, é só chamar viu?
+[end]

@@ -1,0 +1,30 @@
+[call ignoreNpc NPC_Persival]
+[call ignoreNpc NPC_Aina]
+[call ignoreNpc NPC_Gunvar]
+[call ignoreNpc NPC_Klaus]
+[call ignoreNpc NPC_Alvis]
+[call ignoreNpc NPC_Argus]
+[call ignoreNpc NPC_Finn]
+[call ignoreNpc NPC_Anika]
+[call ignoreNpc NPC_Ulrick]
+[call ignoreNpc NPC_Tobbie]
+[call ignoreNpc NPC_Ben]
+[call ignoreNpc NPC_Encapuzado]
+[call ignoreNpc NPC_Riki]
+
+Player {Preocupado com o Gunvar?} [goto line1]
+Player {Preocupado com o Riki?} [goto line2]
+
+-line1
+DRAKE: Todos os anos ele inventa alguma desculpa para não ir na missa...
+DRAKE: Desde pequeno, quando vai a essas missas, ele fica dormindo...
+[end]
+
+-line2
+DRAKE: ...
+DRAKE: Acredita que eu quase nunca conversei com aquele garoto?
+DRAKE: Ele é calado e muito fechado... Espero que um dia ele consiga se abrir.
+DRAKE: Acho que ele e o Gunvar se dariam bem. Você também não acha? Hahaha!
+[end]
+
+[call checkCondition item_pingente]

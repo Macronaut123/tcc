@@ -1,0 +1,33 @@
+[call ignoreNpc NPC_Persival]
+[call ignoreNpc NPC_Drake]
+[call ignoreNpc NPC_Tobbie]
+[call ignoreNpc NPC_Klaus]
+[call ignoreNpc NPC_Alvis]
+[call ignoreNpc NPC_Argus]
+[call ignoreNpc NPC_Finn]
+[call ignoreNpc NPC_Anika]
+[call ignoreNpc NPC_Ulrick]
+[call ignoreNpc NPC_Aina]
+[call ignoreNpc NPC_Ben]
+[call ignoreNpc NPC_Encapuzado]
+[call ignoreNpc NPC_Riki]
+
+GUNVAR: Aconteceu alguma coisa? GAHAHAHA!!
+
+Player{Esse pingente é seu?} [gotoLine1]
+Player{não aconteceu nada} [gotoLine2]
+
+-Line1
+GUNVAR: Ahm… Eu já vi esse pingente em algum lugar…
+GUNVAR: Por ser algo bonito, deve ser de um dos príncipes! GAHAHA!
+GUNVAR: Não estou conseguindo me lembrar de quem é...
+GUNVAR: Mas pra eu conseguir me lembrar dessa forma...
+GUNVAR: Deve ser de alguém assim que eu sempre vejo! GAHAHAHA!!
+[end]
+
+-Line2
+GUNVAR: Precisando de algo é só falar! GAHAHAHA!!
+[end]
+
+
+

@@ -1,0 +1,26 @@
+﻿[call ignoreNpc NPC_Klaus]
+[call ignoreNpc NPC_Drake]
+[call ignoreNpc NPC_Gunvar]
+[call ignoreNpc NPC_Alvis]
+[call ignoreNpc NPC_Ulric]
+[call ignoreNpc NPC_Argus]
+[call ignoreNpc NPC_Finn]
+[call ignoreNpc NPC_Anika]
+[call ignoreNpc NPC_Aina]
+[call ignoreNpc NPC_Tobbie]
+[call ignoreNpc NPC_Ben]
+[call ignoreNpc NPC_Encapuzado]
+[call ignoreNpc NPC_Riki]
+
+Player {Este pingente é seu?} [goto lineTalk]
+Player {Não deve ser dele} [goto lineNoTalk]
+
+-lineTalk
+PERSIVAL: ...
+PERSIVAL:  Já perguntou para a Aina se este pingente é dela?
+PERSIVAL: Se caso não for dela... Eu não faço ideia de quem seja.
+[end]
+
+-lineNoTalk
+TITOR:...
+[end]
