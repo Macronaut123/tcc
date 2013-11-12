@@ -22,6 +22,6 @@ public class ChangeTime : MonoBehaviour {
     void OnClick() { 
         //print(timeText.text.Substring(0,1));
         //print(timeText.text.Substring(2, 2));
-        globalActions.GetComponent<GlobalActions>().setNewTimer(int.Parse(gameObject.name.Substring(0, 2)), int.Parse(gameObject.name.Substring(2, 2)), 0);
+        globalActions.GetComponent<GlobalActions>().action(int.Parse(gameObject.name.Substring(0, 2)), int.Parse(gameObject.name.Substring(2, 2)), 0, false);
     }
 }

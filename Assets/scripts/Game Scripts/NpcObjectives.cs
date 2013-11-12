@@ -14,9 +14,6 @@ public class NpcObjectives : MonoBehaviour
         {
 			case "Player":
                 dependencyActions.Add("letter_condition", false);
-				dependencyActions.Add("knowgunvar_condition", false);
-				dependencyActions.Add("knowriki_condition", false);
-				dependencyActions.Add("colar_condition", false);
 			
 				//FINAL
 				dependencyActions.Add("FINAL_DEFAULT", false);

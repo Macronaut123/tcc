@@ -3,17 +3,14 @@ using System.Collections;
 
 public class GetItem : MonoBehaviour {
 	
+	private string itemName;
+	
 	void OnTriggerEnter(Collider hit){
-		
+
         if(hit.gameObject.tag == "getable"){
-			hit.gameObject.collider.enabled = false;
-			hit.gameObject.renderer.enabled = false;
+			hit.gameObject.SetActive(false);
 			var playerDependency = GameObject.Find("Player").GetComponent<NpcObjectives>().dependencyActions;
-			if(playerDependency.ContainsKey(hit.gameObject.name)){
-				playerDependency[hit.gameObject.name] = true;	
-			}else{
-				playerDependency.Add(hit.gameObject.name, true);
-			}
+			playerDependency[hit.gameObject.name] = true;	
         }
 	}
 }

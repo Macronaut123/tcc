@@ -51,16 +51,29 @@ public class GlobalTime : MonoBehaviour
 		
 		
 		if(dp["FINAL_BAD"] == true){
-			
+			mainCamera.farClipPlane -= 100 * Time.deltaTime;
+			if(mainCamera.farClipPlane < 0){
+				Debug.Log("FINAL_BAD");
+				Application.LoadLevel("FINAL_BAD");
+			}
 		}
 		else if(dp["FINAL_GOOD"] == true){
-			
+			mainCamera.farClipPlane -= 100 * Time.deltaTime;
+			if(mainCamera.farClipPlane < 0){
+				Debug.Log("FINAL_GOOD");
+				Application.LoadLevel("FINAL_GOOD");
+			}
 		}
 		else if(dp["FINAL_PERFECT"] == true){
-			
+			mainCamera.farClipPlane -= 100 * Time.deltaTime;
+			if(mainCamera.farClipPlane < 0){
+				Debug.Log("FINAL_PERFECT");
+				Application.LoadLevel("FINAL_PERFECT");
+			}
 		}else /*DEFAULT	*/ {
 			mainCamera.farClipPlane -= 100 * Time.deltaTime;
 			if(mainCamera.farClipPlane < 0){
+				Debug.Log("FINAL_DEFAULT");
 				Application.LoadLevel("FINAL_DEFAULT");
 			}
 		}
