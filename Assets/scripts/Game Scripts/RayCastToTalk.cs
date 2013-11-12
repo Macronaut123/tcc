@@ -10,10 +10,14 @@ public class RayCastToTalk : MonoBehaviour {
 	public void OnTriggerEnter(Collider hit){
 		if(hit.name.Contains("NPC") && hit.tag == "canBack"){
 			canCheckRay = true;
+			GameObject.Find(hit.gameObject.name+"_Balao").GetComponent<NpcBallon>().show(true);
 		}
 	}
 	
 	public void OnTriggerExit(Collider hit){
+		
+		Debug.Log("TriggerExit");
+		
 		if(hit.name.Contains("NPC") && hit.tag == "canBack"){
 			canCheckRay = false;
 			if(hit.GetComponent<DemoAI>()){
@@ -22,6 +26,7 @@ public class RayCastToTalk : MonoBehaviour {
 				hit.GetComponent<DemoAI>().gameObject.GetComponent<DisableObject>().disableAll(true);
 				isRotating = false;
 			}
+			GameObject.Find(hit.gameObject.name+"_Balao").GetComponent<NpcBallon>().show(false);
 		}
 	}
 	
