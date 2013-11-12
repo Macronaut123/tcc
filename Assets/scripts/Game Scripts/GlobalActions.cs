@@ -35,6 +35,7 @@ public class GlobalActions : GenericFunction
     {
         if (true)
         {
+		/*
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
 				var h = hour();
@@ -75,6 +76,7 @@ public class GlobalActions : GenericFunction
 					action(hTemp, mTemp , 0f, true);	
 				}
             }
+			*/
 		}
     }
 }
