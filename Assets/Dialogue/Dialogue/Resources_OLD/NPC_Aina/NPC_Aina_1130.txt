@@ -1,9 +1,0 @@
-[call ignoreNpc NPC_Tobbie]
-
-AINA: Tenho que ir no bosque pegar alguns ingredientes! 
-AINE: Vou correndo e já volto Tobbie!
-TOBBIE: Vai e volta rápido Aina... Vou ficar brincando por aí!
-AINA: Só não perturbe ninguém! Ouviu?
-TOBBIE: Kikiki! Ok!
-
-AINA: Estou com um pouco de pressa agora Titor! Depois conversamos!

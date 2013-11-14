@@ -1,7 +1,0 @@
-//[call ignoreNpc NPC_Tobbie]
-
-TOBBIE: Tenho um espírito que me consome de dentro! 
-TOBBIE: Estou com muuuuuita fome...
-TOBBIE: Acredita que a Aina não quis me dar nenhum dos 
-TOBBIE: pães quentinhos que saiu do forno Titor??
-AINA: Não reclama Tobbie.. Vc já vai comer bastante mais tarde.

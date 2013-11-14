@@ -1,6 +1,0 @@
-[call ignoreNpc NPC_Riki]
-
-ULRIC: E o Persival, onde está?
-RIKI: Ele deve estar tendo aulas com Alvis, o senhor quer ir ve-lo?
-ULRIC: Não vou atrapalhar os estudos dele. Vamos para o castelo.
-RIKI: Claro senhor.

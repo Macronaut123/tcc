@@ -1,8 +1,0 @@
-[call ignoreNpc NPC_Tobbie]
-
-AINA: Hoje está um lindo dia para o festival! 
-AINA: Você também não acha isso Titor?
-AINA: Espero que dê tudo certo hoje!
-
-
-

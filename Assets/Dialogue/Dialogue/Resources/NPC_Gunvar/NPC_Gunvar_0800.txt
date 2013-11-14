@@ -1,7 +1,0 @@
-GUNVAR: Vá Klaus! Mais forte!
-
-Player {Player: Bom dia.} [goto lineOla]
-
--lineOla
-GUNVAR: ...Titor? Veio participar do treino também? Gahaha!
-[end]

@@ -1,8 +1,0 @@
-[call ignoreNpc NPC_Aina]
-
-AINA: Os pães parecem estar deliciosos! A Anika realmente sabe cozinhar!
-TOBBIE: Me dá um pão Aina!
-AINA: Já disse que meninos sujos só vão comer a noite!
-TOBBIE: Mas.. Mass....
-AINA: Espera até a hora do almoço Tobbie!
-AINA: Tenho que voltar agora para a praça e ajuda-la com os preparativos!

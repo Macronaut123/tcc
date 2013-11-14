@@ -1,7 +1,0 @@
-[call ignoreNpc NPC_Gunvar]
-
-GUNVAR: Segure firme! Preste mais atenção! De novo!
-KLAUS: Rahhhh... Rahhhh...
-
-GUNVAR: Titor, não quero desconcentrar o príncipe! 
-GUNVAR: Depois você conversa com ele!

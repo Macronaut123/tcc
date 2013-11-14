@@ -1,7 +1,0 @@
-//A demo of simple speech between 2 people
-Robot 1:		Welcome to this Dialogue demo.
-Robot 1:		I am a demo of simple dialogue between 2 people,
-Robot 1:		If you look in the file "Demo Dialogue 1" in the resources folder you can see how easy it is to write these.
-Player:			That is pretty cool, what else can I do?
-Robot 1:		Talk to the other robots, thay have more to say.
-Player:			Ok will do!

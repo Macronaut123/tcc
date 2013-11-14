@@ -1,9 +1,0 @@
-GUNVAR: ...
-
-Player{Player: Aconteceu alguma coisa?} [goto lineSusto]
-
--lineSusto
-GUNVAR: Que susto! Titor... Ahm... Nada não, 
-GUNVAR: vá para a praça e veja se está tudo pronto para o festival. 
-GUNVAR: GAHAHA! Hoje teremos o melhor festival de todos os tempos!
-[end]

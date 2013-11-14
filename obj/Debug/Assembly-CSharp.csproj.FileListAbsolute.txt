@@ -1,3 +1,0 @@
-C:\tcc\obj\Debug\ResolveAssemblyReference.cache
-C:\tcc\obj\Debug\Assembly-CSharp.dll
-C:\tcc\obj\Debug\Assembly-CSharp.pdb

@@ -1,7 +1,0 @@
-[call ignoreNpc NPC_Drake]
-
-ULRIC: Drake! Como você está?
-DRAKE: Bem senhor… E como o senhor está?
-ULRIC: Estou ótimo. Como estão as espadas que eu pedi?
-DRAKE: Estão prontas.
-ULRIC: Depois enviarei soldados para as levar ao castelo.

@@ -1,4 +1,0 @@
-////[call ignoreNpc NPC_Klaus]
-
-Persival: Agora não Titor!
-Persival: Agora não Titor!
